@@ -1,0 +1,40 @@
+# Entorno virtual Python
+venv/
+.venv/
+env/
+
+# Datos generados
+data/
+*.csv
+*.json
+
+# Logs
+logs/
+*.log
+logs.txt
+
+# Docker
+.env
+docker-compose.override.yml
+
+# Playwright/browsers
+.ms-playwright/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# IDE/Sistemas operativos
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos temporales
+*.tmp
+*~
