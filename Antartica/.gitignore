@@ -9,6 +9,8 @@ data/
 *.json
 
 # Logs
+logs/
+*.log
 logs.txt
 
 # Docker

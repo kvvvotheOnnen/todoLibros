@@ -4,7 +4,5 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - ./logs:/app/logs  # Monta el directorio de logs
-    environment:
-      - LOG_DIR=/app/logs
-      - LOG_FILENAME=scraper.log
+      - ./data:/app/data  # Persistencia de datos
+      - ./logs.txt:/app/logs.txt  # Persistencia de logs
