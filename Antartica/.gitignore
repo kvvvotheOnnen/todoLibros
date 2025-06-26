@@ -9,8 +9,7 @@ data/
 *.json
 
 # Logs
-logs/
-*.log
+
 logs.txt
 
 # Docker
@@ -38,3 +37,5 @@ build/
 # Archivos temporales
 *.tmp
 *~
+logs/
+*.log
