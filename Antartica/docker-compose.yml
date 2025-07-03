@@ -1,10 +1,14 @@
+  GNU nano 4.8                   docker-compose.yml                             
 version: '3.8'
 services:
   scraper:
     build: .
     restart: unless-stopped
     volumes:
+      - /var/antartica/data:/app/data
       - ./logs:/app/logs  # Monta el directorio de logs
     environment:
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
       - LOG_DIR=/app/logs
       - LOG_FILENAME=scraper.log
+
