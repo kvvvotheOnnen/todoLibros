@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  scraper:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs 
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=scraper.log
