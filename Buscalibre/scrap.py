@@ -78,27 +78,19 @@ class Scrap():
                     try:
                         sb.wait_for_element(".productos.pais42")
                         break
-                    except ValueError as err:
+                    except Exception as err:
                         error_logs(f'🔴 Intento {attempt + 1}/{max_attempts} - En espera de contenedor de productos', str(err))
                         if attempt < max_attempts - 1:
                             sb.refresh_page()
                         else:
                             error_logs('❌ Conexión perdida después de 3 intentos', '')
-                            if lista_productos:
-                                self.export_to_csv(lista_productos)
-                                process_logs(f'📊 Total de productos procesados: {len(lista_productos)}')
-                            else:
-                                error_logs('❌ No hay productos para exportar', '')
-                            return lista_productos if lista_productos else None
+                            break
+                else:
+                    break
                 productos = sb.find_elements(".box-producto.producto")
                 if not productos:
                     error_logs('❌ No se encontraron productos', '')
-                    if lista_productos:
-                        self.export_to_csv(lista_productos)
-                        process_logs(f'📊 Total de productos procesados: {len(lista_productos)}')
-                    else:
-                        error_logs('❌ No hay productos para exportar', '')
-                    return lista_productos if lista_productos else None
+                    break
                 productos_en_pagina = 0
                 for producto in productos:
                     try:
@@ -107,7 +99,6 @@ class Scrap():
                         autor = producto.find_element(By.CSS_SELECTOR, ".autor").text.strip()
                         tapa = producto.find_element(By.CSS_SELECTOR, ".metas").text.strip()
                         link = producto.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
-                        
                         precio_element = producto.find_element(By.CSS_SELECTOR, "strong")
                         if precio_element:
                             precio = precio_element.text.strip()
