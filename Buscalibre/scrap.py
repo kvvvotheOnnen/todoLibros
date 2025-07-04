@@ -18,19 +18,13 @@ class Scrap():
     def export_to_csv(self, products):
         try:
             filename = os.path.join(self.output_dir, f"{self.categoria.replace(' ', '_')}.csv")
-            file_exists = os.path.isfile(filename)
-
-            with open(filename, mode='a', newline='', encoding='utf-8') as csvfile:
+            with open(filename, mode='w', newline='', encoding='utf-8') as csvfile:
                 fieldnames = ['isbn', 'titulo', 'autor', 'tapa', 'precio', 'link', 'categoria']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-                if not file_exists:
-                    writer.writeheader()
-
+                writer.writeheader()
                 for product in products:
                     product_data = product.copy()
                     writer.writerow(product_data)
-
             if os.path.exists(filename):
                 process_logs(f"Archivo cvs creado exitosamente: {filename}")
                 process_logs(f"📊 Total de registros guardados: {len(products)}")
@@ -38,7 +32,6 @@ class Scrap():
             else:
                 error_logs('El archivo CSV no se creó correctamente', '')
                 return None
-
         except Exception as err:  
             error_logs('Error en export_to_csv', str(err))
         return None
