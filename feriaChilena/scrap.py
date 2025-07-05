@@ -59,7 +59,7 @@ class Scrap():
         products = []
         with sync_playwright() as p:
             try:
-                browser = p.firefox.launch(headless=True)
+                browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
                 page.goto(self.url)
                 page.wait_for_selector(".ast-woocommerce-container", state="visible", timeout=60000)
