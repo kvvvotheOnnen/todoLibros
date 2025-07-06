@@ -11,8 +11,8 @@ COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN playwright install firefox
-RUN playwright install-deps firefox
+RUN playwright install chromium
+RUN playwright install-deps chromium
 
 COPY . .
 
