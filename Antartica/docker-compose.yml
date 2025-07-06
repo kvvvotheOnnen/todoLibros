@@ -5,8 +5,8 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - /var/antartica/data:/app/data
-      - ./logs:/app/logs  # Monta el directorio de logs
+      - ./data:/app/data
+      - ./logs:/app/logs  
     environment:
       - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
       - LOG_DIR=/app/logs
