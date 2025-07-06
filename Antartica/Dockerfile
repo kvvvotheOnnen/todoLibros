@@ -1,4 +1,3 @@
-GNU nano 4.8                       Dockerfile                                 
 FROM mcr.microsoft.com/playwright/python:v1.52.0-noble
 
 WORKDIR /app
