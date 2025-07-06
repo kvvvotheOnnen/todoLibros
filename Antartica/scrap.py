@@ -30,7 +30,7 @@ class Scrap():
         try:
             filename = os.path.join(self.output_dir, f"{self.categoria.replace(' ', '_')}.csv")
             with open(filename, mode='w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ['isbn', 'titulo', 'autor', 'tapa', 'precio', 'link', 'categoria']
+                fieldnames = ['isbn', 'titulo', 'autor', 'precio', 'link', 'categoria']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 writer.writeheader()
                 for product in products:
@@ -59,7 +59,6 @@ class Scrap():
                 page.wait_for_selector(".products.list.items.product-items", state="visible", timeout=60000)
                 while True:
                     try:
-                        # Scrapear productos de la página actual
                         product_elements = page.query_selector_all(".product-item-info")
                         for element in product_elements:
                             try:
@@ -77,13 +76,13 @@ class Scrap():
                                 title_element = element.query_selector(".product-item-link")
                                 title = title_element.inner_text().strip() if title_element else None
                                 
-                                author_element = element.query_selector(".product-item-author")
+                                author_element = element.query_selector(".link-autor-search-result")
                                 author = author_element.inner_text().strip() if author_element else None
                                 
                                 product_data = {
                                     "isbn": isbn,
                                     "titulo": title,
-                                    "Autor": author,
+                                    "autor": author,
                                     "precio": price,
                                     "link": link,
                                     "categoria":self.categoria
