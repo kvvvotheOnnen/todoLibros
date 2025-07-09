@@ -7,18 +7,26 @@ from datetime import datetime
 
 categorias = [
     ('https://www.antartica.cl/libros/arte-y-arquitectura.html', 'Arte y Arquitectura'),
-    ('https://www.antartica.cl/libros/ciencias.html', 'Ciencias'),
-    ('https://www.antartica.cl/libros/ciencias-exactas.html','Ciencias Exactas'),
-    ('https://www.antartica.cl/libros/computacion-e-informacion.html','Computacion e informatica'),
-    ('https://www.antartica.cl/libros/cuerpo-y-mente.html','Cuerpo y mente'),
     ('https://www.antartica.cl/libros/economia-y-administracion.html','Economia y administracion'),
     ('https://www.antartica.cl/libros/entretencion-y-manual.html','Entretencion y manualidades'),
     ('https://www.antartica.cl/libros/gastronomia-y-vinos.html','Gastronomia y vinos'),
-    ('https://www.antartica.cl/libros/guias-de-viaje-y-tur.html','Guias de viaje y turismo'),
-    ('https://www.antartica.cl/libros/infantil-y-juvenil.html','Infantil y juvenil'),
     ('https://www.antartica.cl/libros/literatura.html','Literatura'),
     ('https://www.antartica.cl/libros/mundo-comic.html','Mundo comic'),
-    ('https://www.antartica.cl/libros/referencias.html','Referencias')
+    ('https://www.antartica.cl/libros/ciencias/ciencias-agrarias-y-de-la-naturaleza.html', 'Ciencias agrarias y de la naturaleza'),
+    ('https://www.antartica.cl/libros/ciencias-exactas/ciencias-fisicas-y-elementales.html', 'Ciencias físicas y elementales'),
+    ('https://www.antartica.cl/libros/ciencias-exactas/ingenieria-y-tecnologia.html', 'Ingeniería y tecnología'),
+    ('https://www.antartica.cl/libros/ciencias/ciencias-medicas.html', 'Ciencias médicas'),
+    ('https://www.antartica.cl/libros/ciencias/zoologia-y-animales-domesticos.html', 'Zoología y animales domésticos'),
+    ('https://www.antartica.cl/libros/computacion-e-informacion/conectados.html', 'Conectados'),
+    ('https://www.antartica.cl/libros/computacion-e-informacion/informatica.html', 'Informática'),
+    ('https://www.antartica.cl/libros/cuerpo-y-mente/autoayuda.html', 'Autoayuda'),
+    ('https://www.antartica.cl/libros/cuerpo-y-mente/ciencias-alternativas-y-esoterismo.html', 'Ciencias alternativas y esoterismo'),
+    ('https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html', 'Guías de viaje'),
+    ('https://www.antartica.cl/libros/guias-de-viaje-y-tur/mapas-y-planos.html', 'Mapas y planos'),
+    ('https://www.antartica.cl/libros/infantil-y-juvenil/juegos-ocio-y-actividades.html', 'Juegos, ocio y actividades'),
+    ('https://www.antartica.cl/libros/infantil-y-juvenil/libros-infantiles.html', 'Libros infantiles'),
+    ('https://www.antartica.cl/libros/infantil-y-juvenil/literatura-juvenil.html', 'Literatura juvenil'),
+    ('https://www.antartica.cl/libros/referencias/diccionarios.html', 'Diccionarios'),
 ]
 
 def scrapear_aleatoriamente(max_reintentos=3):
