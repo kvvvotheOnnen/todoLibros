@@ -1,6 +1,6 @@
 from scrap import Scrap
 import random
-from logs.logs import process_logs
+from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
@@ -64,6 +64,12 @@ def scrapear_aleatoriamente(max_reintentos=3):
             if count > 0:
                 process_logs(f"  {cat}: {count} veces")
 
+    try:
+        scrap_unificador = Scrap('https://miralibros.cl', 'unificador')
+        scrap_unificador.csv_forAll('miraLibros.csv')
+    except Exception as e:
+        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
+
 def main():
     while True:
         start_time = datetime.now()
@@ -75,12 +81,10 @@ def main():
         elapsed_time = end_time - start_time
         process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
         
-        # Espera aleatoria entre 1 y 4 horas (3600 a 14400 segundos)
         wait_hours = random.uniform(1, 4)
         wait_seconds = int(wait_hours * 3600)
         process_logs(f"⏳ Esperando {wait_hours:.2f} horas para el próximo ciclo...")
         
-        # Espera mostrando progreso cada 5 minutos
         for remaining in range(wait_seconds, 0, -300):
             minutes_left = remaining // 60
             process_logs(f"🕒 Próximo ciclo en ~{minutes_left} minutos...")

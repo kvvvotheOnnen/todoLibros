@@ -14,29 +14,24 @@ class Scrap():
 
 
     def pasar_pagina(self, page):
-        # Buscar el botón de siguiente página con la nueva estructura
         next_btn = page.query_selector('a.square-button i.fas.fa-angle-right')
         if not next_btn:
             return False
         
-        # Obtener el elemento padre (el enlace <a>)
         next_link = next_btn.query_selector('xpath=..')
         if not next_link:
             return False
         
-        # Verificar si el enlace tiene href (si no tiene, estamos en la última página)
         href = next_link.get_attribute('href')
         if not href:
             process_logs("ℹ️ Llegamos a la última página - el botón no tiene href")
             return False
         
-        # Verificar si tiene la clase "disabled"
         class_attribute = next_link.get_attribute('class')
         if class_attribute and 'disabled' in class_attribute:
             process_logs("ℹ️ Llegamos a la última página - el botón está deshabilitado")
             return False
 
-        # Hacer clic en el enlace
         next_link.click()
         page.wait_for_selector('.product-block')  # Espera a que carguen los productos
         return True
@@ -49,7 +44,6 @@ class Scrap():
                 fieldnames = ['isbn', 'titulo', 'Autor', 'precio', 'link', 'categoria']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
-                # Siempre escribir el header ya que estamos sobrescribiendo el archivo
                 writer.writeheader()
                 
                 for product in products:
@@ -67,6 +61,41 @@ class Scrap():
             error_logs('Error en export_to_csv', str(err))
         return None
 
+    def csv_forAll(self, nombre_csv_final):
+
+        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
+        if not archivos:
+            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
+            return
+
+        cabecera = None
+        filas = []
+
+        for archivo in archivos:
+            ruta_archivo = os.path.join(self.output_dir, archivo)
+            with open(ruta_archivo, newline='', encoding='utf-8') as f:
+                lector = csv.reader(f)
+                try:
+                    cabecera_archivo = next(lector)
+                except StopIteration:
+                    continue  # archivo vacío
+                if cabecera is None:
+                    cabecera = cabecera_archivo
+                elif cabecera != cabecera_archivo:
+                    process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
+                    continue
+                filas.extend(list(lector))
+
+        if cabecera is None:
+            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
+            return
+
+        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
+        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
+            escritor = csv.writer(f)
+            escritor.writerow(cabecera)
+            escritor.writerows(filas)
+        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
 
 
     def scrap(self):
@@ -102,10 +131,8 @@ class Scrap():
                                 error_logs('flujo principal de scrap', str(e))
                                 continue
                         
-                        # Después de procesar TODOS los productos de la página actual
                         process_logs(f"✅ Página procesada. Total de productos acumulados: {len(products)}")
                         
-                        # Intentar pasar a la siguiente página
                         next_page = self.pasar_pagina(page)
                         if(next_page):
                             page.wait_for_selector(".col-lg-12.col-md-12", state="visible", timeout=60000)

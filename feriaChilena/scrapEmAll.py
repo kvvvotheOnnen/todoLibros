@@ -1,6 +1,6 @@
 from scrap import Scrap
 import random
-from logs.logs import process_logs
+from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
@@ -74,6 +74,13 @@ def scrapear_aleatoriamente(max_reintentos=3):
         for cat, count in reintentos.items():
             if count > 0:
                 process_logs(f"  {cat}: {count} veces")
+
+    # Unir todos los CSV generados en un solo archivo
+    try:
+        scrap_unificador = Scrap('https://www.feriachilenadellibro.cl', 'unificador')
+        scrap_unificador.csv_forAll('feriaChilena.csv')
+    except Exception as e:
+        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
 
 def main():
     while True:

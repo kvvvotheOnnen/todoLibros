@@ -17,7 +17,7 @@ class Scrap():
             texto_limpio = re.sub(r"_.*", "", isbn)
             return texto_limpio
         except ValueError as err:
-            error_logs('Error en metodo de scrap cleanIsbn', err)
+            error_logs('Error en metodo de scrap cleanIsbn', str(err))
     def cleanPrice(self, price_text):
         cleaned_price = price_text.replace("$", "").replace(".", "").strip()
         try:
@@ -47,6 +47,41 @@ class Scrap():
             error_logs('Error en export_to_csv', str(err))
         return None
 
+    def csv_forAll(self, 'Antartica'):
+
+        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
+        if not archivos:
+            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
+            return
+
+        cabecera = None
+        filas = []
+
+        for archivo in archivos:
+            ruta_archivo = os.path.join(self.output_dir, archivo)
+            with open(ruta_archivo, newline='', encoding='utf-8') as f:
+                lector = csv.reader(f)
+                try:
+                    cabecera_archivo = next(lector)
+                except StopIteration:
+                    continue  
+                if cabecera is None:
+                    cabecera = cabecera_archivo
+                elif cabecera != cabecera_archivo:
+                    process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
+                    continue
+                filas.extend(list(lector))
+
+        if cabecera is None:
+            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
+            return
+
+        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
+        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
+            escritor = csv.writer(f)
+            escritor.writerow(cabecera)
+            escritor.writerows(filas)
+        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
 
 
     def scrap(self):
@@ -89,7 +124,7 @@ class Scrap():
                                 }
                                 products.append(product_data)
                             except Exception as e:
-                                error_logs('flujo principal de scrap',e)
+                                error_logs('flujo principal de scrap', str(e))
                                 continue
                         current_page = page.query_selector(".item.current")
                         if not current_page:
@@ -118,10 +153,10 @@ class Scrap():
 
                         
                     except Exception as e:
-                        error_logs(f'Error en el bucle principal de scrap',e)
+                        error_logs(f'Error en el bucle principal de scrap', str(e))
                         break
             except Exception as e:
-                error_logs('error inicializando el navegador', e)
+                error_logs('error inicializando el navegador', str(e))
             finally:
                 browser.close()
                 self.export_to_csv(products)

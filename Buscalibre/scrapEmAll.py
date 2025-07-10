@@ -1,5 +1,5 @@
 from scrap import Scrap
-from logs.logs import process_logs
+from logs.logs import process_logs, error_logs
 from datetime import datetime
 import time
 import random
@@ -32,6 +32,13 @@ def main():
     end_time = datetime.now()
     elapsed_time = end_time - start_time
     process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
+
+    # Unir todos los CSV generados en un solo archivo
+    try:
+        scrap_unificador = Scrap('https://www.buscalibre.cl', 'unificador')
+        scrap_unificador.csv_forAll('Buscalibre.csv')
+    except Exception as e:
+        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
 
 if __name__ == "__main__":
     main()

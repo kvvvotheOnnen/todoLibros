@@ -1,6 +1,6 @@
 from scrap import Scrap
 import random
-from logs.logs import process_logs
+from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
@@ -48,10 +48,10 @@ def scrapear_aleatoriamente(max_reintentos=3):
         except Exception as e:
             reintentos[categoria] += 1
             if reintentos[categoria] < max_reintentos:
-                process_logs(f"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
                 categorias_pendientes.append((url, categoria))
             else:
-                process_logs(f"Fallo definitivo: {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Fallo definitivo: {categoria}")
         
         if categorias_pendientes:
             delay = random.randint(8, 25)  # Rango más amplio
@@ -73,16 +73,20 @@ def main():
         
         scrapear_aleatoriamente()
         
+        try:
+            scrap_unificador = Scrap('https://www.antartica.cl', 'unificador')
+            scrap_unificador.csv_forAll('Antartica.csv')
+        except Exception as e:
+            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
+        
         end_time = datetime.now()
         elapsed_time = end_time - start_time
         process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
         
-        # Espera aleatoria entre 1 y 4 horas (3600 a 14400 segundos)
         wait_hours = random.uniform(1, 4)
         wait_seconds = int(wait_hours * 3600)
         process_logs(f"⏳ Esperando {wait_hours:.2f} horas para el próximo ciclo...")
         
-        # Espera mostrando progreso cada 5 minutos
         for remaining in range(wait_seconds, 0, -300):
             minutes_left = remaining // 60
             process_logs(f"🕒 Próximo ciclo en ~{minutes_left} minutos...")

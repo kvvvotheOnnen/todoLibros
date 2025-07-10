@@ -15,8 +15,8 @@ class Scrap():
     def extraer_isbn(self,url):
         match = re.search(r"/(\d+)-", url)
         if match:
-            return match.group(1)  # Retorna el ISBN encontrado
-        return None  # Si no hay coincidencia
+            return match.group(1)  
+        return None  
 
     def pasar_pagina(self, page):
         next_btn = page.query_selector('a.next.page-numbers')
@@ -24,7 +24,7 @@ class Scrap():
             return False
 
         next_btn.click()
-        page.wait_for_selector('li.product')  # Espera a que carguen los productos
+        page.wait_for_selector('li.product')  
         return True
 
     def export_to_csv(self, products):
@@ -35,7 +35,7 @@ class Scrap():
                 fieldnames = ['isbn', 'titulo', 'Autor', 'precio', 'link', 'categoria']
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 
-                # Siempre escribir el header ya que estamos sobrescribiendo el archivo
+                
                 writer.writeheader()
                 
                 for product in products:
@@ -49,10 +49,44 @@ class Scrap():
                 error_logs('El archivo CSV no se creó correctamente', '')
                 return None
 
-        except Exception as err:  # Captura todos los tipos de error, no solo ValueError
+        except Exception as err:  
             error_logs('Error en export_to_csv', str(err))
         return None
 
+    def csv_forAll(self, nombre_csv_final):
+        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
+        if not archivos:
+            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
+            return
+
+        cabecera = None
+        filas = []
+
+        for archivo in archivos:
+            ruta_archivo = os.path.join(self.output_dir, archivo)
+            with open(ruta_archivo, newline='', encoding='utf-8') as f:
+                lector = csv.reader(f)
+                try:
+                    cabecera_archivo = next(lector)
+                except StopIteration:
+                    continue  # archivo vacío
+                if cabecera is None:
+                    cabecera = cabecera_archivo
+                elif cabecera != cabecera_archivo:
+                    process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
+                    continue
+                filas.extend(list(lector))
+
+        if cabecera is None:
+            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
+            return
+
+        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
+        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
+            escritor = csv.writer(f)
+            escritor.writerow(cabecera)
+            escritor.writerows(filas)
+        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
 
 
     def scrap(self):
@@ -90,10 +124,8 @@ class Scrap():
                                 error_logs('flujo principal de scrap',e)
                                 continue
                         
-                        # Después de procesar TODOS los productos de la página actual
                         process_logs(f"✅ Página procesada. Total de productos acumulados: {len(products)}")
                         
-                        # Intentar pasar a la siguiente página
                         next_page = self.pasar_pagina(page)
                         if(next_page):
                             page.wait_for_selector(".products", state="visible", timeout=60000)
