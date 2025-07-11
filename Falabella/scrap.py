@@ -52,8 +52,18 @@ class Scrap():
                 time.sleep(espera)
                 return True
         except Exception as err:
-            error_logs("❌ Error al intentar avanzar a la siguiente página", str(err))
-            return False
+            error_msg = str(err)
+            if "element click intercepted" in error_msg:
+                if "kampyleInviteContainer" in error_msg:
+                    process_logs("🚫 Popup detectado: kampyleInviteContainer interceptando clic")
+                else:
+                    process_logs("🚫 Elemento interceptando clic (footer u otro elemento)")
+                sb.refresh_page()
+                time.sleep(3)  # Esperar a que la página se cargue
+                return True
+            else:    
+                error_logs("❌ Error al intentar avanzar a la siguiente página", str(err))
+                return False
 
     def scrap(self):
         with SB(uc=True, xvfb=True) as sb:
@@ -65,7 +75,7 @@ class Scrap():
                     try:
                         sb.wait_for_element("#testId-searchResults-products")
                         break
-                    except Exception as err:
+                    except ValueError as err:
                         error_logs(f'🔴 Intento {attempt + 1}/{max_attempts} - En espera de contenedor de productos', str(err))
                         if attempt < max_attempts - 1:
                             sb.refresh_page()
@@ -73,6 +83,9 @@ class Scrap():
                             error_logs('❌ Conexión perdida después de 3 intentos', '')
                             break
                 else:
+                    if lista_productos:
+                        self.export_to_csv(lista_productos)
+                        process_logs(f'📊 Total de productos procesados: {len(lista_productos)}')
                     break
                 productos = sb.find_elements(".jsx-3752256814.search-results-4-grid.grid-pod")
                 if not productos:
@@ -128,10 +141,7 @@ class Scrap():
             return lista_productos
                     
     def csv_forAll(self, nombre_csv_final):
-        """
-        Une todos los archivos CSV de la carpeta data en uno solo, usando la cabecera del primero.
-        El archivo final se guarda en la misma carpeta data con el nombre proporcionado.
-        """
+
         archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
         if not archivos:
             process_logs(f'No se encontraron archivos CSV en {self.output_dir}')

@@ -14,7 +14,7 @@ logs.txt
 
 # Docker
 .env
-docker-compose.override.yml
+docker-compose.yml
 
 # Playwright/browsers
 .ms-playwright/

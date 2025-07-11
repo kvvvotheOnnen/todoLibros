@@ -47,7 +47,7 @@ class Scrap():
             error_logs('Error en export_to_csv', str(err))
         return None
 
-    def csv_forAll(self, 'Antartica'):
+    def csv_forAll(self, nombre_csv_final):
 
         archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
         if not archivos:
