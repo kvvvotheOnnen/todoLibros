@@ -78,8 +78,6 @@ class Scrap():
                         else:
                             error_logs('❌ Conexión perdida después de 3 intentos', '')
                             break
-                else:
-                    break
                 productos = sb.find_elements(".box-producto.producto")
                 if not productos:
                     error_logs('❌ No se encontraron productos', '')
@@ -125,10 +123,6 @@ class Scrap():
             return lista_productos
                     
     def csv_forAll(self, nombre_csv_final):
-        """
-        Une todos los archivos CSV de la carpeta data en uno solo, usando la cabecera del primero.
-        El archivo final se guarda en la misma carpeta data con el nombre proporcionado.
-        """
         archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
         if not archivos:
             process_logs(f'No se encontraron archivos CSV en {self.output_dir}')

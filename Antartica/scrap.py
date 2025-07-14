@@ -25,7 +25,26 @@ class Scrap():
         except ValueError:
             return None
     
-
+    def pasar_pagina(self,page):
+        try:
+            next_button =  page.query_selector('a.next-page')
+            if not next_button:
+                process_logs("❌ No se encuentra el boton de pasar pagina")
+                return False
+            href =  next_button.get_attribute('href')
+            if href and (href.strip().lower() == 'javascript:void(0)' or 
+                         href.strip().lower() == '#'):
+                process_logs('✅ Ultima pagina ya escrapeada !')
+                return False
+            next_button.click()
+            page.wait_for_selector('.products.list.items.product-items')
+            espera = random.randint(5, 15)
+            process_logs(f"Llegamos a {href},⏳ Esperando {espera} segundos antes de continuar")
+            time.sleep(espera)
+            return True
+        except ValueError as e:
+            error_logs('❌En metodo pasar pagina',{e})
+            return False
     def export_to_csv(self, products):
         try:
             filename = os.path.join(self.output_dir, f"{self.categoria.replace(' ', '_')}.csv")
@@ -88,7 +107,7 @@ class Scrap():
         products = []
         with sync_playwright() as p:
             try:
-                browser = p.firefox.launch(headless=True)
+                browser = p.firefox.launch(headless=False)
                 page = browser.new_page()
                 page.goto(self.url)
                 page.wait_for_selector(".products.list.items.product-items", state="visible", timeout=60000)
@@ -126,32 +145,9 @@ class Scrap():
                             except Exception as e:
                                 error_logs('flujo principal de scrap', str(e))
                                 continue
-                        current_page = page.query_selector(".item.current")
-                        if not current_page:
-                            break
-
-                        last_item = page.query_selector(".item.item-margin-right-0")
-                        if not last_item:
-                            break
-
-                        next_item = current_page.evaluate_handle("(element) => element.nextElementSibling")
-                        if not next_item:
-                            break
                             
-                        next_page_link = next_item.query_selector("a")
-                        if not next_page_link:
+                        if not self.pasar_pagina(page):
                             break
-
-                        new_url = next_page_link.get_attribute('href')
-                        if not new_url:
-                            break
-                        delay_seconds = random.randint(5, 15)
-                        time.sleep(delay_seconds)
-                        process_logs(f"{self.categoria}|| Avanzando a: {new_url}, luego de una espera de {delay_seconds} segundos")
-                        page.goto(new_url)
-                        page.wait_for_selector(".products.list.items.product-items", state="visible", timeout=60000)
-
-                        
                     except Exception as e:
                         error_logs(f'Error en el bucle principal de scrap', str(e))
                         break
