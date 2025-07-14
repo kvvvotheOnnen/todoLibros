@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    ports:
+      - "${RABBITMQ_AMQP_PORT}:5672"   # AMQP
+      - "${RABBITMQ_MANAGEMENT_PORT}:15672" #GUI
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
+      - RABBITMQ_LOGS=/var/log/rabbitmq/rabbit.log 
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+      - ./logs/rabbitmq:/var/log/rabbitmq 
+      
+    restart: unless-stopped
+
+  antartica:
+    build: ./Antartica
+    restart: unless-stopped
+    volumes:
+      - ./Antartica/data:/app/data
+      - ./Antartica/logs:/app/logs
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Antartica.log
+    depends_on:
+      - rabbitmq
+
+  buscalibre:
+    build: ./Buscalibre
+    restart: unless-stopped
+    volumes:
+      - ./Buscalibre/data:/app/data
+      - ./Buscalibre/logs:/app/logs
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Buscalibre.log
+    depends_on:
+      - rabbitmq
+
+  falabella:
+    build: ./Falabella
+    restart: unless-stopped
+    volumes:
+      - ./Falabella/data:/app/data
+      - ./Falabella/logs:/app/logs
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Falabella.log
+    depends_on:
+      - rabbitmq
+
+  feriachilena:
+    build: ./feriaChilena
+    restart: unless-stopped
+    volumes:
+      - ./feriaChilena/data:/app/data
+      - ./feriaChilena/logs:/app/logs
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=feriaChilena.log
+    depends_on:
+      - rabbitmq
+
+  miralibros:
+    build: ./miraLibros
+    restart: unless-stopped
+    volumes:
+      - ./miraLibros/data:/app/data
+      - ./miraLibros/logs:/app/logs
+    environment:
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=miraLibros.log
+    depends_on:
+      - rabbitmq
+
+volumes:
+  rabbitmq_data:
