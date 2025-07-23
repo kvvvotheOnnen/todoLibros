@@ -5,77 +5,114 @@ services:
     image: rabbitmq:3-management
     hostname: rabbitmq
     ports:
-      - "${RABBITMQ_AMQP_PORT}:5672"   # AMQP
-      - "${RABBITMQ_MANAGEMENT_PORT}:15672" #GUI
+      - "${RABBITMQ_AMQP_PORT}:5672"
+      - "${RABBITMQ_MANAGEMENT_PORT}:15672"
     environment:
       - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER}
       - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}
-      - RABBITMQ_LOGS=/var/log/rabbitmq/rabbit.log 
+      - RABBITMQ_LOGS=/var/log/rabbitmq/rabbit.log
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
-      - ./logs/rabbitmq:/var/log/rabbitmq 
-      
+      - ./logs/rabbitmq:/var/log/rabbitmq
+    networks:
+      - scraping_net
     restart: unless-stopped
+
 
   antartica:
     build: ./Antartica
     restart: unless-stopped
     volumes:
+      - ./rabbitmq_handler.py:/app/rabbitMQ_handler.py
       - ./Antartica/data:/app/data
       - ./Antartica/logs:/app/logs
     environment:
       - LOG_DIR=/app/logs
       - LOG_FILENAME=Antartica.log
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
+      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
     depends_on:
       - rabbitmq
+    networks:
+      - scraping_net
 
   buscalibre:
     build: ./Buscalibre
     restart: unless-stopped
     volumes:
+      - ./rabbitmq_handler.py:/app/rabbitMQ_handler.py
       - ./Buscalibre/data:/app/data
       - ./Buscalibre/logs:/app/logs
     environment:
       - LOG_DIR=/app/logs
-      - LOG_FILENAME=Buscalibre.log
+      - LOG_FILENAME=Antartica.log
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
+      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
     depends_on:
       - rabbitmq
+    networks:
+      - scraping_net
 
   falabella:
     build: ./Falabella
     restart: unless-stopped
     volumes:
+      - ./rabbitmq_handler.py:/app/rabbitMQ_handler.py
       - ./Falabella/data:/app/data
       - ./Falabella/logs:/app/logs
     environment:
       - LOG_DIR=/app/logs
-      - LOG_FILENAME=Falabella.log
+      - LOG_FILENAME=Antartica.log
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
+      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
     depends_on:
       - rabbitmq
+    networks:
+      - scraping_net
 
   feriachilena:
     build: ./feriaChilena
     restart: unless-stopped
     volumes:
+      - ./rabbitmq_handler.py:/app/rabbitMQ_handler.py
       - ./feriaChilena/data:/app/data
       - ./feriaChilena/logs:/app/logs
     environment:
       - LOG_DIR=/app/logs
-      - LOG_FILENAME=feriaChilena.log
+      - LOG_FILENAME=Antartica.log
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
+      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
     depends_on:
       - rabbitmq
+    networks:
+      - scraping_net
 
   miralibros:
     build: ./miraLibros
     restart: unless-stopped
     volumes:
+      - ./rabbitmq_handler.py:/app/rabbitMQ_handler.py
       - ./miraLibros/data:/app/data
       - ./miraLibros/logs:/app/logs
     environment:
       - LOG_DIR=/app/logs
-      - LOG_FILENAME=miraLibros.log
+      - LOG_FILENAME=Antartica.log
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
+      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
     depends_on:
       - rabbitmq
+    networks:
+      - scraping_net
 
 volumes:
   rabbitmq_data:

@@ -4,6 +4,9 @@ from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
+import os
+from rabbitmq_handler import RabbitMQHandler
+
 categorias = [
 ('https://feriachilenadellibro.cl/categoria-producto/arte-y-diseno/','arte_y_diseno'),
 ('https://feriachilenadellibro.cl/categoria-producto/autoayuda/','autoayuda'),
@@ -27,14 +30,12 @@ categorias = [
 ('https://feriachilenadellibro.cl/categoria-producto/medicina/','medicina'),
 ('https://feriachilenadellibro.cl/categoria-producto/medicina-alternativa/','medicina_alternativa'),
 ('https://feriachilenadellibro.cl/categoria-producto/ocio-y-hobbies/','ocio_y_hobbies'),
-('https://feriachilenadellibro.cl/categoria-producto/material-didactico/','material_didactico'),
 ('https://feriachilenadellibro.cl/categoria-producto/pack-de-libros/','pack_de_libros'),
 ('https://feriachilenadellibro.cl/categoria-producto/puzzles/','puzzles'),
 ('https://feriachilenadellibro.cl/categoria-producto/politica/','politica'),
 ('https://feriachilenadellibro.cl/categoria-producto/religion/','religion'),
 ('https://feriachilenadellibro.cl/categoria-producto/sexologia/','sexologia'),
 ('https://feriachilenadellibro.cl/categoria-producto/tecnologia/','tecnologia'),
-('https://feriachilenadellibro.cl/categoria-producto/texto-de-estudio/','texto_de_estudio'),
 ('https://feriachilenadellibro.cl/categoria-producto/turismo-y-viajes/','turismo_y_viajes'),
 ]
 
@@ -76,11 +77,20 @@ def scrapear_aleatoriamente(max_reintentos=3):
                 process_logs(f"  {cat}: {count} veces")
 
     # Unir todos los CSV generados en un solo archivo
-    try:
-        scrap_unificador = Scrap('https://www.feriachilenadellibro.cl', 'unificador')
-        scrap_unificador.csv_forAll('feriaChilena.csv')
-    except Exception as e:
-        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
+        try:
+            scrap_unificador = Scrap('https://www.antartica.cl', 'unificador')
+            if scrap_unificador.csv_forAll(csv_filename):
+                if os.path.exists(csv_relative_path):
+                            on_csv_generated(
+                            csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
+                            service_name="Antartica"
+                            )
+                else:
+                    process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
+            else:
+                process_logs("❌ Fallo al generar el CSV")
+        except Exception as e:
+            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
 
 def main():
     while True:

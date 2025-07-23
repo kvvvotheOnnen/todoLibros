@@ -4,6 +4,9 @@ from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
+import os
+from rabbitmq_handler import RabbitMQHandler
+
 categorias = [
 ('https://www.falabella.com/falabella-cl/category/CATG11448/Libros?page=1','general_falabella')
 ]
@@ -46,11 +49,20 @@ def scrapear_aleatoriamente(max_reintentos=3):
                 process_logs(f"  {cat}: {count} veces")
 
     # Unir todos los CSV generados en un solo archivo
-    try:
-        scrap_unificador = Scrap('https://www.falabella.com', 'unificador')
-        scrap_unificador.csv_forAll('Falabella.csv')
-    except Exception as e:
-        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
+        try:
+            scrap_unificador = Scrap('https://www.antartica.cl', 'unificador')
+            if scrap_unificador.csv_forAll(csv_filename):
+                if os.path.exists(csv_relative_path):
+                            on_csv_generated(
+                            csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
+                            service_name="Antartica"
+                            )
+                else:
+                    process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
+            else:
+                process_logs("❌ Fallo al generar el CSV")
+        except Exception as e:
+            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
 
 def main():
     while True:

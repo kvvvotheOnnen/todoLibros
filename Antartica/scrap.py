@@ -101,13 +101,13 @@ class Scrap():
             escritor.writerow(cabecera)
             escritor.writerows(filas)
         process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
-
+        return True
 
     def scrap(self):
         products = []
         with sync_playwright() as p:
             try:
-                browser = p.firefox.launch(headless=False)
+                browser = p.firefox.launch(headless=True)
                 page = browser.new_page()
                 page.goto(self.url)
                 page.wait_for_selector(".products.list.items.product-items", state="visible", timeout=60000)

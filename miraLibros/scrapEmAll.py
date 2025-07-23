@@ -4,6 +4,8 @@ from logs.logs import process_logs, error_logs
 import time
 import sys
 from datetime import datetime
+import os
+from rabbitmq_handler import RabbitMQHandler
 categorias = [
 ('https://miralibros.cl/a-narrativa','Narrativa'),
 ('https://miralibros.cl/b-poesia','Poesia'),
@@ -26,6 +28,17 @@ categorias = [
 ('https://miralibros.cl/s-deportes','Deportes'),
 ('https://miralibros.cl/t-juegos','Juegos')
 ]
+# Después de generar el CSV exitosamente
+def on_csv_generated(csv_path, service_name):
+    rabbit = RabbitMQHandler()
+    if rabbit.connect():
+        timestamp = datetime.now().isoformat()
+        rabbit.send_csv_notification(
+            service_name=service_name,
+            csv_path=csv_path,
+            timestamp=timestamp
+        )
+        rabbit.close()
 
 def scrapear_aleatoriamente(max_reintentos=3):
     categorias_procesadas = set()
@@ -46,13 +59,13 @@ def scrapear_aleatoriamente(max_reintentos=3):
         except Exception as e:
             reintentos[categoria] += 1
             if reintentos[categoria] < max_reintentos:
-                process_logs(f"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
                 categorias_pendientes.append((url, categoria))
             else:
-                process_logs(f"Fallo definitivo: {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Fallo definitivo: {categoria}")
         
         if categorias_pendientes:
-            delay = random.randint(8, 25)  
+            delay = random.randint(8, 25)  # Rango más amplio
             process_logs(f"Espera aleatoria: {delay}s")
             time.sleep(delay)
 
@@ -64,31 +77,40 @@ def scrapear_aleatoriamente(max_reintentos=3):
             if count > 0:
                 process_logs(f"  {cat}: {count} veces")
 
-    try:
-        scrap_unificador = Scrap('https://miralibros.cl', 'unificador')
-        scrap_unificador.csv_forAll('miraLibros.csv')
-    except Exception as e:
-        error_logs('scrap unificador', f"Error al unir los CSV: {str(e)}")
-
 def main():
     while True:
+        csv_filename = "miraLibros.csv" #Dato dinamico, ajustar a lo que agrege despues
+        csv_relative_path = f"data/{csv_filename}"
         start_time = datetime.now()
         process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
         
         scrapear_aleatoriamente()
         
+        try:
+            scrap_unificador = Scrap('https://www.miralibros.cl', 'unificador') #Dato dinamico, ajustar a lo que agrege despues
+            if scrap_unificador.csv_forAll(csv_filename):
+                if os.path.exists(csv_relative_path): 
+                            on_csv_generated(
+                            csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
+                            service_name="miraLibros"
+                            )
+                else:
+                    process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
+            else:
+                process_logs("❌ Fallo al generar el CSV")
+        except Exception as e:
+            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
+        
         end_time = datetime.now()
         elapsed_time = end_time - start_time
-        process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
-        
+        process_logs(f"⏳Tiempo total del scrap: {elapsed_time}")
         wait_hours = random.uniform(1, 4)
-        wait_seconds = int(wait_hours * 3600)
-        process_logs(f"⏳ Esperando {wait_hours:.2f} horas para el próximo ciclo...")
+        wait_seconds = wait_hours * 3600
+        process_logs(f"Esperando {wait_hours:.2f} horas para el próximo ciclo...⏳")
+        time.sleep(wait_seconds)
         
-        for remaining in range(wait_seconds, 0, -300):
-            minutes_left = remaining // 60
-            process_logs(f"🕒 Próximo ciclo en ~{minutes_left} minutos...")
-            time.sleep(min(300, remaining))
+        
+
 
 if __name__ == "__main__":
     try:
