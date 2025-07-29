@@ -61,6 +61,42 @@ class Scrap():
             error_logs("❌ Error al intentar avanzar a la siguiente página", str(err))
             return False
 
+    def csv_forAll(self, nombre_csv_final):
+        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
+        if not archivos:
+            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
+            return False
+
+        cabecera = None
+        filas = []
+
+        for archivo in archivos:
+            ruta_archivo = os.path.join(self.output_dir, archivo)
+            with open(ruta_archivo, newline='', encoding='utf-8') as f:
+                lector = csv.reader(f)
+                try:
+                    cabecera_archivo = next(lector)
+                except StopIteration:
+                    continue  # archivo vacío
+                if cabecera is None:
+                    cabecera = cabecera_archivo
+                elif cabecera != cabecera_archivo:
+                    process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
+                    continue
+                filas.extend(list(lector))
+
+        if cabecera is None:
+            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
+            return False
+
+        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
+        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
+            escritor = csv.writer(f)
+            escritor.writerow(cabecera)
+            escritor.writerows(filas)
+        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
+        return True
+
     def scrap(self):
         with SB(uc=True, xvfb=True) as sb:
             lista_productos = []
@@ -121,41 +157,6 @@ class Scrap():
             else:
                 error_logs('❌ No hay productos para exportar', '')
             return lista_productos
-                    
-    def csv_forAll(self, nombre_csv_final):
-        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
-        if not archivos:
-            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
-            return
-
-        cabecera = None
-        filas = []
-
-        for archivo in archivos:
-            ruta_archivo = os.path.join(self.output_dir, archivo)
-            with open(ruta_archivo, newline='', encoding='utf-8') as f:
-                lector = csv.reader(f)
-                try:
-                    cabecera_archivo = next(lector)
-                except StopIteration:
-                    continue  # archivo vacío
-                if cabecera is None:
-                    cabecera = cabecera_archivo
-                elif cabecera != cabecera_archivo:
-                    process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
-                    continue
-                filas.extend(list(lector))
-
-        if cabecera is None:
-            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
-            return
-
-        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
-        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
-            escritor = csv.writer(f)
-            escritor.writerow(cabecera)
-            escritor.writerows(filas)
-        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
                     
             
 

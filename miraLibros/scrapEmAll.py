@@ -2,6 +2,7 @@ from scrap import Scrap
 import random
 from logs.logs import process_logs, error_logs
 import time
+import pytz
 import sys
 from datetime import datetime
 import os
@@ -30,15 +31,17 @@ categorias = [
 ]
 # Después de generar el CSV exitosamente
 def on_csv_generated(csv_path, service_name):
-    rabbit = RabbitMQHandler()
-    if rabbit.connect():
-        timestamp = datetime.now().isoformat()
-        rabbit.send_csv_notification(
-            service_name=service_name,
-            csv_path=csv_path,
-            timestamp=timestamp
-        )
-        rabbit.close()
+    try:
+        with RabbitMQHandler() as rabbit:  # Conexión automática
+            chile_tz = pytz.timezone("America/Santiago")
+            timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+            rabbit.send_csv_notification(
+                service_name=service_name,
+                csv_path=csv_path,
+                timestamp=timestamp
+            )
+    except Exception as e:
+        error_logs(f"Error en on_csv_generated: {str(e)}")  
 
 def scrapear_aleatoriamente(max_reintentos=3):
     categorias_procesadas = set()
@@ -99,7 +102,7 @@ def main():
             else:
                 process_logs("❌ Fallo al generar el CSV")
         except Exception as e:
-            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
+            error_logs(f'scrap unificador',"Error al unir los CSV:", str(e))
         
         end_time = datetime.now()
         elapsed_time = end_time - start_time
@@ -112,12 +115,12 @@ def main():
         
 
 
-if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        process_logs("\n🔴 Script detenido manualmente")
-        sys.exit(0)
-    except Exception as e:
-        process_logs(f"\n❌ Error no controlado: {str(e)}")
-        sys.exit(1)
+
+try:
+    main()
+except KeyboardInterrupt:
+    process_logs("\n🔴 Script detenido manualmente")
+    sys.exit(0)
+except Exception as e:
+    process_logs(f"\n❌ Error no controlado: {str(e)}")
+    sys.exit(1)

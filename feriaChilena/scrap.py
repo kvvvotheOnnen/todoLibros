@@ -57,7 +57,7 @@ class Scrap():
         archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
         if not archivos:
             process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
-            return
+            return False
 
         cabecera = None
         filas = []
@@ -79,7 +79,7 @@ class Scrap():
 
         if cabecera is None:
             process_logs('No se pudo determinar la cabecera de los archivos CSV.')
-            return
+            return False
 
         ruta_final = os.path.join(self.output_dir, nombre_csv_final)
         with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
@@ -87,7 +87,7 @@ class Scrap():
             escritor.writerow(cabecera)
             escritor.writerows(filas)
         process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
-
+        return True
 
     def scrap(self):
         products = []

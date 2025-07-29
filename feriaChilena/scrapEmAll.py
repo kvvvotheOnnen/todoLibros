@@ -2,6 +2,7 @@ from scrap import Scrap
 import random
 from logs.logs import process_logs, error_logs
 import time
+import pytz
 import sys
 from datetime import datetime
 import os
@@ -38,6 +39,18 @@ categorias = [
 ('https://feriachilenadellibro.cl/categoria-producto/tecnologia/','tecnologia'),
 ('https://feriachilenadellibro.cl/categoria-producto/turismo-y-viajes/','turismo_y_viajes'),
 ]
+def on_csv_generated(csv_path, service_name):
+    try:
+        with RabbitMQHandler() as rabbit:  # Conexión automática
+            chile_tz = pytz.timezone("America/Santiago")
+            timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+            rabbit.send_csv_notification(
+                service_name=service_name,
+                csv_path=csv_path,
+                timestamp=timestamp
+            )
+    except Exception as e:
+        error_logs(f"Error en on_csv_generated: {str(e)}")  
 
 def scrapear_aleatoriamente(max_reintentos=3):
     categorias_procesadas = set()
@@ -58,13 +71,13 @@ def scrapear_aleatoriamente(max_reintentos=3):
         except Exception as e:
             reintentos[categoria] += 1
             if reintentos[categoria] < max_reintentos:
-                process_logs(f"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
                 categorias_pendientes.append((url, categoria))
             else:
-                process_logs(f"Fallo definitivo: {categoria}")
+                error_logs(f'scrapEmAll.py, while categorias pendientes',"Fallo definitivo: {categoria}")
         
         if categorias_pendientes:
-            delay = random.randint(8, 25)  
+            delay = random.randint(8, 25)  # Rango más amplio
             process_logs(f"Espera aleatoria: {delay}s")
             time.sleep(delay)
 
@@ -76,43 +89,39 @@ def scrapear_aleatoriamente(max_reintentos=3):
             if count > 0:
                 process_logs(f"  {cat}: {count} veces")
 
-    # Unir todos los CSV generados en un solo archivo
+def main():
+    while True:
+        csv_filename = "feriaChilena.csv"
+        csv_relative_path = f"data/{csv_filename}"
+        start_time = datetime.now()
+        process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        
+        scrapear_aleatoriamente()
+        
         try:
-            scrap_unificador = Scrap('https://www.antartica.cl', 'unificador')
+            scrap_unificador = Scrap('https://feriachilenadellibro.cl/', 'unificador')
             if scrap_unificador.csv_forAll(csv_filename):
                 if os.path.exists(csv_relative_path):
                             on_csv_generated(
                             csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
-                            service_name="Antartica"
+                            service_name="feriaChilena"
                             )
                 else:
                     process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
             else:
                 process_logs("❌ Fallo al generar el CSV")
         except Exception as e:
-            error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
-
-def main():
-    while True:
-        start_time = datetime.now()
-        process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
-        
-        scrapear_aleatoriamente()
-        
+            error_logs(f'scrap unificador',"{e}")  
         end_time = datetime.now()
         elapsed_time = end_time - start_time
-        process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
-        
-        # Espera aleatoria entre 1 y 4 horas (3600 a 14400 segundos)
+        process_logs(f"⏳Tiempo total del scrap: {elapsed_time}")
         wait_hours = random.uniform(1, 4)
-        wait_seconds = int(wait_hours * 3600)
-        process_logs(f"⏳ Esperando {wait_hours:.2f} horas para el próximo ciclo...")
+        wait_seconds = wait_hours * 3600
+        process_logs(f"Esperando {wait_hours:.2f} horas para el próximo ciclo...⏳")
+        time.sleep(wait_seconds)
         
-        # Espera mostrando progreso cada 5 minutos
-        for remaining in range(wait_seconds, 0, -300):
-            minutes_left = remaining // 60
-            process_logs(f"🕒 Próximo ciclo en ~{minutes_left} minutos...")
-            time.sleep(min(300, remaining))
+        
+
 
 if __name__ == "__main__":
     try:

@@ -2,6 +2,7 @@ from scrap import Scrap
 from logs.logs import process_logs, error_logs
 from datetime import datetime
 import time
+import pytz
 import random
 import os
 from rabbitmq_handler import RabbitMQHandler
@@ -13,15 +14,17 @@ categorias = [
 ]
 
 def on_csv_generated(csv_path, service_name):
-    rabbit = RabbitMQHandler()
-    if rabbit.connect():
-        timestamp = datetime.now().isoformat()
-        rabbit.send_csv_notification(
-            service_name=service_name,
-            csv_path=csv_path,
-            timestamp=timestamp
-        )
-        rabbit.close()
+    try:
+        with RabbitMQHandler() as rabbit:  # Conexión automática
+            chile_tz = pytz.timezone("America/Santiago")
+            timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+            rabbit.send_csv_notification(
+                service_name=service_name,
+                csv_path=csv_path,
+                timestamp=timestamp
+            )
+    except Exception as e:
+        error_logs(f"Error en on_csv_generated: {str(e)}")  
 
 def main():
     csv_filename = "Buscalibre.csv"
@@ -51,19 +54,19 @@ def main():
 
     # Unir todos los CSV generados en un solo archivo
     try:
-        scrap_unificador = Scrap('https://www.antartica.cl', 'unificador')
+        scrap_unificador = Scrap('https://www.buscalibre.cl', 'unificador')
         if scrap_unificador.csv_forAll(csv_filename):
             if os.path.exists(csv_relative_path):
                         on_csv_generated(
                         csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
-                        service_name="Antartica"
+                        service_name="Buscalibre"
                         )
             else:
                 process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
         else:
             process_logs("❌ Fallo al generar el CSV")
     except Exception as e:
-        error_logs(f'scrap unificador',"Error al unir los CSV: {str(e)}")
+        error_logs(f"Error al unir los CSV: ",{str(e)})
 
 if __name__ == "__main__":
     main()

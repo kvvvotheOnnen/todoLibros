@@ -60,21 +60,33 @@ class Scrap():
                 process_logs(f"📊 Total de registros guardados: {len(products)}")
                 return filename
             else:
-                error_logs('El archivo CSV no se creó correctamente', '')
+                error_logs('❌El archivo CSV no se creó correctamente', '')
                 return None
         except Exception as err:  
-            error_logs('Error en export_to_csv', str(err))
+            error_logs('❌Error en export_to_csv', str(err))
         return None
 
     def csv_forAll(self, nombre_csv_final):
+        # Obtener todos los archivos CSV excepto el archivo final
+        archivos = [f for f in os.listdir(self.output_dir) 
+                   if f.endswith('.csv') and f != nombre_csv_final]
 
-        archivos = [f for f in os.listdir(self.output_dir) if f.endswith('.csv')]
         if not archivos:
-            process_logs(f'No se encontraron archivos CSV en {self.output_dir}')
-            return
+            process_logs(f'❌No se encontraron archivos CSV en {self.output_dir} (excluyendo {nombre_csv_final})')
+            return False
 
         cabecera = None
         filas = []
+        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
+
+        # Eliminar el archivo final si ya existe para empezar desde cero
+        if os.path.exists(ruta_final):
+            try:
+                os.remove(ruta_final)
+                process_logs(f"✅Archivo existente {nombre_csv_final} eliminado para crear uno nuevo.")
+            except Exception as e:
+                error_logs(f"❌Error al eliminar el archivo existente {nombre_csv_final}: ",{str(e)})
+                return False
 
         for archivo in archivos:
             ruta_archivo = os.path.join(self.output_dir, archivo)
@@ -83,25 +95,28 @@ class Scrap():
                 try:
                     cabecera_archivo = next(lector)
                 except StopIteration:
+                    process_logs(f"Archivo {archivo} está vacío. Se omitirá.")
                     continue  
+
                 if cabecera is None:
                     cabecera = cabecera_archivo
                 elif cabecera != cabecera_archivo:
                     process_logs(f"Advertencia: la cabecera de {archivo} es diferente. Se ignorará este archivo.")
                     continue
+
                 filas.extend(list(lector))
 
-        if cabecera is None:
-            process_logs('No se pudo determinar la cabecera de los archivos CSV.')
-            return
-
-        ruta_final = os.path.join(self.output_dir, nombre_csv_final)
-        with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
-            escritor = csv.writer(f)
-            escritor.writerow(cabecera)
-            escritor.writerows(filas)
-        process_logs(f'Se creó el archivo {ruta_final} con {len(filas)} filas.')
-        return True
+        # Escribir el archivo final solo si hay datos
+        if cabecera and filas:
+            with open(ruta_final, 'w', newline='', encoding='utf-8') as f:
+                escritor = csv.writer(f)
+                escritor.writerow(cabecera)
+                escritor.writerows(filas)
+            process_logs(f"✅Archivo {nombre_csv_final} creado exitosamente con datos de {len(archivos)} archivos.")
+            return True
+        else:
+            process_logs("❌No se pudo crear el archivo final: no hay datos válidos.")
+            return False
 
     def scrap(self):
         products = []

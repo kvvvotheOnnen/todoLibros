@@ -19,6 +19,18 @@ class RabbitMQHandler:
         self.max_retries = 5
         self.retry_delay = 3
     
+    def __enter__(self):
+        """Método para entrar en el contexto (with)."""
+        if not self.ensure_connection():
+            raise ConnectionError("No se pudo conectar a RabbitMQ")
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Método para salir del contexto (with). Cierra la conexión automáticamente."""
+        self.close_connection()
+        # Si retornas True, las excepciones se suprimen. False las propaga.
+        return False  
+    
     def connect(self):
         retries = 0
         while retries < self.max_retries:
@@ -61,41 +73,37 @@ class RabbitMQHandler:
         return True
 
     def send_csv_notification(self, service_name, csv_path, timestamp):
-        """Envía notificación de CSV generado a la cola"""
-        if not self.ensure_connection():
-            error_logs("No se pudo establecer conexión con RabbitMQ")
-            return False
-            
-        message = {
-            "event_type": "csv_generated",
-            "service": service_name,
-            "csv_path": csv_path,
-            "timestamp": timestamp,
-            "status": "success"
-        }
-        
+        """Envía notificación de CSV generado a la cola (versión optimizada)"""
         try:
+            if not self.ensure_connection():
+                error_logs("RabbitMQ: No se pudo establecer conexión")
+                return False
+
+            message = {
+                "event_type": "csv_generated",
+                "service": service_name,
+                "csv_path": csv_path,
+                "timestamp": timestamp,  # Asegúrate que el consumidor espere este formato
+                "status": "success"
+            }
+
             self.channel.basic_publish(
                 exchange='',
                 routing_key=self.queue_name,
                 body=json.dumps(message),
                 properties=pika.BasicProperties(
-                    delivery_mode=2,
-                    content_type='application/json',
-                    priority=2  # Prioridad media por defecto
+                    delivery_mode=2,  # Persistente
+                    content_type='application/json'
                 )
             )
-            process_logs(f'✅ Mensaje enviado a la cola correctamente - Servicio: {service_name}')
+            process_logs(f'✅ Mensaje enviado - {service_name}')
             return True
-            
+
         except pika.exceptions.AMQPError as e:
-            error_logs(f'RabbitMQ Error - Servicio: {service_name}', f'Error al publicar mensaje: {str(e)}')
-            # Intenta reconectar una vez
-            if self.connect():
-                return self.send_csv_notification(service_name, csv_path, timestamp)
+            error_logs(f'RabbitMQ Error - {service_name}', str(e))
             return False
         except Exception as e:
-            error_logs(f'System Error - Servicio: {service_name}', f'Error inesperado: {str(e)}')
+            error_logs(f'Error inesperado - {service_name}', str(e))
             return False
 
     def close_connection(self):
