@@ -1,5 +1,5 @@
 from scrap import Scrap
-from logs.logs import process_logs, error_logs
+from logs_templates.logs import process_logs, error_logs
 from datetime import datetime
 import time
 import pytz
@@ -13,7 +13,7 @@ categorias = [
     ('https://www.buscalibre.cl/libros/infantiles-juveniles-didactico','Infantiles y Juveniles Didactico'),
 ]
 
-def on_csv_generated(csv_path, service_name):
+def on_csv_generated(csv_path, service_name, ):
     try:
         with RabbitMQHandler() as rabbit:  # Conexión automática
             chile_tz = pytz.timezone("America/Santiago")

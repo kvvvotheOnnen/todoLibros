@@ -1,7 +1,7 @@
 import re
 import time
 import random
-from logs.logs import error_logs, process_logs
+from logs_templates.logs import error_logs, process_logs
 import os
 import csv
 from playwright.sync_api import sync_playwright

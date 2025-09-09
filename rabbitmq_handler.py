@@ -3,7 +3,15 @@ import os
 import json
 import time
 from dotenv import load_dotenv
-from logs.logs import process_logs, error_logs
+import sys
+from pathlib import Path
+
+# Obtiene la ruta absoluta de la raíz del proyecto (donde está "logs_templates")
+proyecto_root = Path(__file__).resolve()  # Sube dos niveles: desde Antartica/ hasta raiz/
+sys.path.append(str(proyecto_root))
+
+# Ahora puedes importar correctamente
+from logs_templates.logs import error_logs, process_logs
 
 load_dotenv()
 

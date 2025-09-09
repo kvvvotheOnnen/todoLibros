@@ -1,12 +1,15 @@
-from scrap import Scrap
 import random
-from logs.logs import process_logs, error_logs
+from pathlib import Path
+import sys
+proyecto_root = Path(__file__).resolve().parent.parent  # Sube dos niveles: desde Antartica/ hasta raiz/
+sys.path.append(str(proyecto_root))
+from logs_templates.logs import process_logs, error_logs
 import time
 import pytz
-import sys
 from datetime import datetime
-import os
 from rabbitmq_handler import RabbitMQHandler
+from logic.randomScrap import scrapear_aleatoriamente
+
 categorias = [
 ('https://miralibros.cl/a-narrativa','Narrativa'),
 ('https://miralibros.cl/b-poesia','Poesia'),
@@ -29,82 +32,18 @@ categorias = [
 ('https://miralibros.cl/s-deportes','Deportes'),
 ('https://miralibros.cl/t-juegos','Juegos')
 ]
-# Después de generar el CSV exitosamente
-def on_csv_generated(csv_path, service_name):
-    try:
-        with RabbitMQHandler() as rabbit:  # Conexión automática
-            chile_tz = pytz.timezone("America/Santiago")
-            timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
-            rabbit.send_csv_notification(
-                service_name=service_name,
-                csv_path=csv_path,
-                timestamp=timestamp
-            )
-    except Exception as e:
-        error_logs(f"Error en on_csv_generated: {str(e)}")  
-
-def scrapear_aleatoriamente(max_reintentos=3):
-    categorias_procesadas = set()
-    categorias_pendientes = categorias.copy()
-    reintentos = {categoria: 0 for _, categoria in categorias}
-    
-    while categorias_pendientes:
-        random.shuffle(categorias_pendientes)
-        url, categoria = categorias_pendientes.pop()
-        
-        process_logs(f"\n📌 Procesando ({len(categorias_procesadas)+1}/{len(categorias)}): {categoria}")
-        scraper = Scrap(url, categoria)
-        
-        try:
-            scraper.scrap()
-            categorias_procesadas.add(categoria)
-            process_logs(f"Éxito: {categoria}")
-        except Exception as e:
-            reintentos[categoria] += 1
-            if reintentos[categoria] < max_reintentos:
-                error_logs(f'scrapEmAll.py, while categorias pendientes',"Reintentando ({reintentos[categoria]}/{max_reintentos}): {categoria}")
-                categorias_pendientes.append((url, categoria))
-            else:
-                error_logs(f'scrapEmAll.py, while categorias pendientes',"Fallo definitivo: {categoria}")
-        
-        if categorias_pendientes:
-            delay = random.randint(8, 25)  # Rango más amplio
-            process_logs(f"Espera aleatoria: {delay}s")
-            time.sleep(delay)
-
-    process_logs("\n✅ Resultado final:")
-    process_logs(f"- Categorías completadas: {len(categorias_procesadas)}/{len(categorias)}")
-    if reintentos:
-        process_logs("- Reintentos necesarios:")
-        for cat, count in reintentos.items():
-            if count > 0:
-                process_logs(f"  {cat}: {count} veces")
 
 def main():
     while True:
-        csv_filename = "miraLibros.csv" #Dato dinamico, ajustar a lo que agrege despues
+        csv_filename = "MiraLibros.csv"
         csv_relative_path = f"data/{csv_filename}"
         start_time = datetime.now()
         process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
-        
-        scrapear_aleatoriamente()
-        
-        try:
-            scrap_unificador = Scrap('https://www.miralibros.cl', 'unificador') #Dato dinamico, ajustar a lo que agrege despues
-            if scrap_unificador.csv_forAll(csv_filename):
-                if os.path.exists(csv_relative_path): 
-                            on_csv_generated(
-                            csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
-                            service_name="miraLibros"
-                            )
-                else:
-                    process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
-            else:
-                process_logs("❌ Fallo al generar el CSV")
-        except Exception as e:
-            error_logs(f'scrap unificador',"Error al unir los CSV:", str(e))
-        
         end_time = datetime.now()
+        try:
+            scrapear_aleatoriamente(categorias, 2)
+        except ValueError as err:
+            error_logs('en MiraLibros/scrapEmAll.py, flujo principal: ',err)
         elapsed_time = end_time - start_time
         process_logs(f"⏳Tiempo total del scrap: {elapsed_time}")
         wait_hours = random.uniform(1, 4)
@@ -114,13 +53,12 @@ def main():
         
         
 
-
-
-try:
-    main()
-except KeyboardInterrupt:
-    process_logs("\n🔴 Script detenido manualmente")
-    sys.exit(0)
-except Exception as e:
-    process_logs(f"\n❌ Error no controlado: {str(e)}")
-    sys.exit(1)
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        process_logs("\n🔴 Script detenido manualmente")
+        sys.exit(0)
+    except Exception as e:
+        process_logs(f"\n❌ Error no controlado: {str(e)}")
+        sys.exit(1)

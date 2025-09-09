@@ -1,6 +1,6 @@
 from scrap import Scrap
 import random
-from logs.logs import process_logs, error_logs
+from logs_templates.logs import process_logs, error_logs
 import time
 import pytz
 import sys

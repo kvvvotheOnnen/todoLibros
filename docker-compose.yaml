@@ -39,44 +39,7 @@ services:
     networks:
       - scraping_net
   
-  buscalibre:
-    build: ./Buscalibre
-    restart: unless-stopped
-    volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-      - ./Buscalibre/data:/app/data
-      - ./Buscalibre/logs:/app/logs
-    environment:
-      - LOG_DIR=/app/logs
-      - LOG_FILENAME=Buscalibre.log
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
-      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
-      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
-    depends_on:
-      - rabbitmq
-    networks:
-      - scraping_net
-#
-  falabella:
-    build: ./Falabella
-    restart: unless-stopped
-    volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-      - ./Falabella/data:/app/data
-      - ./Falabella/logs:/app/logs
-    environment:
-      - LOG_DIR=/app/logs
-      - LOG_FILENAME=Falabella.log
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
-      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
-      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
-    depends_on:
-      - rabbitmq
-    networks:
-      - scraping_net
-##
+
   feriachilena:
     build: ./feriaChilena
     restart: unless-stopped
@@ -96,7 +59,6 @@ services:
       - rabbitmq
     networks:
       - scraping_net
-##
   miralibros:
     build: ./miraLibros
     restart: unless-stopped
@@ -116,7 +78,7 @@ services:
       - rabbitmq
     networks:
       - scraping_net
-#
+
 
 volumes:
   rabbitmq_data:
