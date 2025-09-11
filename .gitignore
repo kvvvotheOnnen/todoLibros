@@ -13,8 +13,8 @@ data/
 logs.txt
 
 # Docker
-.env
-
+.env.dev
+.env.prod
 # Playwright/browsers
 .ms-playwright/
 
