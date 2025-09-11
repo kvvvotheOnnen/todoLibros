@@ -5,7 +5,7 @@ from pathlib import Path
 proyecto_root = Path(__file__).resolve().parent.parent  # Sube dos niveles: desde Antartica/ hasta raiz/
 sys.path.append(str(proyecto_root))
 # Ahora puedes importar correctamente
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 import time
 import pytz
 import sys
@@ -68,7 +68,6 @@ def main():
         time.sleep(wait_seconds)
         
         
-
 
 if __name__ == "__main__":
     try:

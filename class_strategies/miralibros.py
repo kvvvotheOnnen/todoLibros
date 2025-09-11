@@ -1,5 +1,5 @@
 from .scrapStrategy import ScrapStrategy # verificar para produccion
-from logs_templates.logs import error_logs, process_logs # verificar para produccion
+from logic.logs import error_logs, process_logs # verificar para produccion
 from class_products.book import BookProduct
 import random
 import time
@@ -14,7 +14,7 @@ class MiraLibros(ScrapStrategy):
             'product_item': ".product-block",
             'link': "a",
             'price': ".block-price",
-            'title': "img",
+            'title': "h3 a",
         }
     
     def cleanPrice(self, price_text):
@@ -61,7 +61,7 @@ class MiraLibros(ScrapStrategy):
                 rawPrice = price_element.inner_text().strip() if price_element else None
                 price = self.cleanPrice(rawPrice) if rawPrice else None
                 title_element = element.query_selector(selectors['title'])
-                title = title_element.get_attribute('href') if link_element else None
+                title = title_element.inner_text().strip() if link_element else None
 
                 product = BookProduct(
                     ISBN='Template',
@@ -69,11 +69,11 @@ class MiraLibros(ScrapStrategy):
                     Autor='Template',
                     Precio=price,
                     Link=link,
-                    Portada='Template',  # Debes definir esta variable
+                    Portada='Template',  
                     Editorial='Template',
-                    Categoria = categoria,    # Debes definir esta variable
+                    Categoria = categoria,    
                     Tienda='Template',
-                    fechaScrap=current_time  # Debes definir esta variable
+                    fechaScrap=current_time  
                 )
                 products.append(product)
             except Exception as e:

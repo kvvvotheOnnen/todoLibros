@@ -1,5 +1,5 @@
 from .scrapStrategy import ScrapStrategy # verificar para produccion
-from logs_templates.logs import error_logs, process_logs # verificar para produccion
+from logic.logs import error_logs, process_logs # verificar para produccion
 from class_products.book import BookProduct
 import random
 import time
@@ -15,7 +15,7 @@ class feriaChilena(ScrapStrategy):
             'link': "a.ast-loop-product__link",
             'price': "span.price .woocommerce-Price-amount",
             'title': "h2.woocommerce-loop-product__title",
-            'author': ".author-selector",  # Debes ajustar este selector según tu HTML
+            'author': ".author-selector",  
         }
     
     def cleanPrice(self, price_text):
@@ -60,13 +60,13 @@ class feriaChilena(ScrapStrategy):
                         product = BookProduct(
                             ISBN=isbn,
                             Titulo=title,
-                            Autor='Template',  # Cambiar cuando tengas el selector de autor
+                            Autor='Template', 
                             Precio=price,
                             Link=link,
-                            Portada='Template',  # Debes implementar el selector para portada
-                            Editorial='Template',  # Debes implementar el selector para editorial
+                            Portada='Template',  
+                            Editorial='Template',  
                             Categoria=categoria,
-                            Tienda='Template',  # Debes definir el nombre de la tienda
+                            Tienda='feriaChilena',  
                             fechaScrap=current_time
                         )
                         products.append(product)

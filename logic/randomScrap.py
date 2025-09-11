@@ -1,5 +1,6 @@
+import config
 import random
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 from class_scrap_models.scrapPlaywright import ScrapPlaywright
 from class_strategies.antartica import Antartica
 from class_strategies.miralibros import MiraLibros

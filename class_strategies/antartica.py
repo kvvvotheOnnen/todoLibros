@@ -1,5 +1,5 @@
 from .scrapStrategy import ScrapStrategy # verificar para produccion
-from logs_templates.logs import error_logs, process_logs # verificar para produccion
+from logic.logs import error_logs, process_logs # verificar para produccion
 from class_products.book import BookProduct
 import random
 import time
@@ -35,8 +35,7 @@ class Antartica(ScrapStrategy):
             selectors = self.get_selectors()
             page.wait_for_selector(selectors['product_container'])
             espera = random.randint(5, 15)
-            process_logs(f"Llegamos a {href},⏳ Esperando {espera} segundos antes de continuar")
-            time.sleep(espera)
+            process_logs(f"Llegamos a {href}")
             return True
         except ValueError as e:
             error_logs('❌En metodo pasar pagina',{e})

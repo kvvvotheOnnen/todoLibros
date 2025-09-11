@@ -1,6 +1,6 @@
 import os
 import csv
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 
 def export_to_csv(products, categoria):
     try:

@@ -1,11 +1,12 @@
-import random
 from pathlib import Path
 import sys
-proyecto_root = Path(__file__).resolve().parent.parent  # Sube dos niveles: desde Antartica/ hasta raiz/
-sys.path.append(str(proyecto_root))
-from logs_templates.logs import process_logs, error_logs
+current_file = Path(__file__).resolve()
+project_root = current_file.parent.parent
+sys.path.append(str(project_root))
+import config
+import random
+from logic.logs import error_logs, process_logs
 import time
-import pytz
 from datetime import datetime
 from rabbitmq_handler import RabbitMQHandler
 from logic.randomScrap import scrapear_aleatoriamente

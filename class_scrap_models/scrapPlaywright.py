@@ -1,8 +1,10 @@
 import os
+import time
+import random
 from playwright.sync_api import sync_playwright
 from logic.export_to_csv import export_to_csv
 from class_strategies.scrapStrategy import ScrapStrategy  # Importamos la clase abstracta
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 
 
 class ScrapPlaywright:
@@ -25,12 +27,13 @@ class ScrapPlaywright:
                 selectors = self.strategy.get_selectors()
                 page.wait_for_selector(selectors['product_container'], state="visible", timeout=60000)  
                 while True:
+                    tiempo_espera = int(random.uniform(5, 10))
                     try:
-                        # Delegamos la extracción a la estrategia
                         product_list =(self.strategy.get_products(page,self.categoria))
                         if product_list:
-                            process_logs(f'se obtuvieron: {len(product_list)} productos' )
+                            process_logs(f'se obtuvieron: {len(product_list)} productos, ⏳esperando {tiempo_espera}s para la siguiente pagina' )
                             export_to_csv(product_list,self.categoria)
+                            time.sleep(tiempo_espera)
                         if not self.strategy.next_page(page):
                             break   
                     except Exception as e:
