@@ -1,24 +1,6 @@
 version: '3.8'
 
 services:
-  rabbitmq:
-    image: rabbitmq:3.12.4-management  
-    hostname: rabbitmq
-    ports:
-      - "${RABBITMQ_AMQP_PORT}:5672"
-      - "${RABBITMQ_MANAGEMENT_PORT}:15672"
-    environment:
-      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER} 
-      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS}  
-      - RABBITMQ_DEFAULT_VHOST=/
-      - RABBITMQ_LOGS=- 
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
-    networks:
-      - scraping_net
-    restart: unless-stopped
-
-
   antartica:
     build: ./Antartica
     restart: unless-stopped
@@ -35,12 +17,6 @@ services:
       - PYTHONPATH=/app
       - LOG_DIR=/app/logs
       - LOG_FILENAME=Antartica.log
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
-      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
-      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
-    depends_on:
-      - rabbitmq
     networks:
       - scraping_net
   
@@ -61,13 +37,7 @@ services:
       - PYTHONPATH=/app
       - LOG_DIR=/app/logs
       - LOG_FILENAME=feriaChilena.log
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
-      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
-      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
   
-    depends_on:
-      - rabbitmq
     networks:
       - scraping_net
   miralibros:
@@ -86,18 +56,9 @@ services:
       - PYTHONPATH=/app
       - LOG_DIR=/app/logs
       - LOG_FILENAME=Miralibros.log
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=${RABBITMQ_AMQP_PORT}
-      - RABBITMQ_USER=${RABBITMQ_DEFAULT_USER}
-      - RABBITMQ_PASSWORD=${RABBITMQ_DEFAULT_PASS}
-    depends_on:
-      - rabbitmq
     networks:
       - scraping_net
 
-
-volumes:
-  rabbitmq_data:
 
 networks:
   scraping_net:
