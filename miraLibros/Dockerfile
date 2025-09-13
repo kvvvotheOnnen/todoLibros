@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.40.0-jammy
+FROM mcr.microsoft.com/playwright/python:v1.52.0-noble
 
 RUN apt-get update && apt-get install -y \
     python3 \
@@ -11,8 +11,6 @@ COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-RUN playwright install chromium
-RUN playwright install-deps chromium
 
 COPY . .
 
