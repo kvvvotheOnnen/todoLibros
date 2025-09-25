@@ -2,9 +2,15 @@ import config
 import random
 from logic.logs import error_logs, process_logs
 from class_scrap_models.scrapPlaywright import ScrapPlaywright
+from class_scrap_models.scrapSeleniumBase import ScrapSeleniumBase
 from class_strategies.antartica import Antartica
 from class_strategies.miralibros import MiraLibros
 from class_strategies.feriachilena import feriaChilena
+from class_strategies.buscalibre import Buscalibre
+from class_strategies.falabella import Falabella
+
+
+
 import time
 def scrapear_aleatoriamente(categorias, strategy, max_reintentos=3):
     categorias_procesadas = set()
@@ -14,8 +20,6 @@ def scrapear_aleatoriamente(categorias, strategy, max_reintentos=3):
     while categorias_pendientes:
         random.shuffle(categorias_pendientes)
         url, categoria = categorias_pendientes.pop()
-        
-        # Mostrar el progreso correctamente
         total_categorias = len(categorias)
         procesadas_actual = len(categorias_procesadas)
         process_logs(f"\n📌 Procesando ({procesadas_actual + 1}/{total_categorias}): {categoria}")
@@ -25,24 +29,30 @@ def scrapear_aleatoriamente(categorias, strategy, max_reintentos=3):
                 process_logs('Iniciando proceso con estrategia Playwright')
                 playWrightScrap = ScrapPlaywright(url, Antartica(), categoria)
                 playWrightScrap.scrap()
-                
-                # ✅ AÑADIR ESTA LÍNEA: Agregar a procesadas cuando tiene éxito
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 2:
                 process_logs('Iniciando proceso con estrategia Playwright')
                 playWrightScrap = ScrapPlaywright(url, MiraLibros(), categoria)
                 playWrightScrap.scrap()
-                
-                # ✅ AÑADIR ESTA LÍNEA: Agregar a procesadas cuando tiene éxito
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 3:
                 process_logs('Iniciando proceso con estrategia Playwright')
                 playWrightScrap = ScrapPlaywright(url, feriaChilena(), categoria)
                 playWrightScrap.scrap()
-                
-                # ✅ AÑADIR ESTA LÍNEA: Agregar a procesadas cuando tiene éxito
+                categorias_procesadas.add(categoria)
+                process_logs(f"✅ Completado: {categoria}")
+            if strategy == 4:
+                process_logs('Iniciando proceso con estrategia SeleniumBase')
+                playSeleniumBase = ScrapSeleniumBase(url, Buscalibre(), categoria)
+                playSeleniumBase.scrap()
+                categorias_procesadas.add(categoria)
+                process_logs(f"✅ Completado: {categoria}")
+            if strategy == 5:
+                process_logs('Iniciando proceso con estrategia SeleniumBase')
+                playSeleniumBase = ScrapSeleniumBase(url, Falabella(), categoria)
+                playSeleniumBase.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
                 

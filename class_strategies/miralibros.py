@@ -68,11 +68,12 @@ class MiraLibros(ScrapStrategy):
                     Titulo=title,
                     Autor='Template',
                     Precio=price,
+                    PrecioTarjeta='Template',
                     Link=link,
                     Portada='Template',  
                     Editorial='Template',
                     Categoria = categoria,    
-                    Tienda='Template',
+                    Tienda='miraLibros',
                     fechaScrap=current_time  
                 )
                 products.append(product)

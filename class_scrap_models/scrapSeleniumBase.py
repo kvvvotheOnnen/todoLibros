@@ -1,13 +1,14 @@
 import os
 import time
 import random
-from playwright.sync_api import sync_playwright
+from seleniumbase import SB
+from selenium.webdriver.common.by import By
 from logic.export_to_csv import export_to_csv
 from class_strategies.scrapStrategy import ScrapStrategy  
 from logic.logs import error_logs, process_logs
 
 
-class ScrapPlaywright:
+class ScrapSeleniumBase:
     def __init__(self, url, strategy: ScrapStrategy, categoria="Generic"): 
         self.url = url
         self.categoria = categoria
@@ -17,23 +18,25 @@ class ScrapPlaywright:
     
     
     def scrap(self):
-        with sync_playwright() as p:
+        with SB(uc=True, headless=True) as sb: #AGREGAR EL XBVF EN PROD
             try:
-                browser = p.firefox.launch(headless=True)
-                page = browser.new_page()
-                page.goto(self.url)
+                sb.open(self.url)
                 process_logs(f'Estamos en: {self.url}')
                 selectors = self.strategy.get_selectors()
-                page.wait_for_selector(selectors['product_container'], state="visible", timeout=60000)  
+                if sb .wait_for_element(selectors['product_container']):
+                    process_logs('product_container cargado') 
+                else: 
+                    process_logs('no se carga product container')
                 while True:
                     tiempo_espera = int(random.uniform(5, 10))
                     try:
-                        product_list =(self.strategy.get_products(page,self.categoria))
+                        product_list = self.strategy.get_products(sb,self.categoria)
                         if product_list:
                             process_logs(f'se obtuvieron: {len(product_list)} productos, ⏳esperando {tiempo_espera}s para la siguiente pagina' )
                             export_to_csv(product_list,self.categoria)
                             time.sleep(tiempo_espera)
-                        if not self.strategy.next_page(page):
+                        else: process_logs('No se encuentran productos')    
+                        if not self.strategy.next_page(sb):
                             break   
                     except Exception as e:
                         error_logs(f'Error en el bucle principal de scrap', str(e))
@@ -42,5 +45,4 @@ class ScrapPlaywright:
                 error_logs('Error inicializando el navegador', str(e))
                 
             finally:
-                browser.close()
-
+                sb.disconnect()

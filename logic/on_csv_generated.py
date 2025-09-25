@@ -1,7 +1,7 @@
 from rabbitmq_handler import RabbitMQHandler
 import pytz
 import datetime
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 def on_csv_generated(csv_path, service_name):
     try:
         with RabbitMQHandler() as rabbit:  # Conexión automática

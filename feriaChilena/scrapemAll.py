@@ -1,21 +1,15 @@
-import random
-import sys
 from pathlib import Path
-# Obtiene la ruta absoluta de la raíz del proyecto (donde está "logs_templates")
-proyecto_root = Path(__file__).resolve().parent.parent  # Sube dos niveles: desde Antartica/ hasta raiz/
-sys.path.append(str(proyecto_root))
-# Ahora puedes importar correctamente
+import sys
+current_file = Path(__file__).resolve()
+project_root = current_file.parent.parent
+sys.path.append(str(project_root))
+import config
+import random
 from logic.logs import error_logs, process_logs
 import time
-import pytz
-import sys
 from datetime import datetime
-import os
 from rabbitmq_handler import RabbitMQHandler
 from logic.randomScrap import scrapear_aleatoriamente
-from class_scrap_models.scrapPlaywright import ScrapPlaywright
-from class_strategies.antartica import Antartica
-from logic.export_to_csv import export_to_csv 
 
 categorias = [
 ('https://feriachilenadellibro.cl/categoria-producto/arte-y-diseno/','arte_y_diseno'),

@@ -1,7 +1,7 @@
 import re
 import time
 import random
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 import os
 import csv
 from seleniumbase import SB

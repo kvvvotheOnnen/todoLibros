@@ -1,5 +1,5 @@
 import os
-from logs_templates.logs import error_logs, process_logs
+from logic.logs import error_logs, process_logs
 import csv
 def csv_forAll(Scrap, nombre_csv_final):
         # Obtener todos los archivos CSV excepto el archivo final

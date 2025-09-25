@@ -1,72 +1,49 @@
-from scrap import Scrap
-from logs_templates.logs import process_logs, error_logs
-from datetime import datetime
-import time
-import pytz
+from pathlib import Path
+import sys
+current_file = Path(__file__).resolve()
+project_root = current_file.parent.parent
+sys.path.append(str(project_root))
+import config
 import random
-import os
+from logic.logs import error_logs, process_logs
+import time
+from datetime import datetime
 from rabbitmq_handler import RabbitMQHandler
-
+from logic.randomScrap import scrapear_aleatoriamente
 
 categorias = [
     ('https://www.buscalibre.cl/libros-mas-vendidos-en-chile_t.html', 'Libros mas vendidos en Chile'),
     ('https://www.buscalibre.cl/libros/infantiles-juveniles-didactico','Infantiles y Juveniles Didactico'),
 ]
 
-def on_csv_generated(csv_path, service_name, ):
-    try:
-        with RabbitMQHandler() as rabbit:  # Conexión automática
-            chile_tz = pytz.timezone("America/Santiago")
-            timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
-            rabbit.send_csv_notification(
-                service_name=service_name,
-                csv_path=csv_path,
-                timestamp=timestamp
-            )
-    except Exception as e:
-        error_logs(f"Error en on_csv_generated: {str(e)}")  
 
 def main():
-    csv_filename = "Buscalibre.csv"
-    csv_relative_path = f"data/{csv_filename}"
-    start_time = datetime.now()
-    process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
-    for idx, (url, categoria) in enumerate(categorias):
-        process_logs(f"\n📌 Procesando: {categoria}")
-        cat_start = datetime.now()
-        scraper = Scrap(url, categoria)
-        resultado = scraper.scrap()
-        cat_end = datetime.now()
-        elapsed = cat_end - cat_start
-        elapsed_str = str(elapsed).split('.')[0]
-        if resultado:
-            process_logs(f"✅ Éxito: {categoria}")
-        else:
-            process_logs(f"❌ Fallo: {categoria}")
-        process_logs(f"⏱ Tiempo para {categoria}: {elapsed_str}")
-        if idx < len(categorias) - 1:
-            espera = random.randint(30, 60)
-            process_logs(f"⏳ Esperando {espera} segundos antes de la siguiente categoría...")
-            time.sleep(espera)
-    end_time = datetime.now()
-    elapsed_time = end_time - start_time
-    process_logs(f"⏱ Tiempo total del ciclo: {elapsed_time}")
+    while True:
+        csv_filename = "buscaLibre.csv"
+        csv_relative_path = f"data/{csv_filename}"
+        start_time = datetime.now()
+        process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        end_time = datetime.now()
+        try:
+            scrapear_aleatoriamente(categorias, 4)
+        except ValueError as err:
+            error_logs('en buscaLibre/scrapEmAll.py, flujo principal: ',err)
+        elapsed_time = end_time - start_time
+        process_logs(f"⏳Tiempo total del scrap: {elapsed_time}")
+        wait_hours = random.uniform(1, 4)
+        wait_seconds = wait_hours * 3600
+        process_logs(f"Esperando {wait_hours:.2f} horas para el próximo ciclo...⏳")
+        time.sleep(wait_seconds)
+        
+        
 
-    # Unir todos los CSV generados en un solo archivo
-    try:
-        scrap_unificador = Scrap('https://www.buscalibre.cl', 'unificador')
-        if scrap_unificador.csv_forAll(csv_filename):
-            if os.path.exists(csv_relative_path):
-                        on_csv_generated(
-                        csv_path=os.path.abspath(csv_relative_path),  # Convierte a ruta absoluta
-                        service_name="Buscalibre"
-                        )
-            else:
-                process_logs(f"❌ Archivo CSV no encontrado en {csv_relative_path}")    
-        else:
-            process_logs("❌ Fallo al generar el CSV")
-    except Exception as e:
-        error_logs(f"Error al unir los CSV: ",{str(e)})
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        process_logs("\n🔴 Script detenido manualmente")
+        sys.exit(0)
+    except Exception as e:
+        process_logs(f"\n❌ Error no controlado: {str(e)}")
+        sys.exit(1)

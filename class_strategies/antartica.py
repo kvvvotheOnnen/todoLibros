@@ -63,15 +63,12 @@ class Antartica(ScrapStrategy):
             try:
                 rawIsbn = element.query_selector(selectors['isbn'])
                 testIsbn = rawIsbn.get_attribute("alt") if rawIsbn else None
-                isbn = self.cleanIsbn(testIsbn) if testIsbn else None
-                
+                isbn = self.cleanIsbn(testIsbn) if testIsbn else None 
                 link_element = element.query_selector(selectors['link'])
-                link = link_element.get_attribute('href') if link_element else None
-                
+                link = link_element.get_attribute('href') if link_element else None         
                 price_element = element.query_selector(selectors['price'])
                 rawPrice = price_element.inner_text().strip() if price_element else None
                 price = self.cleanPrice(rawPrice) if rawPrice else None
-                
                 title_element = element.query_selector(selectors['title'])
                 title = title_element.inner_text().strip() if title_element else None
                 
@@ -82,11 +79,12 @@ class Antartica(ScrapStrategy):
                     Titulo=title,
                     Autor=author,
                     Precio=price,
+                    PrecioTarjeta='Template',
                     Link=link,
                     Portada='Template',  # Debes definir esta variable
                     Editorial='Template',
                     Categoria = categoria,    # Debes definir esta variable
-                    Tienda='Template',
+                    Tienda='Antartica',
                     fechaScrap=current_time  # Debes definir esta variable
                 )
                 products.append(product)
