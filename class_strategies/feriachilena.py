@@ -62,6 +62,7 @@ class feriaChilena(ScrapStrategy):
                             Titulo=title,
                             Autor='Template', 
                             Precio=price,
+                            PrecioTarjeta='Template',
                             Link=link,
                             Portada='Template',  
                             Editorial='Template',  

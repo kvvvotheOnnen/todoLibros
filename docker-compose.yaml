@@ -21,25 +21,25 @@ services:
       - scraping_net
   
 
-  feriachilena:
-    build: ./feriaChilena
-    restart: unless-stopped
-    volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-      - ./feriaChilena/data:/app/data
-      - ./feriaChilena/logs:/app/logs
-      - ./logic:/app/logic
-      - ./class_products:/app/class_products
-      - ./class_scrap_models:/app/class_scrap_models
-      - ./class_strategies:/app/class_strategies
-      - ./config.py:/app/config.py
-    environment:
-      - PYTHONPATH=/app
-      - LOG_DIR=/app/logs
-      - LOG_FILENAME=feriaChilena.log
-  
-    networks:
-      - scraping_net
+  #feriachilena:
+  #  build: ./feriaChilena
+  #  restart: unless-stopped
+  #  volumes:
+  #    - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+  #    - ./feriaChilena/data:/app/data
+  #    - ./feriaChilena/logs:/app/logs
+  #    - ./logic:/app/logic
+  #    - ./class_products:/app/class_products
+  #    - ./class_scrap_models:/app/class_scrap_models
+  #    - ./class_strategies:/app/class_strategies
+  #    - ./config.py:/app/config.py
+  #  environment:
+  #    - PYTHONPATH=/app
+  #    - LOG_DIR=/app/logs
+  #    - LOG_FILENAME=feriaChilena.log
+  #
+  #  networks:
+  #    - scraping_net
   
   miralibros:
     build: ./miraLibros
@@ -57,6 +57,42 @@ services:
       - PYTHONPATH=/app
       - LOG_DIR=/app/logs
       - LOG_FILENAME=Miralibros.log
+    networks:
+      - scraping_net
+  buscalibre:
+    build: ./Buscalibre
+    restart: unless-stopped
+    volumes:
+      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+      - ./Antartica/data:/app/data
+      - ./Antartica/logs:/app/logs
+      - ./logic:/app/logic
+      - ./class_products:/app/class_products
+      - ./class_scrap_models:/app/class_scrap_models
+      - ./class_strategies:/app/class_strategies
+      - ./config.py:/app/config.py
+    environment:
+      - PYTHONPATH=/app
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Buscalibre.log
+    networks:
+      - scraping_net
+  Falabella:
+    build: ./Falabella
+    restart: unless-stopped
+    volumes:
+      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+      - ./Antartica/data:/app/data
+      - ./Antartica/logs:/app/logs
+      - ./logic:/app/logic
+      - ./class_products:/app/class_products
+      - ./class_scrap_models:/app/class_scrap_models
+      - ./class_strategies:/app/class_strategies
+      - ./config.py:/app/config.py
+    environment:
+      - PYTHONPATH=/app
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Falabella.log
     networks:
       - scraping_net
 
