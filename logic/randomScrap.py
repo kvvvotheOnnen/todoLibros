@@ -1,8 +1,6 @@
 import config
 import random
 from logic.logs import error_logs, process_logs
-from class_scrap_models.scrapPlaywright import ScrapPlaywright
-from class_scrap_models.scrapSeleniumBase import ScrapSeleniumBase
 from class_strategies.antartica import Antartica
 from class_strategies.miralibros import MiraLibros
 from class_strategies.feriachilena import feriaChilena
@@ -12,7 +10,18 @@ from class_strategies.falabella import Falabella
 
 
 import time
-def scrapear_aleatoriamente(categorias, strategy, max_reintentos=3):
+def scrapear_aleatoriamente(categorias, strategy, engine_type, max_reintentos=3):
+    if engine_type == "playwright" or engine_type == 1:
+        process_logs('Estrategia Playwright seleccionada')
+        from class_scrap_models.scrapPlaywright import ScrapPlaywright
+        ScrapClass = ScrapPlaywright
+    elif engine_type == "selenium" or engine_type == 2:
+        from class_scrap_models.scrapSeleniumBase import ScrapSeleniumBase
+        ScrapClass = ScrapSeleniumBase
+    else:
+        raise ValueError(f"Tipo de engine no soportado: {engine_type}")
+    
+    
     categorias_procesadas = set()
     categorias_pendientes = categorias.copy()
     reintentos = {categoria: 0 for _, categoria in categorias}
@@ -27,31 +36,31 @@ def scrapear_aleatoriamente(categorias, strategy, max_reintentos=3):
         try:
             if strategy == 1:
                 process_logs('Iniciando proceso con estrategia Playwright')
-                playWrightScrap = ScrapPlaywright(url, Antartica(), categoria)
+                playWrightScrap = ScrapClass(url, Antartica(), categoria)
                 playWrightScrap.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 2:
                 process_logs('Iniciando proceso con estrategia Playwright')
-                playWrightScrap = ScrapPlaywright(url, MiraLibros(), categoria)
+                playWrightScrap = ScrapClass(url, MiraLibros(), categoria)
                 playWrightScrap.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 3:
                 process_logs('Iniciando proceso con estrategia Playwright')
-                playWrightScrap = ScrapPlaywright(url, feriaChilena(), categoria)
+                playWrightScrap = ScrapClass(url, feriaChilena(), categoria)
                 playWrightScrap.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 4:
                 process_logs('Iniciando proceso con estrategia SeleniumBase')
-                playSeleniumBase = ScrapSeleniumBase(url, Buscalibre(), categoria)
+                playSeleniumBase = ScrapClass(url, Buscalibre(), categoria)
                 playSeleniumBase.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")
             if strategy == 5:
                 process_logs('Iniciando proceso con estrategia SeleniumBase')
-                playSeleniumBase = ScrapSeleniumBase(url, Falabella(), categoria)
+                playSeleniumBase = ScrapClass(url, Falabella(), categoria)
                 playSeleniumBase.scrap()
                 categorias_procesadas.add(categoria)
                 process_logs(f"✅ Completado: {categoria}")

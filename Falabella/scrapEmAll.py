@@ -24,7 +24,7 @@ def main():
         process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
         end_time = datetime.now()
         try:
-            scrapear_aleatoriamente(categorias, 5)
+            scrapear_aleatoriamente(categorias, 5, 2)
         except ValueError as err:
             error_logs('en Falabella/scrapEmAll.py, flujo principal: ',err)
         elapsed_time = end_time - start_time

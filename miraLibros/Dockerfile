@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir pika python-dotenv
+RUN pip install --no-cache-dir pika python-dotenv selenium
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 

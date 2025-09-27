@@ -2,7 +2,6 @@ import os
 import time
 import random
 from seleniumbase import SB
-from selenium.webdriver.common.by import By
 from logic.export_to_csv import export_to_csv
 from class_strategies.scrapStrategy import ScrapStrategy  
 from logic.logs import error_logs, process_logs

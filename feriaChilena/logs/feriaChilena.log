@@ -1,0 +1,113 @@
+[27-09-25 02:55:21] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-09-27 02:55:21
+[27-09-25 02:55:21] Proceso: Estrategia Playwright seleccionada
+[27-09-25 02:55:21] Proceso: 
+📌 Procesando (1/29): pack_de_libros
+[27-09-25 02:55:21] Proceso: Iniciando proceso con estrategia Playwright
+[27-09-25 02:55:27] Proceso: Estamos en: https://feriachilenadellibro.cl/categoria-producto/pack-de-libros/
+[27-09-25 02:56:27] Error en: Error inicializando el navegador: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(".ast-woocommerce-container") to be visible
+
+[27-09-25 02:56:27] Proceso: ✅ Completado: pack_de_libros
+[27-09-25 02:56:27] Proceso: ⏳ Espera aleatoria: 18s
+[27-09-25 02:56:45] Proceso: 
+📌 Procesando (2/29): medicina_alternativa
+[27-09-25 02:56:45] Proceso: Iniciando proceso con estrategia Playwright
+[27-09-25 02:56:48] Proceso: Estamos en: https://feriachilenadellibro.cl/categoria-producto/medicina-alternativa/
+[27-09-25 02:56:49] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:56:52] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:56:52] Proceso: se obtuvieron: 90 productos, ⏳esperando 5s para la siguiente pagina
+[27-09-25 02:56:52] Proceso: ✅ CSV creado: /app/logic/../data/medicina_alternativa.csv
+[27-09-25 02:56:52] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:56:52] Proceso: 📈 Total acumulado: 90 registros
+[27-09-25 02:57:02] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:57:05] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:57:05] Proceso: se obtuvieron: 90 productos, ⏳esperando 5s para la siguiente pagina
+[27-09-25 02:57:05] Proceso: ✅ CSV actualizado: /app/logic/../data/medicina_alternativa.csv
+[27-09-25 02:57:05] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:57:05] Proceso: 📈 Total acumulado: 180 registros
+[27-09-25 02:57:14] Proceso: 📚 Procesando 63 productos en la página actual
+[27-09-25 02:57:16] Proceso: ✅ Página procesada. Total de productos acumulados: 63
+[27-09-25 02:57:16] Proceso: se obtuvieron: 63 productos, ⏳esperando 8s para la siguiente pagina
+[27-09-25 02:57:16] Proceso: ✅ CSV actualizado: /app/logic/../data/medicina_alternativa.csv
+[27-09-25 02:57:16] Proceso: 📊 Nuevos registros: 63
+[27-09-25 02:57:16] Proceso: 📈 Total acumulado: 243 registros
+[27-09-25 02:57:25] Proceso: ✅ Completado: medicina_alternativa
+[27-09-25 02:57:25] Proceso: ⏳ Espera aleatoria: 14s
+[27-09-25 02:57:39] Proceso: 
+📌 Procesando (3/29): derecho
+[27-09-25 02:57:39] Proceso: Iniciando proceso con estrategia Playwright
+[27-09-25 02:57:41] Proceso: Estamos en: https://feriachilenadellibro.cl/categoria-producto/derecho/
+[27-09-25 02:57:42] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:57:44] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:57:44] Proceso: se obtuvieron: 90 productos, ⏳esperando 5s para la siguiente pagina
+[27-09-25 02:57:44] Proceso: ✅ CSV creado: /app/logic/../data/derecho.csv
+[27-09-25 02:57:44] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:57:44] Proceso: 📈 Total acumulado: 90 registros
+[27-09-25 02:57:53] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:57:57] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:57:57] Proceso: se obtuvieron: 90 productos, ⏳esperando 7s para la siguiente pagina
+[27-09-25 02:57:57] Proceso: ✅ CSV actualizado: /app/logic/../data/derecho.csv
+[27-09-25 02:57:57] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:57:57] Proceso: 📈 Total acumulado: 180 registros
+[27-09-25 02:58:08] Proceso: 📚 Procesando 30 productos en la página actual
+[27-09-25 02:58:10] Proceso: ✅ Página procesada. Total de productos acumulados: 30
+[27-09-25 02:58:10] Proceso: se obtuvieron: 30 productos, ⏳esperando 6s para la siguiente pagina
+[27-09-25 02:58:10] Proceso: ✅ CSV actualizado: /app/logic/../data/derecho.csv
+[27-09-25 02:58:10] Proceso: 📊 Nuevos registros: 30
+[27-09-25 02:58:10] Proceso: 📈 Total acumulado: 210 registros
+[27-09-25 02:58:17] Proceso: ✅ Completado: derecho
+[27-09-25 02:58:17] Proceso: ⏳ Espera aleatoria: 13s
+[27-09-25 02:58:30] Proceso: 
+📌 Procesando (4/29): filosofia
+[27-09-25 02:58:30] Proceso: Iniciando proceso con estrategia Playwright
+[27-09-25 02:58:36] Proceso: Estamos en: https://feriachilenadellibro.cl/categoria-producto/filosofia/
+[27-09-25 02:58:36] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:58:39] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:58:39] Proceso: se obtuvieron: 90 productos, ⏳esperando 7s para la siguiente pagina
+[27-09-25 02:58:39] Proceso: ✅ CSV creado: /app/logic/../data/filosofia.csv
+[27-09-25 02:58:39] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:58:39] Proceso: 📈 Total acumulado: 90 registros
+[27-09-25 02:58:50] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:58:53] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:58:53] Proceso: se obtuvieron: 90 productos, ⏳esperando 8s para la siguiente pagina
+[27-09-25 02:58:53] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 02:58:53] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:58:53] Proceso: 📈 Total acumulado: 180 registros
+[27-09-25 02:59:05] Proceso: 📚 Procesando 88 productos en la página actual
+[27-09-25 02:59:09] Proceso: ✅ Página procesada. Total de productos acumulados: 88
+[27-09-25 02:59:09] Proceso: se obtuvieron: 88 productos, ⏳esperando 6s para la siguiente pagina
+[27-09-25 02:59:09] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 02:59:09] Proceso: 📊 Nuevos registros: 88
+[27-09-25 02:59:09] Proceso: 📈 Total acumulado: 268 registros
+[27-09-25 02:59:19] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:59:23] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:59:23] Proceso: se obtuvieron: 90 productos, ⏳esperando 6s para la siguiente pagina
+[27-09-25 02:59:23] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 02:59:23] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:59:23] Proceso: 📈 Total acumulado: 358 registros
+[27-09-25 02:59:34] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:59:39] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:59:39] Proceso: se obtuvieron: 90 productos, ⏳esperando 9s para la siguiente pagina
+[27-09-25 02:59:39] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 02:59:39] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:59:39] Proceso: 📈 Total acumulado: 448 registros
+[27-09-25 02:59:52] Proceso: 📚 Procesando 90 productos en la página actual
+[27-09-25 02:59:57] Proceso: ✅ Página procesada. Total de productos acumulados: 90
+[27-09-25 02:59:57] Proceso: se obtuvieron: 90 productos, ⏳esperando 8s para la siguiente pagina
+[27-09-25 02:59:57] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 02:59:57] Proceso: 📊 Nuevos registros: 90
+[27-09-25 02:59:57] Proceso: 📈 Total acumulado: 538 registros
+[27-09-25 03:00:10] Proceso: 📚 Procesando 89 productos en la página actual
+[27-09-25 03:00:14] Proceso: ✅ Página procesada. Total de productos acumulados: 89
+[27-09-25 03:00:14] Proceso: se obtuvieron: 89 productos, ⏳esperando 8s para la siguiente pagina
+[27-09-25 03:00:14] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 03:00:14] Proceso: 📊 Nuevos registros: 89
+[27-09-25 03:00:14] Proceso: 📈 Total acumulado: 627 registros
+[27-09-25 03:00:26] Proceso: 📚 Procesando 89 productos en la página actual
+[27-09-25 03:00:31] Proceso: ✅ Página procesada. Total de productos acumulados: 89
+[27-09-25 03:00:31] Proceso: se obtuvieron: 89 productos, ⏳esperando 9s para la siguiente pagina
+[27-09-25 03:00:31] Proceso: ✅ CSV actualizado: /app/logic/../data/filosofia.csv
+[27-09-25 03:00:31] Proceso: 📊 Nuevos registros: 89
+[27-09-25 03:00:31] Proceso: 📈 Total acumulado: 716 registros

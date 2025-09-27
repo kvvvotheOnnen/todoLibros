@@ -42,7 +42,7 @@ def main():
         process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
         end_time = datetime.now()
         try:
-            scrapear_aleatoriamente(categorias, 2)
+            scrapear_aleatoriamente(categorias, 2, 1)
         except ValueError as err:
             error_logs('en MiraLibros/scrapEmAll.py, flujo principal: ',err)
         elapsed_time = end_time - start_time
