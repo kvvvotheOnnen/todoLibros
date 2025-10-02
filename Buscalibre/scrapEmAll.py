@@ -10,6 +10,8 @@ import time
 from datetime import datetime
 from rabbitmq_handler import RabbitMQHandler
 from logic.randomScrap import scrapear_aleatoriamente
+from logic.csv_for_all import csv_forAll
+
 
 categorias = [
     ('https://www.buscalibre.cl/libros-mas-vendidos-en-chile_t.html', 'Libros mas vendidos en Chile'),
@@ -20,7 +22,6 @@ categorias = [
 def main():
     while True:
         csv_filename = "buscaLibre.csv"
-        csv_relative_path = f"data/{csv_filename}"
         start_time = datetime.now()
         process_logs(f"\n🚀 Iniciando ciclo de scraping - {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
         try:
@@ -32,6 +33,10 @@ def main():
         process_logs(f"⏳Tiempo total del scrap: {elapsed_time}")
         wait_hours = random.uniform(1, 4)
         wait_seconds = wait_hours * 3600
+        try:
+            csv_forAll("data",csv_filename)
+        except ValueError as ex:
+            error_logs('Error en csv_forAll de Buscalibre', ex)
         process_logs(f"Esperando {wait_hours:.2f} horas para el próximo ciclo...⏳")
         time.sleep(wait_seconds)
         

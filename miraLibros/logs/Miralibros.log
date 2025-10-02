@@ -54,3 +54,215 @@
 🚀 Iniciando ciclo de scraping - 2025-09-27 03:00:12
 [27-09-25 03:00:12] Proceso: 
 ❌ Error no controlado: No module named 'seleniumbase'
+[02-10-25 18:50:59] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-02 18:50:59
+[02-10-25 18:50:59] Proceso: Estrategia Playwright seleccionada
+[02-10-25 18:50:59] Proceso: 
+📌 Procesando (1/20): Cocina
+[02-10-25 18:50:59] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:51:05] Proceso: Estamos en: https://miralibros.cl/f-cocina
+[02-10-25 18:51:06] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:51:06] Proceso: ✅ CSV creado: /app/logic/../data/Cocina.csv
+[02-10-25 18:51:06] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:51:06] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:51:18] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:51:18] Proceso: ✅ CSV actualizado: /app/logic/../data/Cocina.csv
+[02-10-25 18:51:18] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:51:18] Proceso: 📈 Total acumulado: 40 registros
+[02-10-25 18:51:28] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:51:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Cocina.csv
+[02-10-25 18:51:28] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:51:28] Proceso: 📈 Total acumulado: 60 registros
+[02-10-25 18:51:36] Proceso: se obtuvieron: 17 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 18:51:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Cocina.csv
+[02-10-25 18:51:36] Proceso: 📊 Nuevos registros: 17
+[02-10-25 18:51:36] Proceso: 📈 Total acumulado: 77 registros
+[02-10-25 18:51:41] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[02-10-25 18:51:42] Proceso: ✅ Completado: Cocina
+[02-10-25 18:51:42] Proceso: ⏳ Espera aleatoria: 23s
+[02-10-25 18:52:05] Proceso: 
+📌 Procesando (2/20): Deportes
+[02-10-25 18:52:05] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:52:09] Proceso: Estamos en: https://miralibros.cl/s-deportes
+[02-10-25 18:52:10] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:52:10] Proceso: ✅ CSV creado: /app/logic/../data/Deportes.csv
+[02-10-25 18:52:10] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:52:10] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:52:19] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 18:52:19] Proceso: ✅ CSV actualizado: /app/logic/../data/Deportes.csv
+[02-10-25 18:52:19] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:52:19] Proceso: 📈 Total acumulado: 40 registros
+[02-10-25 18:52:25] Proceso: se obtuvieron: 13 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:52:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Deportes.csv
+[02-10-25 18:52:25] Proceso: 📊 Nuevos registros: 13
+[02-10-25 18:52:25] Proceso: 📈 Total acumulado: 53 registros
+[02-10-25 18:52:31] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[02-10-25 18:52:32] Proceso: ✅ Completado: Deportes
+[02-10-25 18:52:32] Proceso: ⏳ Espera aleatoria: 11s
+[02-10-25 18:52:43] Proceso: 
+📌 Procesando (3/20): Idiomas
+[02-10-25 18:52:43] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:52:48] Proceso: Estamos en: https://miralibros.cl/k-idiomas
+[02-10-25 18:52:48] Proceso: se obtuvieron: 6 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:52:48] Proceso: ✅ CSV creado: /app/logic/../data/Idiomas.csv
+[02-10-25 18:52:48] Proceso: 📊 Nuevos registros: 6
+[02-10-25 18:52:48] Proceso: 📈 Total acumulado: 6 registros
+[02-10-25 18:52:57] Proceso: ✅ Completado: Idiomas
+[02-10-25 18:52:57] Proceso: ⏳ Espera aleatoria: 15s
+[02-10-25 18:53:12] Proceso: 
+📌 Procesando (4/20): Divulgacion_Cientifica
+[02-10-25 18:53:12] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:53:15] Proceso: Estamos en: https://miralibros.cl/g-divulgacion-cientifica
+[02-10-25 18:53:17] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:53:17] Proceso: ✅ CSV creado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:53:17] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:53:17] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:53:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:53:26] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:53:26] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:53:26] Proceso: 📈 Total acumulado: 40 registros
+[02-10-25 18:53:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:53:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:53:36] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:53:36] Proceso: 📈 Total acumulado: 60 registros
+[02-10-25 18:53:45] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:53:45] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:53:45] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:53:45] Proceso: 📈 Total acumulado: 80 registros
+[02-10-25 18:53:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:53:58] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:53:58] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:53:58] Proceso: 📈 Total acumulado: 100 registros
+[02-10-25 18:54:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:54:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:54:08] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:54:08] Proceso: 📈 Total acumulado: 120 registros
+[02-10-25 18:54:31] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:54:31] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:54:31] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:54:31] Proceso: 📈 Total acumulado: 140 registros
+[02-10-25 18:54:40] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:54:40] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:54:40] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:54:40] Proceso: 📈 Total acumulado: 160 registros
+[02-10-25 18:54:48] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:54:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:54:48] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:54:48] Proceso: 📈 Total acumulado: 180 registros
+[02-10-25 18:54:54] Proceso: se obtuvieron: 1 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 18:54:54] Proceso: ✅ CSV actualizado: /app/logic/../data/Divulgacion_Cientifica.csv
+[02-10-25 18:54:54] Proceso: 📊 Nuevos registros: 1
+[02-10-25 18:54:54] Proceso: 📈 Total acumulado: 181 registros
+[02-10-25 18:55:03] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[02-10-25 18:55:03] Proceso: ✅ Completado: Divulgacion_Cientifica
+[02-10-25 18:55:03] Proceso: ⏳ Espera aleatoria: 19s
+[02-10-25 18:55:22] Proceso: 
+📌 Procesando (5/20): Poesia
+[02-10-25 18:55:22] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:55:26] Proceso: Estamos en: https://miralibros.cl/b-poesia
+[02-10-25 18:55:27] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:55:27] Proceso: ✅ CSV creado: /app/logic/../data/Poesia.csv
+[02-10-25 18:55:27] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:55:27] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:55:37] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:55:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:55:37] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:55:37] Proceso: 📈 Total acumulado: 40 registros
+[02-10-25 18:55:48] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:55:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:55:48] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:55:48] Proceso: 📈 Total acumulado: 60 registros
+[02-10-25 18:55:59] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:55:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:55:59] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:55:59] Proceso: 📈 Total acumulado: 80 registros
+[02-10-25 18:56:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:56:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:08] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:08] Proceso: 📈 Total acumulado: 100 registros
+[02-10-25 18:56:16] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:56:16] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:16] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:16] Proceso: 📈 Total acumulado: 120 registros
+[02-10-25 18:56:27] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:56:27] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:27] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:27] Proceso: 📈 Total acumulado: 140 registros
+[02-10-25 18:56:35] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:56:35] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:35] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:35] Proceso: 📈 Total acumulado: 160 registros
+[02-10-25 18:56:43] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:56:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:43] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:43] Proceso: 📈 Total acumulado: 180 registros
+[02-10-25 18:56:51] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:56:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:56:51] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:56:51] Proceso: 📈 Total acumulado: 200 registros
+[02-10-25 18:57:00] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:57:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:57:00] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:57:00] Proceso: 📈 Total acumulado: 220 registros
+[02-10-25 18:57:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:57:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:57:08] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:57:08] Proceso: 📈 Total acumulado: 240 registros
+[02-10-25 18:57:17] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:57:17] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:57:17] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:57:17] Proceso: 📈 Total acumulado: 260 registros
+[02-10-25 18:57:25] Proceso: se obtuvieron: 12 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:57:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Poesia.csv
+[02-10-25 18:57:25] Proceso: 📊 Nuevos registros: 12
+[02-10-25 18:57:25] Proceso: 📈 Total acumulado: 272 registros
+[02-10-25 18:57:34] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[02-10-25 18:57:34] Proceso: ✅ Completado: Poesia
+[02-10-25 18:57:34] Proceso: ⏳ Espera aleatoria: 25s
+[02-10-25 18:57:59] Proceso: 
+📌 Procesando (6/20): Negocios_y_Finanzas
+[02-10-25 18:57:59] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:58:03] Proceso: Estamos en: https://miralibros.cl/e-negocios-y-finanzas
+[02-10-25 18:58:04] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:58:04] Proceso: ✅ CSV creado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:04] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:04] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:58:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:58:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:12] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:12] Proceso: 📈 Total acumulado: 40 registros
+[02-10-25 18:58:27] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:58:27] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:27] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:27] Proceso: 📈 Total acumulado: 60 registros
+[02-10-25 18:58:35] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 18:58:35] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:35] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:35] Proceso: 📈 Total acumulado: 80 registros
+[02-10-25 18:58:44] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 18:58:44] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:44] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:44] Proceso: 📈 Total acumulado: 100 registros
+[02-10-25 18:58:52] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:58:52] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:52] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:58:52] Proceso: 📈 Total acumulado: 120 registros
+[02-10-25 18:58:59] Proceso: se obtuvieron: 7 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:58:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Negocios_y_Finanzas.csv
+[02-10-25 18:58:59] Proceso: 📊 Nuevos registros: 7
+[02-10-25 18:58:59] Proceso: 📈 Total acumulado: 127 registros
+[02-10-25 18:59:05] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[02-10-25 18:59:06] Proceso: ✅ Completado: Negocios_y_Finanzas
+[02-10-25 18:59:06] Proceso: ⏳ Espera aleatoria: 10s
+[02-10-25 18:59:16] Proceso: 
+📌 Procesando (7/20): Arte_y_Arquitectura
+[02-10-25 18:59:16] Proceso: Iniciando proceso con estrategia Playwright
+[02-10-25 18:59:20] Proceso: Estamos en: https://miralibros.cl/l-arte-y-arquitectura
+[02-10-25 18:59:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 18:59:20] Proceso: ✅ CSV creado: /app/logic/../data/Arte_y_Arquitectura.csv
+[02-10-25 18:59:20] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:59:20] Proceso: 📈 Total acumulado: 20 registros
+[02-10-25 18:59:38] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 18:59:38] Proceso: ✅ CSV actualizado: /app/logic/../data/Arte_y_Arquitectura.csv
+[02-10-25 18:59:38] Proceso: 📊 Nuevos registros: 20
+[02-10-25 18:59:38] Proceso: 📈 Total acumulado: 40 registros

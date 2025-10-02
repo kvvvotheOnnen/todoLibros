@@ -207,3 +207,171 @@
 [26-09-25 22:25:56] Proceso: 📊 Nuevos registros: 56
 [26-09-25 22:25:56] Proceso: 📈 Total acumulado: 280 registros
 [26-09-25 22:26:05] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:50:59] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-02 14:50:59
+[02-10-25 14:50:59] Proceso: 
+📌 Procesando (1/1): general_falabella
+[02-10-25 14:50:59] Proceso: Iniciando proceso con estrategia SeleniumBase
+[02-10-25 14:51:08] Proceso: Estamos en: https://www.falabella.com/falabella-cl/category/CATG11448/Libros?page=1
+[02-10-25 14:51:08] Proceso: product_container cargado
+[02-10-25 14:51:08] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:51:10] Proceso: se obtuvieron: 56 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:51:10] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:51:10] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:51:10] Proceso: 📈 Total acumulado: 336 registros
+[02-10-25 14:51:17] Proceso: ⏳ Esperando 6 segundos antes de continuar...
+[02-10-25 14:51:23] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:51:24] Proceso: se obtuvieron: 56 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:51:24] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:51:24] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:51:24] Proceso: 📈 Total acumulado: 392 registros
+[02-10-25 14:51:34] Proceso: ⏳ Esperando 12 segundos antes de continuar...
+[02-10-25 14:51:46] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:51:49] Proceso: se obtuvieron: 56 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:51:49] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:51:49] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:51:49] Proceso: 📈 Total acumulado: 448 registros
+[02-10-25 14:51:55] Proceso: ⏳ Esperando 15 segundos antes de continuar...
+[02-10-25 14:52:11] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:52:13] Proceso: se obtuvieron: 56 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:52:13] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:52:13] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:52:13] Proceso: 📈 Total acumulado: 504 registros
+[02-10-25 14:52:20] Proceso: ⏳ Esperando 6 segundos antes de continuar...
+[02-10-25 14:52:26] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:52:29] Proceso: se obtuvieron: 56 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:52:29] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:52:29] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:52:29] Proceso: 📈 Total acumulado: 560 registros
+[02-10-25 14:52:38] Proceso: ⏳ Esperando 15 segundos antes de continuar...
+[02-10-25 14:52:53] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:52:56] Proceso: se obtuvieron: 56 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:52:56] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:52:56] Proceso: 📊 Nuevos registros: 56
+[02-10-25 14:52:56] Proceso: 📈 Total acumulado: 616 registros
+[02-10-25 14:53:02] Proceso: ⏳ Esperando 13 segundos antes de continuar...
+[02-10-25 14:53:15] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:53:18] Proceso: se obtuvieron: 54 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:53:18] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:53:18] Proceso: 📊 Nuevos registros: 54
+[02-10-25 14:53:18] Proceso: 📈 Total acumulado: 670 registros
+[02-10-25 14:53:28] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:53:42] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:53:44] Proceso: se obtuvieron: 48 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:53:44] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:53:44] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:53:44] Proceso: 📈 Total acumulado: 718 registros
+[02-10-25 14:53:53] Proceso: ⏳ Esperando 12 segundos antes de continuar...
+[02-10-25 14:54:05] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:54:06] Proceso: se obtuvieron: 48 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:54:06] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:54:06] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:54:06] Proceso: 📈 Total acumulado: 766 registros
+[02-10-25 14:54:14] Proceso: ⏳ Esperando 15 segundos antes de continuar...
+[02-10-25 14:54:30] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:54:32] Proceso: se obtuvieron: 48 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:54:32] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:54:32] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:54:32] Proceso: 📈 Total acumulado: 814 registros
+[02-10-25 14:54:40] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:54:51] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:54:53] Proceso: se obtuvieron: 48 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:54:53] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:54:53] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:54:53] Proceso: 📈 Total acumulado: 862 registros
+[02-10-25 14:55:00] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:55:10] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:55:11] Proceso: se obtuvieron: 48 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:55:11] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:55:11] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:55:11] Proceso: 📈 Total acumulado: 910 registros
+[02-10-25 14:55:19] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:55:27] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:55:29] Proceso: se obtuvieron: 48 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:55:29] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:55:29] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:55:29] Proceso: 📈 Total acumulado: 958 registros
+[02-10-25 14:55:35] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:55:44] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:55:46] Proceso: se obtuvieron: 48 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:55:46] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:55:46] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:55:46] Proceso: 📈 Total acumulado: 1006 registros
+[02-10-25 14:55:55] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:56:04] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:06] Proceso: se obtuvieron: 48 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:56:06] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:56:06] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:56:06] Proceso: 📈 Total acumulado: 1054 registros
+[02-10-25 14:56:13] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:56:22] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:24] Proceso: se obtuvieron: 48 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:56:24] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:56:24] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:56:24] Proceso: 📈 Total acumulado: 1102 registros
+[02-10-25 14:56:29] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:56:36] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:38] Proceso: se obtuvieron: 48 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:56:38] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:56:38] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:56:38] Proceso: 📈 Total acumulado: 1150 registros
+[02-10-25 14:56:46] Proceso: ⏳ Esperando 5 segundos antes de continuar...
+[02-10-25 14:56:51] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:52] Proceso: se obtuvieron: 48 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:56:52] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:56:52] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:56:52] Proceso: 📈 Total acumulado: 1198 registros
+[02-10-25 14:56:58] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:57:09] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:10] Proceso: se obtuvieron: 48 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:57:10] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:57:10] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:57:10] Proceso: 📈 Total acumulado: 1246 registros
+[02-10-25 14:57:16] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:57:27] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:29] Proceso: se obtuvieron: 48 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:57:29] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:57:29] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:57:29] Proceso: 📈 Total acumulado: 1294 registros
+[02-10-25 14:57:38] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:57:48] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:49] Proceso: se obtuvieron: 48 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:57:49] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:57:49] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:57:49] Proceso: 📈 Total acumulado: 1342 registros
+[02-10-25 14:57:54] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:58:01] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:03] Proceso: se obtuvieron: 48 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:58:03] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:58:03] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:58:03] Proceso: 📈 Total acumulado: 1390 registros
+[02-10-25 14:58:11] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:58:18] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:20] Proceso: se obtuvieron: 48 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:58:20] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:58:20] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:58:20] Proceso: 📈 Total acumulado: 1438 registros
+[02-10-25 14:58:27] Proceso: ⏳ Esperando 13 segundos antes de continuar...
+[02-10-25 14:58:40] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:42] Proceso: se obtuvieron: 48 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:58:42] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:58:42] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:58:42] Proceso: 📈 Total acumulado: 1486 registros
+[02-10-25 14:58:51] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:59:00] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:59:02] Proceso: se obtuvieron: 48 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:59:02] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:59:02] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:59:02] Proceso: 📈 Total acumulado: 1534 registros
+[02-10-25 14:59:09] Proceso: ⏳ Esperando 10 segundos antes de continuar...
+[02-10-25 14:59:19] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:59:21] Proceso: se obtuvieron: 48 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:59:21] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:59:21] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:59:21] Proceso: 📈 Total acumulado: 1582 registros
+[02-10-25 14:59:30] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:59:39] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:59:41] Proceso: se obtuvieron: 48 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:59:41] Proceso: ✅ CSV actualizado: /app/logic/../data/general_falabella.csv
+[02-10-25 14:59:41] Proceso: 📊 Nuevos registros: 48
+[02-10-25 14:59:41] Proceso: 📈 Total acumulado: 1630 registros

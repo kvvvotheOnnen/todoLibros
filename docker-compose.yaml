@@ -21,26 +21,26 @@ services:
       - scraping_net
   
 
-  feriachilena:
-    build: ./feriaChilena
-    restart: unless-stopped
-    volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-      - ./feriaChilena/data:/app/data
-      - ./feriaChilena/logs:/app/logs
-      - ./logic:/app/logic
-      - ./class_products:/app/class_products
-      - ./class_scrap_models:/app/class_scrap_models
-      - ./class_strategies:/app/class_strategies
-      - ./config.py:/app/config.py
-    environment:
-      - PYTHONPATH=/app
-      - LOG_DIR=/app/logs
-      - LOG_FILENAME=feriaChilena.log
-  
-    networks:
-      - scraping_net
-
+  #feriachilena:
+  #  build: ./feriaChilena
+  #  restart: unless-stopped
+  #  volumes:
+  #    - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+  #    - ./feriaChilena/data:/app/data
+  #    - ./feriaChilena/logs:/app/logs
+  #    - ./logic:/app/logic
+  #    - ./class_products:/app/class_products
+  #    - ./class_scrap_models:/app/class_scrap_models
+  #    - ./class_strategies:/app/class_strategies
+  #    - ./config.py:/app/config.py
+  #  environment:
+  #    - PYTHONPATH=/app
+  #    - LOG_DIR=/app/logs
+  #    - LOG_FILENAME=feriaChilena.log
+  #
+  #  networks:
+  #    - scraping_net
+#
   miralibros:
     build: ./miraLibros
     restart: unless-stopped
@@ -59,42 +59,42 @@ services:
       - LOG_FILENAME=Miralibros.log
     networks:
       - scraping_net
-  #buscalibre:
-  #  build: ./Buscalibre
-  #  restart: unless-stopped
-  #  volumes:
-  #    - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-  #    - ./Buscalibre/data:/app/data
-  #    - ./Buscalibre/logs:/app/logs
-  #    - ./logic:/app/logic
-  #    - ./class_products:/app/class_products
-  #    - ./class_scrap_models:/app/class_scrap_models
-  #    - ./class_strategies:/app/class_strategies
-  #    - ./config.py:/app/config.py
-  #  environment:
-  #    - PYTHONPATH=/app
-  #    - LOG_DIR=/app/logs
-  #    - LOG_FILENAME=Buscalibre.log
-  #  networks:
-  #    - scraping_net
-  #falabella:
-  #  build: ./Falabella
-  #  restart: unless-stopped
-  #  volumes:
-  #    - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
-  #    - ./Falabella/data:/app/data
-  #    - ./Falabella/logs:/app/logs
-  #    - ./logic:/app/logic
-  #    - ./class_products:/app/class_products
-  #    - ./class_scrap_models:/app/class_scrap_models
-  #    - ./class_strategies:/app/class_strategies
-  #    - ./config.py:/app/config.py
-  #  environment:
-  #    - PYTHONPATH=/app
-  #    - LOG_DIR=/app/logs
-  #    - LOG_FILENAME=Falabella.log
-  #  networks:
-  #    - scraping_net
+  buscalibre:
+    build: ./Buscalibre
+    restart: unless-stopped
+    volumes:
+      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+      - ./Buscalibre/data:/app/data
+      - ./Buscalibre/logs:/app/logs
+      - ./logic:/app/logic
+      - ./class_products:/app/class_products
+      - ./class_scrap_models:/app/class_scrap_models
+      - ./class_strategies:/app/class_strategies
+      - ./config.py:/app/config.py
+    environment:
+      - PYTHONPATH=/app
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Buscalibre.log
+    networks:
+      - scraping_net
+  falabella:
+    build: ./Falabella
+    restart: unless-stopped
+    volumes:
+      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
+      - ./Falabella/data:/app/data
+      - ./Falabella/logs:/app/logs
+      - ./logic:/app/logic
+      - ./class_products:/app/class_products
+      - ./class_scrap_models:/app/class_scrap_models
+      - ./class_strategies:/app/class_strategies
+      - ./config.py:/app/config.py
+    environment:
+      - PYTHONPATH=/app
+      - LOG_DIR=/app/logs
+      - LOG_FILENAME=Falabella.log
+    networks:
+      - scraping_net
 
 
 networks:

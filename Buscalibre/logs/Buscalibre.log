@@ -459,3 +459,168 @@
 [26-09-25 22:25:49] Proceso: 📈 Total acumulado: 3099 registros
 [26-09-25 22:25:56] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=5
 [26-09-25 22:25:59] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:50:59] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-02 14:50:59
+[02-10-25 14:50:59] Proceso: 
+📌 Procesando (1/2): Libros mas vendidos en Chile
+[02-10-25 14:50:59] Proceso: Iniciando proceso con estrategia SeleniumBase
+[02-10-25 14:51:04] Proceso: Estamos en: https://www.buscalibre.cl/libros-mas-vendidos-en-chile_t.html
+[02-10-25 14:51:04] Proceso: product_container cargado
+[02-10-25 14:51:04] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:51:10] Proceso: se obtuvieron: 99 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:51:10] Proceso: ✅ CSV creado: /app/logic/../data/Libros mas vendidos en Chile.csv
+[02-10-25 14:51:10] Proceso: 📊 Nuevos registros: 99
+[02-10-25 14:51:10] Proceso: 📈 Total acumulado: 99 registros
+[02-10-25 14:51:17] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros-mas-vendidos-en-chile_t.html?page=2
+[02-10-25 14:51:20] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:51:27] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:51:31] Proceso: se obtuvieron: 94 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:51:31] Proceso: ✅ CSV actualizado: /app/logic/../data/Libros mas vendidos en Chile.csv
+[02-10-25 14:51:31] Proceso: 📊 Nuevos registros: 94
+[02-10-25 14:51:31] Proceso: 📈 Total acumulado: 193 registros
+[02-10-25 14:51:39] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros-mas-vendidos-en-chile_t.html?page=3
+[02-10-25 14:51:41] Proceso: ⏳ Esperando 15 segundos antes de continuar...
+[02-10-25 14:51:56] Proceso: no se encontraron productos en buscalibre strategy
+[02-10-25 14:51:56] Proceso: No se encuentran productos
+[02-10-25 14:51:56] Proceso: ℹ️ No se encontró enlace a la siguiente página. Fin de la paginación.
+[02-10-25 14:51:57] Proceso: ✅ Completado: Libros mas vendidos en Chile
+[02-10-25 14:51:57] Proceso: ⏳ Espera aleatoria: 25s
+[02-10-25 14:52:22] Proceso: 
+📌 Procesando (2/2): Infantiles y Juveniles Didactico
+[02-10-25 14:52:22] Proceso: Iniciando proceso con estrategia SeleniumBase
+[02-10-25 14:52:26] Proceso: Estamos en: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico
+[02-10-25 14:52:26] Proceso: product_container cargado
+[02-10-25 14:52:26] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:52:28] Proceso: se obtuvieron: 50 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:52:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:52:28] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:52:28] Proceso: 📈 Total acumulado: 3149 registros
+[02-10-25 14:52:37] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=2
+[02-10-25 14:52:39] Proceso: ⏳ Esperando 13 segundos antes de continuar...
+[02-10-25 14:52:52] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:52:55] Proceso: se obtuvieron: 49 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:52:55] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:52:55] Proceso: 📊 Nuevos registros: 49
+[02-10-25 14:52:55] Proceso: 📈 Total acumulado: 3198 registros
+[02-10-25 14:53:02] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=3
+[02-10-25 14:53:05] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:53:16] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:53:19] Proceso: se obtuvieron: 50 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:53:19] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:53:19] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:53:19] Proceso: 📈 Total acumulado: 3248 registros
+[02-10-25 14:53:26] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=4
+[02-10-25 14:53:31] Proceso: ⏳ Esperando 9 segundos antes de continuar...
+[02-10-25 14:53:40] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:53:43] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:53:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:53:43] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:53:43] Proceso: 📈 Total acumulado: 3298 registros
+[02-10-25 14:53:48] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=5
+[02-10-25 14:53:52] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:54:03] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:54:05] Proceso: se obtuvieron: 50 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:54:05] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:54:05] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:54:05] Proceso: 📈 Total acumulado: 3348 registros
+[02-10-25 14:54:13] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=6
+[02-10-25 14:54:31] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:54:42] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:54:44] Proceso: se obtuvieron: 50 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:54:44] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:54:44] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:54:44] Proceso: 📈 Total acumulado: 3398 registros
+[02-10-25 14:54:53] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=7
+[02-10-25 14:54:59] Proceso: ⏳ Esperando 8 segundos antes de continuar...
+[02-10-25 14:55:07] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:55:09] Proceso: se obtuvieron: 50 productos, ⏳esperando 9s para la siguiente pagina
+[02-10-25 14:55:09] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:55:09] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:55:09] Proceso: 📈 Total acumulado: 3448 registros
+[02-10-25 14:55:18] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=8
+[02-10-25 14:55:21] Proceso: ⏳ Esperando 10 segundos antes de continuar...
+[02-10-25 14:55:31] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:55:34] Proceso: se obtuvieron: 50 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:55:34] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:55:34] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:55:34] Proceso: 📈 Total acumulado: 3498 registros
+[02-10-25 14:55:40] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=9
+[02-10-25 14:55:44] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:55:58] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:01] Proceso: se obtuvieron: 50 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:56:01] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:56:01] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:56:01] Proceso: 📈 Total acumulado: 3548 registros
+[02-10-25 14:56:09] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=10
+[02-10-25 14:56:11] Proceso: ⏳ Esperando 5 segundos antes de continuar...
+[02-10-25 14:56:17] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:19] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:56:19] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:56:19] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:56:19] Proceso: 📈 Total acumulado: 3598 registros
+[02-10-25 14:56:24] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=11
+[02-10-25 14:56:26] Proceso: ⏳ Esperando 6 segundos antes de continuar...
+[02-10-25 14:56:32] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:34] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:56:34] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:56:34] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:56:34] Proceso: 📈 Total acumulado: 3648 registros
+[02-10-25 14:56:39] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=12
+[02-10-25 14:56:43] Proceso: ⏳ Esperando 13 segundos antes de continuar...
+[02-10-25 14:56:56] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:56:58] Proceso: se obtuvieron: 50 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:56:58] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:56:58] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:56:58] Proceso: 📈 Total acumulado: 3698 registros
+[02-10-25 14:57:04] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=13
+[02-10-25 14:57:07] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:57:14] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:17] Proceso: se obtuvieron: 50 productos, ⏳esperando 6s para la siguiente pagina
+[02-10-25 14:57:17] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:57:17] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:57:17] Proceso: 📈 Total acumulado: 3748 registros
+[02-10-25 14:57:23] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=14
+[02-10-25 14:57:25] Proceso: ⏳ Esperando 5 segundos antes de continuar...
+[02-10-25 14:57:30] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:32] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:57:32] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:57:32] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:57:32] Proceso: 📈 Total acumulado: 3798 registros
+[02-10-25 14:57:37] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=15
+[02-10-25 14:57:40] Proceso: ⏳ Esperando 10 segundos antes de continuar...
+[02-10-25 14:57:50] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:57:52] Proceso: se obtuvieron: 50 productos, ⏳esperando 8s para la siguiente pagina
+[02-10-25 14:57:52] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:57:52] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:57:52] Proceso: 📈 Total acumulado: 3848 registros
+[02-10-25 14:58:00] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=16
+[02-10-25 14:58:03] Proceso: ⏳ Esperando 7 segundos antes de continuar...
+[02-10-25 14:58:10] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:12] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:58:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:58:12] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:58:12] Proceso: 📈 Total acumulado: 3898 registros
+[02-10-25 14:58:17] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=17
+[02-10-25 14:58:20] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:58:31] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:33] Proceso: se obtuvieron: 50 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:58:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:58:33] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:58:33] Proceso: 📈 Total acumulado: 3948 registros
+[02-10-25 14:58:40] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=18
+[02-10-25 14:58:43] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:58:57] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:58:59] Proceso: se obtuvieron: 50 productos, ⏳esperando 7s para la siguiente pagina
+[02-10-25 14:58:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:58:59] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:58:59] Proceso: 📈 Total acumulado: 3998 registros
+[02-10-25 14:59:06] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=19
+[02-10-25 14:59:09] Proceso: ⏳ Esperando 14 segundos antes de continuar...
+[02-10-25 14:59:23] Proceso: se encontraron los productos en buscalibre strategy
+[02-10-25 14:59:25] Proceso: se obtuvieron: 50 productos, ⏳esperando 5s para la siguiente pagina
+[02-10-25 14:59:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Infantiles y Juveniles Didactico.csv
+[02-10-25 14:59:25] Proceso: 📊 Nuevos registros: 50
+[02-10-25 14:59:25] Proceso: 📈 Total acumulado: 4048 registros
+[02-10-25 14:59:30] Proceso: ➡️ Avanzando a la siguiente página: https://www.buscalibre.cl/libros/infantiles-juveniles-didactico?page=20
+[02-10-25 14:59:33] Proceso: ⏳ Esperando 11 segundos antes de continuar...
+[02-10-25 14:59:44] Proceso: se encontraron los productos en buscalibre strategy
