@@ -8,16 +8,18 @@ import random
 from logic.logs import error_logs, process_logs
 import time
 from datetime import datetime
-from rabbitmq_handler import RabbitMQHandler
+from logic.rabbitmq_handler import RabbitMQHandler
 from logic.randomScrap import scrapear_aleatoriamente
 from logic.csv_for_all import csv_forAll
+import pytz
+
 
 
 categorias = [
    #('https://www.antartica.cl/libros/arte-y-arquitectura.html', 'Arte y Arquitectura'),
    #('https://www.antartica.cl/libros/economia-y-administracion.html','Economia y administracion'),
    ('https://www.antartica.cl/libros/entretencion-y-manual.html','Entretencion y manualidades'),
-   ('https://www.antartica.cl/libros/gastronomia-y-vinos.html','Gastronomia y vinos'),
+   #('https://www.antartica.cl/libros/gastronomia-y-vinos.html','Gastronomia y vinos'),
    #('https://www.antartica.cl/libros/literatura.html','Literatura'),
    #('https://www.antartica.cl/libros/mundo-comic.html','Mundo comic'),
    #('https://www.antartica.cl/libros/ciencias/ciencias-agrarias-y-de-la-naturaleza.html', 'Ciencias agrarias y de la naturaleza'),
@@ -29,7 +31,7 @@ categorias = [
    #('https://www.antartica.cl/libros/computacion-e-informacion/informatica.html', 'Informática'),
    #('https://www.antartica.cl/libros/cuerpo-y-mente/autoayuda.html', 'Autoayuda'),
    #('https://www.antartica.cl/libros/cuerpo-y-mente/ciencias-alternativas-y-esoterismo.html', 'Ciencias alternativas y esoterismo'),
-   ('https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html', 'Guías de viaje'),
+   #('https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html', 'Guías de viaje'),
    #('https://www.antartica.cl/libros/guias-de-viaje-y-tur/mapas-y-planos.html', 'Mapas y planos'),
    #('https://www.antartica.cl/libros/infantil-y-juvenil/juegos-ocio-y-actividades.html', 'Juegos, ocio y actividades'),
    #('https://www.antartica.cl/libros/infantil-y-juvenil/libros-infantiles.html', 'Libros infantiles'),
@@ -52,9 +54,25 @@ def main():
         wait_hours = random.uniform(1, 4)
         wait_seconds = wait_hours * 3600
         try:
-            csv_forAll("data",csv_filename)
+            csv_success = csv_forAll("data", csv_filename)
+            if csv_success:
+                try:
+                    with RabbitMQHandler() as rabbit:
+                        chile_tz = pytz.timezone("America/Santiago")
+                        timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+                        enviarACola = rabbit.send_csv_notification('Antartica', timestamp)
+                        if enviarACola:
+                            process_logs('✅ CSV Antartica enviado a la cola exitosamente')
+                        else:
+                            process_logs('❌ CSV Antartica no se envio a la cola de manera exitosa')
+                except Exception as err:
+                    error_logs('proceso de cola rabbiMQ Antartica', err)
+            else:
+                process_logs('❌ csv_forAll falló, no se envía a cola')
+
         except ValueError as ex:
             error_logs('Error en csv_forAll de Antartica', ex)
+
         finally:
             process_logs(f"Esperando {wait_hours:.2f} horas para el próximo ciclo...⏳")
             time.sleep(wait_seconds)

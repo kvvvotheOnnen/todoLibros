@@ -266,3 +266,744 @@
 [02-10-25 18:59:38] Proceso: ✅ CSV actualizado: /app/logic/../data/Arte_y_Arquitectura.csv
 [02-10-25 18:59:38] Proceso: 📊 Nuevos registros: 20
 [02-10-25 18:59:38] Proceso: 📈 Total acumulado: 40 registros
+[03-10-25 00:04:07] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-03 00:04:07
+[03-10-25 00:04:07] Proceso: Estrategia Playwright seleccionada
+[03-10-25 00:04:07] Proceso: 
+📌 Procesando (1/3): salud_y_bienestar
+[03-10-25 00:04:07] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:04:12] Proceso: Estamos en: https://miralibros.cl/c-salud-y-bienestar
+[03-10-25 00:04:13] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:04:13] Proceso: ✅ CSV creado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:04:13] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:04:13] Proceso: 📈 Total acumulado: 20 registros
+[03-10-25 00:04:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:04:20] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:04:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:04:20] Proceso: 📈 Total acumulado: 40 registros
+[03-10-25 00:04:30] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:04:30] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:04:30] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:04:30] Proceso: 📈 Total acumulado: 60 registros
+[03-10-25 00:04:40] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:04:40] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:04:40] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:04:40] Proceso: 📈 Total acumulado: 80 registros
+[03-10-25 00:04:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:04:49] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:04:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:04:49] Proceso: 📈 Total acumulado: 100 registros
+[03-10-25 00:05:00] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:05:00] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:00] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:00] Proceso: 📈 Total acumulado: 120 registros
+[03-10-25 00:05:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:05:08] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:08] Proceso: 📈 Total acumulado: 140 registros
+[03-10-25 00:05:14] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:05:14] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:14] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:14] Proceso: 📈 Total acumulado: 160 registros
+[03-10-25 00:05:24] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:05:24] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:24] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:24] Proceso: 📈 Total acumulado: 180 registros
+[03-10-25 00:05:34] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:05:34] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:34] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:34] Proceso: 📈 Total acumulado: 200 registros
+[03-10-25 00:05:41] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:05:41] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:41] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:41] Proceso: 📈 Total acumulado: 220 registros
+[03-10-25 00:05:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:05:49] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:49] Proceso: 📈 Total acumulado: 240 registros
+[03-10-25 00:05:57] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:05:57] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:05:57] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:05:57] Proceso: 📈 Total acumulado: 260 registros
+[03-10-25 00:06:04] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:06:04] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:04] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:04] Proceso: 📈 Total acumulado: 280 registros
+[03-10-25 00:06:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:06:12] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:12] Proceso: 📈 Total acumulado: 300 registros
+[03-10-25 00:06:21] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:06:21] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:21] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:21] Proceso: 📈 Total acumulado: 320 registros
+[03-10-25 00:06:32] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:06:32] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:32] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:32] Proceso: 📈 Total acumulado: 340 registros
+[03-10-25 00:06:39] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:06:39] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:39] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:39] Proceso: 📈 Total acumulado: 360 registros
+[03-10-25 00:06:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:06:49] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:49] Proceso: 📈 Total acumulado: 380 registros
+[03-10-25 00:06:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:06:58] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:06:58] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:06:58] Proceso: 📈 Total acumulado: 400 registros
+[03-10-25 00:07:07] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:07:07] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:07] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:07] Proceso: 📈 Total acumulado: 420 registros
+[03-10-25 00:07:15] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:07:15] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:15] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:15] Proceso: 📈 Total acumulado: 440 registros
+[03-10-25 00:07:22] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:07:22] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:22] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:22] Proceso: 📈 Total acumulado: 460 registros
+[03-10-25 00:07:31] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:07:31] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:31] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:31] Proceso: 📈 Total acumulado: 480 registros
+[03-10-25 00:07:41] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:07:41] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:41] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:41] Proceso: 📈 Total acumulado: 500 registros
+[03-10-25 00:07:52] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:07:52] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:52] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:52] Proceso: 📈 Total acumulado: 520 registros
+[03-10-25 00:07:59] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:07:59] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:07:59] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:07:59] Proceso: 📈 Total acumulado: 540 registros
+[03-10-25 00:08:06] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:08:06] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:06] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:06] Proceso: 📈 Total acumulado: 560 registros
+[03-10-25 00:08:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:08:12] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:12] Proceso: 📈 Total acumulado: 580 registros
+[03-10-25 00:08:19] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:08:19] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:19] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:19] Proceso: 📈 Total acumulado: 600 registros
+[03-10-25 00:08:29] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:08:29] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:29] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:29] Proceso: 📈 Total acumulado: 620 registros
+[03-10-25 00:08:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:08:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:36] Proceso: 📈 Total acumulado: 640 registros
+[03-10-25 00:08:47] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:08:47] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:47] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:47] Proceso: 📈 Total acumulado: 660 registros
+[03-10-25 00:08:53] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:08:53] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:08:53] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:08:53] Proceso: 📈 Total acumulado: 680 registros
+[03-10-25 00:09:01] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:09:01] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:01] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:01] Proceso: 📈 Total acumulado: 700 registros
+[03-10-25 00:09:07] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:09:07] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:07] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:07] Proceso: 📈 Total acumulado: 720 registros
+[03-10-25 00:09:15] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:09:15] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:15] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:15] Proceso: 📈 Total acumulado: 740 registros
+[03-10-25 00:09:25] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:09:25] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:25] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:25] Proceso: 📈 Total acumulado: 760 registros
+[03-10-25 00:09:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:09:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:36] Proceso: 📈 Total acumulado: 780 registros
+[03-10-25 00:09:43] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:09:43] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:43] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:43] Proceso: 📈 Total acumulado: 800 registros
+[03-10-25 00:09:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:09:49] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:49] Proceso: 📈 Total acumulado: 820 registros
+[03-10-25 00:09:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:09:58] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:09:58] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:09:58] Proceso: 📈 Total acumulado: 840 registros
+[03-10-25 00:10:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:10:08] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:08] Proceso: 📈 Total acumulado: 860 registros
+[03-10-25 00:10:17] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:10:17] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:17] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:17] Proceso: 📈 Total acumulado: 880 registros
+[03-10-25 00:10:28] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:10:28] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:28] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:28] Proceso: 📈 Total acumulado: 900 registros
+[03-10-25 00:10:34] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:10:34] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:34] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:34] Proceso: 📈 Total acumulado: 920 registros
+[03-10-25 00:10:42] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:10:42] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:42] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:42] Proceso: 📈 Total acumulado: 940 registros
+[03-10-25 00:10:50] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:10:50] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:50] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:50] Proceso: 📈 Total acumulado: 960 registros
+[03-10-25 00:10:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:10:58] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:10:58] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:10:58] Proceso: 📈 Total acumulado: 980 registros
+[03-10-25 00:11:09] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:11:09] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:11:09] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:11:09] Proceso: 📈 Total acumulado: 1000 registros
+[03-10-25 00:11:18] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:11:18] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:11:18] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:11:18] Proceso: 📈 Total acumulado: 1020 registros
+[03-10-25 00:11:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:11:26] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:11:26] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:11:26] Proceso: 📈 Total acumulado: 1040 registros
+[03-10-25 00:11:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:11:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:11:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:11:36] Proceso: 📈 Total acumulado: 1060 registros
+[03-10-25 00:11:46] Proceso: se obtuvieron: 16 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:11:46] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:11:46] Proceso: 📊 Nuevos registros: 16
+[03-10-25 00:11:46] Proceso: 📈 Total acumulado: 1076 registros
+[03-10-25 00:20:13] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-03 00:20:13
+[03-10-25 00:20:13] Proceso: Estrategia Playwright seleccionada
+[03-10-25 00:20:13] Proceso: 
+📌 Procesando (1/3): salud_y_bienestar
+[03-10-25 00:20:13] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:20:18] Proceso: Estamos en: https://miralibros.cl/c-salud-y-bienestar
+[03-10-25 00:20:19] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:20:19] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:20:19] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:20:19] Proceso: 📈 Total acumulado: 1096 registros
+[03-10-25 00:20:27] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:20:27] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:20:27] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:20:27] Proceso: 📈 Total acumulado: 1116 registros
+[03-10-25 00:20:37] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:20:37] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:20:37] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:20:37] Proceso: 📈 Total acumulado: 1136 registros
+[03-10-25 00:20:44] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:20:44] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:20:44] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:20:44] Proceso: 📈 Total acumulado: 1156 registros
+[03-10-25 00:20:54] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:20:54] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:20:54] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:20:54] Proceso: 📈 Total acumulado: 1176 registros
+[03-10-25 00:21:04] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:21:04] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:04] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:04] Proceso: 📈 Total acumulado: 1196 registros
+[03-10-25 00:21:10] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:21:10] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:10] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:10] Proceso: 📈 Total acumulado: 1216 registros
+[03-10-25 00:21:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:21:20] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:20] Proceso: 📈 Total acumulado: 1236 registros
+[03-10-25 00:21:30] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:21:30] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:30] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:30] Proceso: 📈 Total acumulado: 1256 registros
+[03-10-25 00:21:39] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:21:39] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:39] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:39] Proceso: 📈 Total acumulado: 1276 registros
+[03-10-25 00:21:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:21:49] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:49] Proceso: 📈 Total acumulado: 1296 registros
+[03-10-25 00:21:57] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:21:57] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:21:57] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:21:57] Proceso: 📈 Total acumulado: 1316 registros
+[03-10-25 00:22:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:22:08] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:08] Proceso: 📈 Total acumulado: 1336 registros
+[03-10-25 00:22:18] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:22:18] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:18] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:18] Proceso: 📈 Total acumulado: 1356 registros
+[03-10-25 00:22:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:22:26] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:26] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:26] Proceso: 📈 Total acumulado: 1376 registros
+[03-10-25 00:22:35] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:22:35] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:35] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:35] Proceso: 📈 Total acumulado: 1396 registros
+[03-10-25 00:22:45] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:22:45] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:45] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:45] Proceso: 📈 Total acumulado: 1416 registros
+[03-10-25 00:22:52] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:22:52] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:22:52] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:22:52] Proceso: 📈 Total acumulado: 1436 registros
+[03-10-25 00:23:02] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:23:02] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:02] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:02] Proceso: 📈 Total acumulado: 1456 registros
+[03-10-25 00:23:09] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:23:09] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:09] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:09] Proceso: 📈 Total acumulado: 1476 registros
+[03-10-25 00:23:16] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:23:16] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:16] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:16] Proceso: 📈 Total acumulado: 1496 registros
+[03-10-25 00:23:23] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:23:23] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:23] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:23] Proceso: 📈 Total acumulado: 1516 registros
+[03-10-25 00:23:32] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:23:32] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:32] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:32] Proceso: 📈 Total acumulado: 1536 registros
+[03-10-25 00:23:43] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:23:43] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:43] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:43] Proceso: 📈 Total acumulado: 1556 registros
+[03-10-25 00:23:52] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:23:52] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:52] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:52] Proceso: 📈 Total acumulado: 1576 registros
+[03-10-25 00:23:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:23:58] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:23:58] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:23:58] Proceso: 📈 Total acumulado: 1596 registros
+[03-10-25 00:24:06] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:24:06] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:06] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:06] Proceso: 📈 Total acumulado: 1616 registros
+[03-10-25 00:24:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:24:12] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:12] Proceso: 📈 Total acumulado: 1636 registros
+[03-10-25 00:24:19] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:24:19] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:19] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:19] Proceso: 📈 Total acumulado: 1656 registros
+[03-10-25 00:24:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:24:26] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:26] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:26] Proceso: 📈 Total acumulado: 1676 registros
+[03-10-25 00:24:35] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:24:35] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:35] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:35] Proceso: 📈 Total acumulado: 1696 registros
+[03-10-25 00:24:46] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:24:46] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:46] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:46] Proceso: 📈 Total acumulado: 1716 registros
+[03-10-25 00:24:53] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:24:53] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:24:53] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:24:53] Proceso: 📈 Total acumulado: 1736 registros
+[03-10-25 00:25:01] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:25:01] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:01] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:01] Proceso: 📈 Total acumulado: 1756 registros
+[03-10-25 00:25:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:25:08] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:08] Proceso: 📈 Total acumulado: 1776 registros
+[03-10-25 00:25:18] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:25:18] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:18] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:18] Proceso: 📈 Total acumulado: 1796 registros
+[03-10-25 00:25:28] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:25:28] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:28] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:28] Proceso: 📈 Total acumulado: 1816 registros
+[03-10-25 00:25:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:25:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:36] Proceso: 📈 Total acumulado: 1836 registros
+[03-10-25 00:25:47] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:25:47] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:47] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:47] Proceso: 📈 Total acumulado: 1856 registros
+[03-10-25 00:25:55] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:25:55] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:25:55] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:25:55] Proceso: 📈 Total acumulado: 1876 registros
+[03-10-25 00:26:05] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:26:05] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:05] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:05] Proceso: 📈 Total acumulado: 1896 registros
+[03-10-25 00:26:14] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:26:14] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:14] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:14] Proceso: 📈 Total acumulado: 1916 registros
+[03-10-25 00:26:23] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:26:23] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:23] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:23] Proceso: 📈 Total acumulado: 1936 registros
+[03-10-25 00:26:29] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:26:29] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:29] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:29] Proceso: 📈 Total acumulado: 1956 registros
+[03-10-25 00:26:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:26:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:36] Proceso: 📈 Total acumulado: 1976 registros
+[03-10-25 00:26:46] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:26:46] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:46] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:46] Proceso: 📈 Total acumulado: 1996 registros
+[03-10-25 00:26:55] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:26:55] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:26:55] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:26:55] Proceso: 📈 Total acumulado: 2016 registros
+[03-10-25 00:27:01] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:27:01] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:01] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:01] Proceso: 📈 Total acumulado: 2036 registros
+[03-10-25 00:27:11] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:27:11] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:11] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:11] Proceso: 📈 Total acumulado: 2056 registros
+[03-10-25 00:27:17] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:27:17] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:17] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:17] Proceso: 📈 Total acumulado: 2076 registros
+[03-10-25 00:27:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:27:26] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:26] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:26] Proceso: 📈 Total acumulado: 2096 registros
+[03-10-25 00:27:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:27:36] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:36] Proceso: 📈 Total acumulado: 2116 registros
+[03-10-25 00:27:46] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:27:46] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:46] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:27:46] Proceso: 📈 Total acumulado: 2136 registros
+[03-10-25 00:27:55] Proceso: se obtuvieron: 16 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:27:55] Proceso: ✅ CSV actualizado: /app/logic/../data/salud_y_bienestar.csv
+[03-10-25 00:27:55] Proceso: 📊 Nuevos registros: 16
+[03-10-25 00:27:55] Proceso: 📈 Total acumulado: 2152 registros
+[03-10-25 00:28:02] Proceso: ℹ️ Llegamos a la última página - el botón no tiene href
+[03-10-25 00:28:02] Proceso: ✅ Completado: salud_y_bienestar
+[03-10-25 00:28:02] Proceso: ⏳ Espera aleatoria: 19s
+[03-10-25 00:28:21] Proceso: 
+📌 Procesando (2/3): Narrativa
+[03-10-25 00:28:21] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:28:26] Proceso: Estamos en: https://miralibros.cl/a-narrativa
+[03-10-25 00:28:27] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:28:27] Proceso: ✅ CSV creado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:28:27] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:28:27] Proceso: 📈 Total acumulado: 20 registros
+[03-10-25 00:28:35] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:28:35] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:28:35] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:28:35] Proceso: 📈 Total acumulado: 40 registros
+[03-10-25 00:28:44] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:28:44] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:28:44] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:28:44] Proceso: 📈 Total acumulado: 60 registros
+[03-10-25 00:28:50] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:28:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:28:50] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:28:50] Proceso: 📈 Total acumulado: 80 registros
+[03-10-25 00:28:57] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:28:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:28:57] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:28:57] Proceso: 📈 Total acumulado: 100 registros
+[03-10-25 00:29:05] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:29:05] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:05] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:05] Proceso: 📈 Total acumulado: 120 registros
+[03-10-25 00:29:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:29:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:12] Proceso: 📈 Total acumulado: 140 registros
+[03-10-25 00:29:19] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:29:19] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:19] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:19] Proceso: 📈 Total acumulado: 160 registros
+[03-10-25 00:29:26] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:29:26] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:26] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:26] Proceso: 📈 Total acumulado: 180 registros
+[03-10-25 00:29:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:29:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:36] Proceso: 📈 Total acumulado: 200 registros
+[03-10-25 00:29:47] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:29:47] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:47] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:47] Proceso: 📈 Total acumulado: 220 registros
+[03-10-25 00:29:54] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:29:54] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:29:54] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:29:54] Proceso: 📈 Total acumulado: 240 registros
+[03-10-25 00:30:04] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:30:04] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:04] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:04] Proceso: 📈 Total acumulado: 260 registros
+[03-10-25 00:30:13] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:30:13] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:13] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:13] Proceso: 📈 Total acumulado: 280 registros
+[03-10-25 00:30:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:30:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:20] Proceso: 📈 Total acumulado: 300 registros
+[03-10-25 00:30:28] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:30:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:28] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:28] Proceso: 📈 Total acumulado: 320 registros
+[03-10-25 00:30:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:30:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:36] Proceso: 📈 Total acumulado: 340 registros
+[03-10-25 00:30:44] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:30:44] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:44] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:44] Proceso: 📈 Total acumulado: 360 registros
+[03-10-25 00:30:51] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:30:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:30:51] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:30:51] Proceso: 📈 Total acumulado: 380 registros
+[03-10-25 00:31:01] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:31:01] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:01] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:01] Proceso: 📈 Total acumulado: 400 registros
+[03-10-25 00:31:11] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:31:11] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:11] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:11] Proceso: 📈 Total acumulado: 420 registros
+[03-10-25 00:31:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:31:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:20] Proceso: 📈 Total acumulado: 440 registros
+[03-10-25 00:31:28] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:31:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:28] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:28] Proceso: 📈 Total acumulado: 460 registros
+[03-10-25 00:31:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:31:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:36] Proceso: 📈 Total acumulado: 480 registros
+[03-10-25 00:31:43] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:31:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:43] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:43] Proceso: 📈 Total acumulado: 500 registros
+[03-10-25 00:31:54] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:31:54] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:31:54] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:31:54] Proceso: 📈 Total acumulado: 520 registros
+[03-10-25 00:32:01] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:32:01] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:01] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:01] Proceso: 📈 Total acumulado: 540 registros
+[03-10-25 00:32:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:32:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:12] Proceso: 📈 Total acumulado: 560 registros
+[03-10-25 00:32:21] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:32:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:21] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:21] Proceso: 📈 Total acumulado: 580 registros
+[03-10-25 00:32:30] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:32:30] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:30] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:30] Proceso: 📈 Total acumulado: 600 registros
+[03-10-25 00:32:42] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:32:42] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:42] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:42] Proceso: 📈 Total acumulado: 620 registros
+[03-10-25 00:32:48] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:32:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:48] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:48] Proceso: 📈 Total acumulado: 640 registros
+[03-10-25 00:32:58] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:32:58] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:32:58] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:32:58] Proceso: 📈 Total acumulado: 660 registros
+[03-10-25 00:33:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:33:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:08] Proceso: 📈 Total acumulado: 680 registros
+[03-10-25 00:33:15] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:33:15] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:15] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:15] Proceso: 📈 Total acumulado: 700 registros
+[03-10-25 00:33:24] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:33:24] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:24] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:24] Proceso: 📈 Total acumulado: 720 registros
+[03-10-25 00:33:33] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:33:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:33] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:33] Proceso: 📈 Total acumulado: 740 registros
+[03-10-25 00:33:43] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:33:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:43] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:43] Proceso: 📈 Total acumulado: 760 registros
+[03-10-25 00:33:50] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:33:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:50] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:50] Proceso: 📈 Total acumulado: 780 registros
+[03-10-25 00:33:57] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:33:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:33:57] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:33:57] Proceso: 📈 Total acumulado: 800 registros
+[03-10-25 00:34:07] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:34:07] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:07] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:07] Proceso: 📈 Total acumulado: 820 registros
+[03-10-25 00:34:15] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:34:15] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:15] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:15] Proceso: 📈 Total acumulado: 840 registros
+[03-10-25 00:34:21] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:34:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:21] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:21] Proceso: 📈 Total acumulado: 860 registros
+[03-10-25 00:34:31] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:34:31] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:31] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:31] Proceso: 📈 Total acumulado: 880 registros
+[03-10-25 00:34:37] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:34:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:37] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:37] Proceso: 📈 Total acumulado: 900 registros
+[03-10-25 00:34:48] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:34:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:48] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:48] Proceso: 📈 Total acumulado: 920 registros
+[03-10-25 00:34:56] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:34:56] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:34:56] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:34:56] Proceso: 📈 Total acumulado: 940 registros
+[03-10-25 00:35:03] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:35:03] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:03] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:03] Proceso: 📈 Total acumulado: 960 registros
+[03-10-25 00:35:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:35:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:12] Proceso: 📈 Total acumulado: 980 registros
+[03-10-25 00:35:22] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:35:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:22] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:22] Proceso: 📈 Total acumulado: 1000 registros
+[03-10-25 00:35:30] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:35:30] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:30] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:30] Proceso: 📈 Total acumulado: 1020 registros
+[03-10-25 00:35:39] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:35:39] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:39] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:39] Proceso: 📈 Total acumulado: 1040 registros
+[03-10-25 00:35:49] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:35:49] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:49] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:49] Proceso: 📈 Total acumulado: 1060 registros
+[03-10-25 00:35:56] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:35:56] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:35:56] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:35:56] Proceso: 📈 Total acumulado: 1080 registros
+[03-10-25 00:36:05] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:36:05] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:05] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:05] Proceso: 📈 Total acumulado: 1100 registros
+[03-10-25 00:36:12] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:36:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:12] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:12] Proceso: 📈 Total acumulado: 1120 registros
+[03-10-25 00:36:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:36:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:20] Proceso: 📈 Total acumulado: 1140 registros
+[03-10-25 00:36:29] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:36:29] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:29] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:29] Proceso: 📈 Total acumulado: 1160 registros
+[03-10-25 00:36:36] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:36:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:36] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:36] Proceso: 📈 Total acumulado: 1180 registros
+[03-10-25 00:36:46] Proceso: se obtuvieron: 20 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:36:46] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:46] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:46] Proceso: 📈 Total acumulado: 1200 registros
+[03-10-25 00:36:54] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:36:54] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:36:54] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:36:54] Proceso: 📈 Total acumulado: 1220 registros
+[03-10-25 00:37:03] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:37:03] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:03] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:03] Proceso: 📈 Total acumulado: 1240 registros
+[03-10-25 00:37:10] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:37:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:10] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:10] Proceso: 📈 Total acumulado: 1260 registros
+[03-10-25 00:37:20] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:37:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:20] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:20] Proceso: 📈 Total acumulado: 1280 registros
+[03-10-25 00:37:30] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:37:30] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:30] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:30] Proceso: 📈 Total acumulado: 1300 registros
+[03-10-25 00:37:40] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:37:40] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:40] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:40] Proceso: 📈 Total acumulado: 1320 registros
+[03-10-25 00:37:51] Proceso: se obtuvieron: 20 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:37:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:51] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:51] Proceso: 📈 Total acumulado: 1340 registros
+[03-10-25 00:37:57] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:37:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:37:57] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:37:57] Proceso: 📈 Total acumulado: 1360 registros
+[03-10-25 00:38:08] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:38:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:38:08] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:38:08] Proceso: 📈 Total acumulado: 1380 registros
+[03-10-25 00:38:17] Proceso: se obtuvieron: 20 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:38:17] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:38:17] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:38:17] Proceso: 📈 Total acumulado: 1400 registros
+[03-10-25 00:38:25] Proceso: se obtuvieron: 20 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:38:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:38:25] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:38:25] Proceso: 📈 Total acumulado: 1420 registros
+[03-10-25 00:38:34] Proceso: se obtuvieron: 20 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:38:34] Proceso: ✅ CSV actualizado: /app/logic/../data/Narrativa.csv
+[03-10-25 00:38:34] Proceso: 📊 Nuevos registros: 20
+[03-10-25 00:38:34] Proceso: 📈 Total acumulado: 1440 registros

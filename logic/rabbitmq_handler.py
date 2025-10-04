@@ -1,27 +1,47 @@
-
-
+import os
+import pika
+from logic.logs import error_logs, process_logs
+import time
+import json
 class RabbitMQHandler:
     def __init__(self):
         self.connection = None
         self.channel = None
-        self.queue_name = "cola_generacion_csv"
-        self.host = os.getenv('RABBITMQ_HOST', 'rabbitmq')  # Usará el nombre del servicio
-        self.port = int(os.getenv('RABBITMQ_PORT', 5672))
-        self.user = os.getenv('RABBITMQ_USER')
-        self.password = os.getenv('RABBITMQ_PASSWORD')
-        self.max_retries = 5
-        self.retry_delay = 3
+        self.queue_name = os.getenv('RABBITMQ_QUEUE')
+        self.host = os.getenv('RABBITMQ_HOST')  
+        
+        port_str = os.getenv('RABBITMQ_PORT', '5672')
+        try:
+            self.port = int(port_str)  
+        except (TypeError, ValueError):
+            self.port = 5666  
+            
+        self.user = os.getenv('DEFAULT_USER_DEV')
+        self.password = os.getenv('DEFAULT_PASS_DEV')
+        self.max_retries = int(os.getenv('RABBITMQ_MAX_RETRIES', '5'))
+        self.retry_delay = int(os.getenv('RABBITMQ_RETRY_DELAY', '3'))
+        
+        self._validate_config()
+    
+    def _validate_config(self):
+        required_config = {
+            'RABBITMQ_QUEUE': self.queue_name,
+            'RABBITMQ_HOST': self.host,
+            'DEFAULT_USER_DEV': self.user,
+            'DEFAULT_PASS_DEV': self.password
+        }
+        
+        missing = [key for key, value in required_config.items() if not value]
+        if missing:
+            raise ValueError(f"Variables de entorno faltantes: {', '.join(missing)}")
     
     def __enter__(self):
-        """Método para entrar en el contexto (with)."""
         if not self.ensure_connection():
             raise ConnectionError("No se pudo conectar a RabbitMQ")
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        """Método para salir del contexto (with). Cierra la conexión automáticamente."""
         self.close_connection()
-        # Si retornas True, las excepciones se suprimen. False las propaga.
         return False  
     
     def connect(self):
@@ -53,11 +73,11 @@ class RabbitMQHandler:
                 
             except Exception as e:
                 retries += 1
-                error_logs(f"Error connecting to RabbitMQ (attempt {retries}/{self.max_retries}): {str(e)}")
+                error_logs(f"Error connecting to RabbitMQ (attempt {retries}/{self.max_retries}):", str(e))
                 if retries < self.max_retries:
                     time.sleep(self.retry_delay)
         
-        error_logs("❌ No se pudo conectar a RabbitMQ después de varios intentos")
+        process_logs("❌ No se pudo conectar a RabbitMQ después de varios intentos")
         return False
 
     def ensure_connection(self):
@@ -65,18 +85,17 @@ class RabbitMQHandler:
             return self.connect()
         return True
 
-    def send_csv_notification(self, service_name, csv_path, timestamp):
-        """Envía notificación de CSV generado a la cola (versión optimizada)"""
+    def send_csv_notification(self, service_name,timestamp):
         try:
             if not self.ensure_connection():
-                error_logs("RabbitMQ: No se pudo establecer conexión")
+                process_logs("RabbitMQ: No se pudo establecer conexión")
                 return False
 
             message = {
                 "event_type": "csv_generated",
                 "service": service_name,
-                "csv_path": csv_path,
-                "timestamp": timestamp,  # Asegúrate que el consumidor espere este formato
+                "csv_path": f'data/{service_name}.csv',
+                "timestamp": timestamp, 
                 "status": "success"
             }
 
@@ -105,4 +124,4 @@ class RabbitMQHandler:
                 self.connection.close()
                 process_logs("Conexión con RabbitMQ cerrada correctamente")
         except Exception as e:
-            error_logs(f"Error al cerrar conexión con RabbitMQ: {str(e)}")
+            error_logs(f"Error al cerrar conexión con RabbitMQ:",str(e))

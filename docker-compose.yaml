@@ -1,11 +1,23 @@
 version: '3.8'
 
 services:
+  rabbitmq:
+    image: rabbitmq:3.13.7-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    ports:
+      - "${RABBITMQ_PORT_EXTERNAL}:5672"
+      - "${RABBITMQ_PORT_WEB}:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${DEFAULT_USER_DEV}
+      - RABBITMQ_DEFAULT_PASS=${DEFAULT_PASS_DEV}
+    networks:
+      - scraping_net
+
   antartica:
     build: ./Antartica
     restart: unless-stopped
     volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
       - ./Antartica/data:/app/data
       - ./Antartica/logs:/app/logs
       - ./logic:/app/logic
@@ -45,7 +57,6 @@ services:
     build: ./miraLibros
     restart: unless-stopped
     volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
       - ./miraLibros/data:/app/data
       - ./miraLibros/logs:/app/logs
       - ./logic:/app/logic
@@ -63,7 +74,6 @@ services:
     build: ./Buscalibre
     restart: unless-stopped
     volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
       - ./Buscalibre/data:/app/data
       - ./Buscalibre/logs:/app/logs
       - ./logic:/app/logic
@@ -81,7 +91,6 @@ services:
     build: ./Falabella
     restart: unless-stopped
     volumes:
-      - ./rabbitmq_handler.py:/app/rabbitmq_handler.py
       - ./Falabella/data:/app/data
       - ./Falabella/logs:/app/logs
       - ./logic:/app/logic

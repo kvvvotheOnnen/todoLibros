@@ -1067,3 +1067,1096 @@
 [02-10-25 18:56:34] Proceso: ✅ Guías de viaje.csv procesado: 178 filas
 [02-10-25 18:56:34] Proceso: ✅ Antartica.csv creado con 729 filas de 3 archivos
 [02-10-25 18:56:34] Proceso: Esperando 1.24 horas para el próximo ciclo...⏳
+[03-10-25 00:20:13] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-03 00:20:13
+[03-10-25 00:20:13] Proceso: Estrategia Playwright seleccionada
+[03-10-25 00:20:13] Proceso: 
+📌 Procesando (1/3): Gastronomia y vinos
+[03-10-25 00:20:13] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:20:22] Proceso: Estamos en: https://www.antartica.cl/libros/gastronomia-y-vinos.html
+[03-10-25 00:20:25] Proceso: se obtuvieron: 36 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:20:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:20:25] Proceso: 📊 Nuevos registros: 36
+[03-10-25 00:20:25] Proceso: 📈 Total acumulado: 341 registros
+[03-10-25 00:20:32] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=2
+[03-10-25 00:20:36] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:20:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:20:36] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:20:36] Proceso: 📈 Total acumulado: 378 registros
+[03-10-25 00:20:43] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=3
+[03-10-25 00:20:47] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:20:47] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:20:47] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:20:47] Proceso: 📈 Total acumulado: 415 registros
+[03-10-25 00:20:56] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=4
+[03-10-25 00:20:59] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:20:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:20:59] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:20:59] Proceso: 📈 Total acumulado: 452 registros
+[03-10-25 00:21:04] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=5
+[03-10-25 00:21:08] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:21:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:21:08] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:21:08] Proceso: 📈 Total acumulado: 489 registros
+[03-10-25 00:21:16] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=6
+[03-10-25 00:21:20] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:21:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:21:20] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:21:20] Proceso: 📈 Total acumulado: 526 registros
+[03-10-25 00:21:25] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=7
+[03-10-25 00:21:29] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:21:29] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:21:29] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:21:29] Proceso: 📈 Total acumulado: 563 registros
+[03-10-25 00:21:37] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=8
+[03-10-25 00:21:41] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:21:41] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:21:41] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:21:41] Proceso: 📈 Total acumulado: 600 registros
+[03-10-25 00:21:51] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=9
+[03-10-25 00:21:53] Proceso: se obtuvieron: 10 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:21:53] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 00:21:53] Proceso: 📊 Nuevos registros: 10
+[03-10-25 00:21:53] Proceso: 📈 Total acumulado: 610 registros
+[03-10-25 00:21:58] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 00:21:59] Proceso: ✅ Completado: Gastronomia y vinos
+[03-10-25 00:21:59] Proceso: ⏳ Espera aleatoria: 17s
+[03-10-25 00:22:16] Proceso: 
+📌 Procesando (2/3): Guías de viaje
+[03-10-25 00:22:16] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:22:20] Proceso: Estamos en: https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html
+[03-10-25 00:22:23] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:22:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 00:22:23] Proceso: 📊 Nuevos registros: 36
+[03-10-25 00:22:23] Proceso: 📈 Total acumulado: 214 registros
+[03-10-25 00:22:32] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=2
+[03-10-25 00:22:37] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:22:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 00:22:37] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:22:37] Proceso: 📈 Total acumulado: 251 registros
+[03-10-25 00:22:46] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=3
+[03-10-25 00:22:50] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:22:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 00:22:50] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:22:50] Proceso: 📈 Total acumulado: 288 registros
+[03-10-25 00:22:57] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=4
+[03-10-25 00:23:00] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:23:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 00:23:00] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:23:00] Proceso: 📈 Total acumulado: 325 registros
+[03-10-25 00:23:08] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=5
+[03-10-25 00:23:11] Proceso: se obtuvieron: 31 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 00:23:11] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 00:23:11] Proceso: 📊 Nuevos registros: 31
+[03-10-25 00:23:11] Proceso: 📈 Total acumulado: 356 registros
+[03-10-25 00:23:17] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 00:23:18] Proceso: ✅ Completado: Guías de viaje
+[03-10-25 00:23:18] Proceso: ⏳ Espera aleatoria: 21s
+[03-10-25 00:23:39] Proceso: 
+📌 Procesando (3/3): Entretencion y manualidades
+[03-10-25 00:23:39] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 00:23:43] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[03-10-25 00:23:47] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:23:47] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:23:47] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:23:47] Proceso: 📈 Total acumulado: 283 registros
+[03-10-25 00:23:56] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[03-10-25 00:24:00] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 00:24:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:00] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:24:00] Proceso: 📈 Total acumulado: 320 registros
+[03-10-25 00:24:07] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[03-10-25 00:24:11] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 00:24:11] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:11] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:24:11] Proceso: 📈 Total acumulado: 357 registros
+[03-10-25 00:24:20] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[03-10-25 00:24:23] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:24:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:23] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:24:23] Proceso: 📈 Total acumulado: 394 registros
+[03-10-25 00:24:32] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[03-10-25 00:24:36] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 00:24:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:36] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:24:36] Proceso: 📈 Total acumulado: 431 registros
+[03-10-25 00:24:44] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[03-10-25 00:24:48] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:24:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:48] Proceso: 📊 Nuevos registros: 37
+[03-10-25 00:24:48] Proceso: 📈 Total acumulado: 468 registros
+[03-10-25 00:24:54] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[03-10-25 00:24:59] Proceso: se obtuvieron: 24 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 00:24:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 00:24:59] Proceso: 📊 Nuevos registros: 24
+[03-10-25 00:24:59] Proceso: 📈 Total acumulado: 492 registros
+[03-10-25 00:25:04] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 00:25:05] Proceso: ✅ Completado: Entretencion y manualidades
+[03-10-25 00:25:05] Proceso: 
+✅ Resultado final:
+[03-10-25 00:25:05] Proceso: - Categorías completadas: 3/3
+[03-10-25 00:25:05] Proceso: ⏳Tiempo total del scrap: 0:04:51.451026
+[03-10-25 00:25:05] Proceso: ✅ Iniciando proceso csv_forAll
+[03-10-25 00:25:05] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[03-10-25 00:25:05] Proceso: ✅ Entretencion y manualidades.csv procesado: 492 filas
+[03-10-25 00:25:05] Proceso: ✅ Gastronomia y vinos.csv procesado: 610 filas
+[03-10-25 00:25:05] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[03-10-25 00:25:05] Proceso: ✅ Antartica.csv creado con 1458 filas de 3 archivos
+[03-10-25 00:25:05] Proceso: Esperando 3.80 horas para el próximo ciclo...⏳
+[03-10-25 22:52:46] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-03 22:52:46
+[03-10-25 22:52:46] Proceso: Estrategia Playwright seleccionada
+[03-10-25 22:52:46] Proceso: 
+📌 Procesando (1/3): Gastronomia y vinos
+[03-10-25 22:52:46] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 22:52:50] Proceso: Estamos en: https://www.antartica.cl/libros/gastronomia-y-vinos.html
+[03-10-25 22:52:53] Proceso: se obtuvieron: 36 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 22:52:53] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:52:53] Proceso: 📊 Nuevos registros: 36
+[03-10-25 22:52:53] Proceso: 📈 Total acumulado: 646 registros
+[03-10-25 22:53:01] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=2
+[03-10-25 22:53:04] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 22:53:04] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:04] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:04] Proceso: 📈 Total acumulado: 683 registros
+[03-10-25 22:53:11] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=3
+[03-10-25 22:53:14] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 22:53:14] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:14] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:14] Proceso: 📈 Total acumulado: 720 registros
+[03-10-25 22:53:22] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=4
+[03-10-25 22:53:25] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:53:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:25] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:25] Proceso: 📈 Total acumulado: 757 registros
+[03-10-25 22:53:35] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=5
+[03-10-25 22:53:38] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 22:53:38] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:38] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:38] Proceso: 📈 Total acumulado: 794 registros
+[03-10-25 22:53:47] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=6
+[03-10-25 22:53:50] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 22:53:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:50] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:50] Proceso: 📈 Total acumulado: 831 registros
+[03-10-25 22:53:56] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=7
+[03-10-25 22:53:59] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 22:53:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:53:59] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:53:59] Proceso: 📈 Total acumulado: 868 registros
+[03-10-25 22:54:05] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=8
+[03-10-25 22:54:10] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:54:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:54:10] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:54:10] Proceso: 📈 Total acumulado: 905 registros
+[03-10-25 22:54:19] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=9
+[03-10-25 22:54:22] Proceso: se obtuvieron: 7 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:54:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 22:54:22] Proceso: 📊 Nuevos registros: 7
+[03-10-25 22:54:22] Proceso: 📈 Total acumulado: 912 registros
+[03-10-25 22:54:31] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 22:54:32] Proceso: ✅ Completado: Gastronomia y vinos
+[03-10-25 22:54:32] Proceso: ⏳ Espera aleatoria: 8s
+[03-10-25 22:54:40] Proceso: 
+📌 Procesando (2/3): Guías de viaje
+[03-10-25 22:54:40] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 22:54:44] Proceso: Estamos en: https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html
+[03-10-25 22:54:46] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:54:46] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 22:54:46] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:54:46] Proceso: 📈 Total acumulado: 393 registros
+[03-10-25 22:54:55] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=2
+[03-10-25 22:54:59] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:54:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 22:54:59] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:54:59] Proceso: 📈 Total acumulado: 430 registros
+[03-10-25 22:55:08] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=3
+[03-10-25 22:55:11] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 22:55:11] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 22:55:11] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:55:11] Proceso: 📈 Total acumulado: 467 registros
+[03-10-25 22:55:17] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=4
+[03-10-25 22:55:20] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 22:55:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 22:55:20] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:55:20] Proceso: 📈 Total acumulado: 504 registros
+[03-10-25 22:55:30] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=5
+[03-10-25 22:55:33] Proceso: se obtuvieron: 31 productos, ⏳esperando 6s para la siguiente pagina
+[03-10-25 22:55:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 22:55:33] Proceso: 📊 Nuevos registros: 31
+[03-10-25 22:55:33] Proceso: 📈 Total acumulado: 535 registros
+[03-10-25 22:55:39] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 22:55:39] Proceso: ✅ Completado: Guías de viaje
+[03-10-25 22:55:39] Proceso: ⏳ Espera aleatoria: 8s
+[03-10-25 22:55:47] Proceso: 
+📌 Procesando (3/3): Entretencion y manualidades
+[03-10-25 22:55:47] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 22:55:50] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[03-10-25 22:55:52] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 22:55:52] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:55:52] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:55:52] Proceso: 📈 Total acumulado: 529 registros
+[03-10-25 22:56:00] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[03-10-25 22:56:03] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 22:56:03] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:03] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:56:03] Proceso: 📈 Total acumulado: 566 registros
+[03-10-25 22:56:10] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[03-10-25 22:56:13] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 22:56:13] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:13] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:56:13] Proceso: 📈 Total acumulado: 603 registros
+[03-10-25 22:56:22] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[03-10-25 22:56:25] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 22:56:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:25] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:56:25] Proceso: 📈 Total acumulado: 640 registros
+[03-10-25 22:56:33] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[03-10-25 22:56:36] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 22:56:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:36] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:56:36] Proceso: 📈 Total acumulado: 677 registros
+[03-10-25 22:56:42] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[03-10-25 22:56:45] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 22:56:45] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:45] Proceso: 📊 Nuevos registros: 37
+[03-10-25 22:56:45] Proceso: 📈 Total acumulado: 714 registros
+[03-10-25 22:56:52] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[03-10-25 22:56:55] Proceso: se obtuvieron: 24 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 22:56:55] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 22:56:55] Proceso: 📊 Nuevos registros: 24
+[03-10-25 22:56:55] Proceso: 📈 Total acumulado: 738 registros
+[03-10-25 22:57:00] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 22:57:00] Proceso: ✅ Completado: Entretencion y manualidades
+[03-10-25 22:57:00] Proceso: 
+✅ Resultado final:
+[03-10-25 22:57:00] Proceso: - Categorías completadas: 3/3
+[03-10-25 22:57:00] Proceso: ⏳Tiempo total del scrap: 0:04:14.771322
+[03-10-25 22:57:00] Proceso: ✅ Iniciando proceso csv_forAll
+[03-10-25 22:57:00] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[03-10-25 22:57:00] Proceso: ✅ Entretencion y manualidades.csv procesado: 738 filas
+[03-10-25 22:57:00] Proceso: ✅ Gastronomia y vinos.csv procesado: 912 filas
+[03-10-25 22:57:00] Proceso: ✅ Guías de viaje.csv procesado: 535 filas
+[03-10-25 22:57:00] Proceso: ✅ Antartica.csv creado con 2185 filas de 3 archivos
+[03-10-25 22:57:00] Error en: proceso de cola rabbiMQ Antartica: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+[03-10-25 22:57:00] Proceso: Esperando 2.02 horas para el próximo ciclo...⏳
+[03-10-25 23:02:27] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-03 23:02:27
+[03-10-25 23:02:27] Proceso: Estrategia Playwright seleccionada
+[03-10-25 23:02:27] Proceso: 
+📌 Procesando (1/3): Entretencion y manualidades
+[03-10-25 23:02:27] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 23:02:33] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[03-10-25 23:02:37] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:02:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:02:37] Proceso: 📊 Nuevos registros: 36
+[03-10-25 23:02:37] Proceso: 📈 Total acumulado: 774 registros
+[03-10-25 23:02:46] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[03-10-25 23:02:49] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 23:02:49] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:02:49] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:02:49] Proceso: 📈 Total acumulado: 811 registros
+[03-10-25 23:02:55] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[03-10-25 23:02:58] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:02:58] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:02:58] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:02:58] Proceso: 📈 Total acumulado: 848 registros
+[03-10-25 23:03:07] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[03-10-25 23:03:12] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 23:03:12] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:03:12] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:03:12] Proceso: 📈 Total acumulado: 885 registros
+[03-10-25 23:03:19] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[03-10-25 23:03:22] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 23:03:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:03:22] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:03:22] Proceso: 📈 Total acumulado: 922 registros
+[03-10-25 23:03:29] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[03-10-25 23:03:33] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:03:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:03:33] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:03:33] Proceso: 📈 Total acumulado: 959 registros
+[03-10-25 23:03:42] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[03-10-25 23:03:46] Proceso: se obtuvieron: 24 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 23:03:46] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[03-10-25 23:03:46] Proceso: 📊 Nuevos registros: 24
+[03-10-25 23:03:46] Proceso: 📈 Total acumulado: 983 registros
+[03-10-25 23:03:51] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 23:03:51] Proceso: ✅ Completado: Entretencion y manualidades
+[03-10-25 23:03:51] Proceso: ⏳ Espera aleatoria: 18s
+[03-10-25 23:04:09] Proceso: 
+📌 Procesando (2/3): Gastronomia y vinos
+[03-10-25 23:04:09] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 23:04:13] Proceso: Estamos en: https://www.antartica.cl/libros/gastronomia-y-vinos.html
+[03-10-25 23:04:15] Proceso: se obtuvieron: 36 productos, ⏳esperando 5s para la siguiente pagina
+[03-10-25 23:04:15] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:04:15] Proceso: 📊 Nuevos registros: 36
+[03-10-25 23:04:15] Proceso: 📈 Total acumulado: 948 registros
+[03-10-25 23:04:20] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=2
+[03-10-25 23:04:23] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:04:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:04:23] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:04:23] Proceso: 📈 Total acumulado: 985 registros
+[03-10-25 23:04:33] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=3
+[03-10-25 23:04:37] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 23:04:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:04:37] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:04:37] Proceso: 📈 Total acumulado: 1022 registros
+[03-10-25 23:04:45] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=4
+[03-10-25 23:04:48] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:04:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:04:48] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:04:48] Proceso: 📈 Total acumulado: 1059 registros
+[03-10-25 23:04:58] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=5
+[03-10-25 23:05:01] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 23:05:01] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:05:01] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:05:01] Proceso: 📈 Total acumulado: 1096 registros
+[03-10-25 23:05:09] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=6
+[03-10-25 23:05:14] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:05:14] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:05:14] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:05:14] Proceso: 📈 Total acumulado: 1133 registros
+[03-10-25 23:05:23] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=7
+[03-10-25 23:05:26] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 23:05:26] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:05:26] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:05:26] Proceso: 📈 Total acumulado: 1170 registros
+[03-10-25 23:05:34] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=8
+[03-10-25 23:05:39] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[03-10-25 23:05:39] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:05:39] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:05:39] Proceso: 📈 Total acumulado: 1207 registros
+[03-10-25 23:05:46] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=9
+[03-10-25 23:05:48] Proceso: se obtuvieron: 7 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 23:05:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[03-10-25 23:05:48] Proceso: 📊 Nuevos registros: 7
+[03-10-25 23:05:48] Proceso: 📈 Total acumulado: 1214 registros
+[03-10-25 23:05:56] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 23:05:57] Proceso: ✅ Completado: Gastronomia y vinos
+[03-10-25 23:05:57] Proceso: ⏳ Espera aleatoria: 18s
+[03-10-25 23:06:15] Proceso: 
+📌 Procesando (3/3): Guías de viaje
+[03-10-25 23:06:15] Proceso: Iniciando proceso con estrategia Playwright
+[03-10-25 23:06:19] Proceso: Estamos en: https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html
+[03-10-25 23:06:21] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:06:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 23:06:21] Proceso: 📊 Nuevos registros: 36
+[03-10-25 23:06:21] Proceso: 📈 Total acumulado: 571 registros
+[03-10-25 23:06:30] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=2
+[03-10-25 23:06:34] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[03-10-25 23:06:34] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 23:06:34] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:06:34] Proceso: 📈 Total acumulado: 608 registros
+[03-10-25 23:06:42] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=3
+[03-10-25 23:06:45] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:06:45] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 23:06:45] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:06:45] Proceso: 📈 Total acumulado: 645 registros
+[03-10-25 23:06:54] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=4
+[03-10-25 23:06:57] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:06:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 23:06:57] Proceso: 📊 Nuevos registros: 37
+[03-10-25 23:06:57] Proceso: 📈 Total acumulado: 682 registros
+[03-10-25 23:07:07] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=5
+[03-10-25 23:07:10] Proceso: se obtuvieron: 31 productos, ⏳esperando 9s para la siguiente pagina
+[03-10-25 23:07:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[03-10-25 23:07:10] Proceso: 📊 Nuevos registros: 31
+[03-10-25 23:07:10] Proceso: 📈 Total acumulado: 713 registros
+[03-10-25 23:07:19] Proceso: ✅ Ultima pagina ya escrapeada !
+[03-10-25 23:07:19] Proceso: ✅ Completado: Guías de viaje
+[03-10-25 23:07:19] Proceso: 
+✅ Resultado final:
+[03-10-25 23:07:19] Proceso: - Categorías completadas: 3/3
+[03-10-25 23:07:19] Proceso: ⏳Tiempo total del scrap: 0:04:51.690535
+[03-10-25 23:07:19] Proceso: ✅ Iniciando proceso csv_forAll
+[03-10-25 23:07:19] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[03-10-25 23:07:19] Proceso: ✅ Entretencion y manualidades.csv procesado: 983 filas
+[03-10-25 23:07:19] Proceso: ✅ Gastronomia y vinos.csv procesado: 1214 filas
+[03-10-25 23:07:19] Proceso: ✅ Guías de viaje.csv procesado: 713 filas
+[03-10-25 23:07:19] Proceso: ✅ Antartica.csv creado con 2910 filas de 3 archivos
+[03-10-25 23:07:19] Error en: proceso de cola rabbiMQ Antartica: error_logs() missing 1 required positional argument: 'error_message'
+[03-10-25 23:07:19] Proceso: Esperando 2.47 horas para el próximo ciclo...⏳
+[04-10-25 15:49:27] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 15:49:27
+[04-10-25 15:49:27] Proceso: Estrategia Playwright seleccionada
+[04-10-25 15:49:27] Proceso: 
+📌 Procesando (1/3): Gastronomia y vinos
+[04-10-25 15:49:27] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 15:49:32] Proceso: Estamos en: https://www.antartica.cl/libros/gastronomia-y-vinos.html
+[04-10-25 15:49:34] Proceso: se obtuvieron: 36 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 15:49:34] Proceso: ✅ CSV creado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:49:34] Proceso: 📊 Nuevos registros: 36
+[04-10-25 15:49:34] Proceso: 📈 Total acumulado: 36 registros
+[04-10-25 15:49:39] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=2
+[04-10-25 15:49:42] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 15:49:42] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:49:42] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:49:42] Proceso: 📈 Total acumulado: 73 registros
+[04-10-25 15:49:48] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=3
+[04-10-25 15:49:51] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 15:49:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:49:51] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:49:51] Proceso: 📈 Total acumulado: 110 registros
+[04-10-25 15:49:57] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=4
+[04-10-25 15:50:00] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 15:50:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:00] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:50:00] Proceso: 📈 Total acumulado: 147 registros
+[04-10-25 15:50:06] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=5
+[04-10-25 15:50:08] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:50:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:08] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:50:08] Proceso: 📈 Total acumulado: 184 registros
+[04-10-25 15:50:18] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=6
+[04-10-25 15:50:20] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 15:50:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:20] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:50:20] Proceso: 📈 Total acumulado: 221 registros
+[04-10-25 15:50:27] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=7
+[04-10-25 15:50:29] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:50:29] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:29] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:50:29] Proceso: 📈 Total acumulado: 258 registros
+[04-10-25 15:50:37] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=8
+[04-10-25 15:50:39] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 15:50:39] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:39] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:50:39] Proceso: 📈 Total acumulado: 295 registros
+[04-10-25 15:50:46] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=9
+[04-10-25 15:50:48] Proceso: se obtuvieron: 7 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:50:48] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 15:50:48] Proceso: 📊 Nuevos registros: 7
+[04-10-25 15:50:48] Proceso: 📈 Total acumulado: 302 registros
+[04-10-25 15:50:55] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 15:50:56] Proceso: ✅ Completado: Gastronomia y vinos
+[04-10-25 15:50:56] Proceso: ⏳ Espera aleatoria: 9s
+[04-10-25 15:51:05] Proceso: 
+📌 Procesando (2/3): Guías de viaje
+[04-10-25 15:51:05] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 15:51:09] Proceso: Estamos en: https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html
+[04-10-25 15:51:11] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:51:11] Proceso: ✅ CSV creado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 15:51:11] Proceso: 📊 Nuevos registros: 36
+[04-10-25 15:51:11] Proceso: 📈 Total acumulado: 36 registros
+[04-10-25 15:51:20] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=2
+[04-10-25 15:51:23] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:51:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 15:51:23] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:51:23] Proceso: 📈 Total acumulado: 73 registros
+[04-10-25 15:51:30] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=3
+[04-10-25 15:51:33] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:51:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 15:51:33] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:51:33] Proceso: 📈 Total acumulado: 110 registros
+[04-10-25 15:51:40] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=4
+[04-10-25 15:51:43] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:51:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 15:51:43] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:51:43] Proceso: 📈 Total acumulado: 147 registros
+[04-10-25 15:51:52] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=5
+[04-10-25 15:51:55] Proceso: se obtuvieron: 31 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:51:55] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 15:51:55] Proceso: 📊 Nuevos registros: 31
+[04-10-25 15:51:55] Proceso: 📈 Total acumulado: 178 registros
+[04-10-25 15:52:04] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 15:52:05] Proceso: ✅ Completado: Guías de viaje
+[04-10-25 15:52:05] Proceso: ⏳ Espera aleatoria: 18s
+[04-10-25 15:52:23] Proceso: 
+📌 Procesando (3/3): Entretencion y manualidades
+[04-10-25 15:52:23] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 15:52:26] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 15:52:29] Proceso: se obtuvieron: 36 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:52:29] Proceso: ✅ CSV creado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:52:29] Proceso: 📊 Nuevos registros: 36
+[04-10-25 15:52:29] Proceso: 📈 Total acumulado: 36 registros
+[04-10-25 15:52:36] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 15:52:39] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:52:39] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:52:39] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:52:39] Proceso: 📈 Total acumulado: 73 registros
+[04-10-25 15:52:49] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 15:52:51] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 15:52:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:52:51] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:52:51] Proceso: 📈 Total acumulado: 110 registros
+[04-10-25 15:52:57] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 15:53:00] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 15:53:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:53:00] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:53:00] Proceso: 📈 Total acumulado: 147 registros
+[04-10-25 15:53:06] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 15:53:09] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 15:53:09] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:53:09] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:53:09] Proceso: 📈 Total acumulado: 184 registros
+[04-10-25 15:53:18] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 15:53:21] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 15:53:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:53:21] Proceso: 📊 Nuevos registros: 37
+[04-10-25 15:53:21] Proceso: 📈 Total acumulado: 221 registros
+[04-10-25 15:53:30] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 15:53:33] Proceso: se obtuvieron: 24 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 15:53:33] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 15:53:33] Proceso: 📊 Nuevos registros: 24
+[04-10-25 15:53:33] Proceso: 📈 Total acumulado: 245 registros
+[04-10-25 15:53:40] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 15:53:40] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 15:53:40] Proceso: 
+✅ Resultado final:
+[04-10-25 15:53:40] Proceso: - Categorías completadas: 3/3
+[04-10-25 15:53:40] Proceso: ⏳Tiempo total del scrap: 0:04:12.957452
+[04-10-25 15:53:40] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 15:53:40] Proceso: ✅ Entretencion y manualidades.csv procesado: 245 filas
+[04-10-25 15:53:40] Proceso: ✅ Gastronomia y vinos.csv procesado: 302 filas
+[04-10-25 15:53:40] Proceso: ✅ Guías de viaje.csv procesado: 178 filas
+[04-10-25 15:53:40] Proceso: ✅ Antartica.csv creado con 725 filas de 3 archivos
+[04-10-25 15:53:40] Error en: Error connecting to RabbitMQ (attempt 1/5):: host must be a str or unicode str, but got None
+[04-10-25 15:53:43] Error en: Error connecting to RabbitMQ (attempt 2/5):: host must be a str or unicode str, but got None
+[04-10-25 15:53:46] Error en: Error connecting to RabbitMQ (attempt 3/5):: host must be a str or unicode str, but got None
+[04-10-25 15:53:49] Error en: Error connecting to RabbitMQ (attempt 4/5):: host must be a str or unicode str, but got None
+[04-10-25 15:53:52] Error en: Error connecting to RabbitMQ (attempt 5/5):: host must be a str or unicode str, but got None
+[04-10-25 15:53:52] Proceso: ❌ No se pudo conectar a RabbitMQ después de varios intentos
+[04-10-25 15:53:52] Error en: proceso de cola rabbiMQ Antartica: No se pudo conectar a RabbitMQ
+[04-10-25 15:53:52] Proceso: Esperando 2.96 horas para el próximo ciclo...⏳
+[04-10-25 16:05:55] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 16:05:55
+[04-10-25 16:05:55] Proceso: Estrategia Playwright seleccionada
+[04-10-25 16:05:55] Proceso: 
+📌 Procesando (1/3): Guías de viaje
+[04-10-25 16:05:55] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:05:58] Proceso: Estamos en: https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html
+[04-10-25 16:06:00] Proceso: se obtuvieron: 36 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:06:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 16:06:00] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:06:00] Proceso: 📈 Total acumulado: 214 registros
+[04-10-25 16:06:07] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=2
+[04-10-25 16:06:09] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:06:09] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 16:06:09] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:06:09] Proceso: 📈 Total acumulado: 251 registros
+[04-10-25 16:06:17] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=3
+[04-10-25 16:06:19] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:06:19] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 16:06:19] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:06:19] Proceso: 📈 Total acumulado: 288 registros
+[04-10-25 16:06:26] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=4
+[04-10-25 16:06:28] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:06:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 16:06:28] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:06:28] Proceso: 📈 Total acumulado: 325 registros
+[04-10-25 16:06:34] Proceso: Llegamos a https://www.antartica.cl/libros/guias-de-viaje-y-tur/guias-de-viaje.html?p=5
+[04-10-25 16:06:36] Proceso: se obtuvieron: 31 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:06:36] Proceso: ✅ CSV actualizado: /app/logic/../data/Guías de viaje.csv
+[04-10-25 16:06:36] Proceso: 📊 Nuevos registros: 31
+[04-10-25 16:06:36] Proceso: 📈 Total acumulado: 356 registros
+[04-10-25 16:06:43] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 16:06:43] Proceso: ✅ Completado: Guías de viaje
+[04-10-25 16:06:43] Proceso: ⏳ Espera aleatoria: 21s
+[04-10-25 16:07:04] Proceso: 
+📌 Procesando (2/3): Gastronomia y vinos
+[04-10-25 16:07:04] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:07:08] Proceso: Estamos en: https://www.antartica.cl/libros/gastronomia-y-vinos.html
+[04-10-25 16:07:10] Proceso: se obtuvieron: 36 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:07:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:10] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:07:10] Proceso: 📈 Total acumulado: 338 registros
+[04-10-25 16:07:17] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=2
+[04-10-25 16:07:20] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:07:20] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:20] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:07:20] Proceso: 📈 Total acumulado: 375 registros
+[04-10-25 16:07:29] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=3
+[04-10-25 16:07:31] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:07:31] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:31] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:07:31] Proceso: 📈 Total acumulado: 412 registros
+[04-10-25 16:07:39] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=4
+[04-10-25 16:07:42] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:07:42] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:42] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:07:42] Proceso: 📈 Total acumulado: 449 registros
+[04-10-25 16:07:48] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=5
+[04-10-25 16:07:50] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:07:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:50] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:07:50] Proceso: 📈 Total acumulado: 486 registros
+[04-10-25 16:07:57] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=6
+[04-10-25 16:07:59] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:07:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:07:59] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:07:59] Proceso: 📈 Total acumulado: 523 registros
+[04-10-25 16:08:08] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=7
+[04-10-25 16:08:10] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:08:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:08:10] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:08:10] Proceso: 📈 Total acumulado: 560 registros
+[04-10-25 16:08:19] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=8
+[04-10-25 16:08:23] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:08:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:08:23] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:08:23] Proceso: 📈 Total acumulado: 597 registros
+[04-10-25 16:08:28] Proceso: Llegamos a https://www.antartica.cl/libros/gastronomia-y-vinos.html?p=9
+[04-10-25 16:08:29] Proceso: se obtuvieron: 7 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:08:29] Proceso: ✅ CSV actualizado: /app/logic/../data/Gastronomia y vinos.csv
+[04-10-25 16:08:29] Proceso: 📊 Nuevos registros: 7
+[04-10-25 16:08:29] Proceso: 📈 Total acumulado: 604 registros
+[04-10-25 16:08:38] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 16:08:39] Proceso: ✅ Completado: Gastronomia y vinos
+[04-10-25 16:08:39] Proceso: ⏳ Espera aleatoria: 13s
+[04-10-25 16:08:52] Proceso: 
+📌 Procesando (3/3): Entretencion y manualidades
+[04-10-25 16:08:52] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:08:55] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 16:08:57] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:08:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:08:57] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:08:57] Proceso: 📈 Total acumulado: 281 registros
+[04-10-25 16:09:06] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 16:09:09] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:09:09] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:09:09] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:09:09] Proceso: 📈 Total acumulado: 318 registros
+[04-10-25 16:09:18] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 16:09:26] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:09:26] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:09:26] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:09:26] Proceso: 📈 Total acumulado: 355 registros
+[04-10-25 16:09:34] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 16:09:41] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:09:41] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:09:41] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:09:41] Proceso: 📈 Total acumulado: 392 registros
+[04-10-25 16:09:47] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 16:09:50] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:09:50] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:09:50] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:09:50] Proceso: 📈 Total acumulado: 429 registros
+[04-10-25 16:09:58] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 16:10:01] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:10:01] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:10:01] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:10:01] Proceso: 📈 Total acumulado: 466 registros
+[04-10-25 16:10:08] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 16:10:11] Proceso: se obtuvieron: 24 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:10:11] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:10:11] Proceso: 📊 Nuevos registros: 24
+[04-10-25 16:10:11] Proceso: 📈 Total acumulado: 490 registros
+[04-10-25 16:10:19] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 16:10:19] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 16:10:19] Proceso: 
+✅ Resultado final:
+[04-10-25 16:10:19] Proceso: - Categorías completadas: 3/3
+[04-10-25 16:10:19] Proceso: ⏳Tiempo total del scrap: 0:04:24.351840
+[04-10-25 16:10:19] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 16:10:19] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 16:10:19] Proceso: ✅ Entretencion y manualidades.csv procesado: 490 filas
+[04-10-25 16:10:19] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 16:10:19] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 16:10:19] Proceso: ✅ Antartica.csv creado con 1450 filas de 3 archivos
+[04-10-25 16:10:19] Error en: proceso de cola rabbiMQ Antartica: Variables de entorno faltantes: RABBITMQ_QUEUE, RABBITMQ_HOST, DEFAULT_USER_DEV, DEFAULT_PASS_DEV
+[04-10-25 16:10:19] Proceso: Esperando 1.38 horas para el próximo ciclo...⏳
+[04-10-25 16:31:28] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 16:31:28
+[04-10-25 16:31:28] Proceso: Estrategia Playwright seleccionada
+[04-10-25 16:31:28] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 16:31:28] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:31:33] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 16:31:35] Proceso: se obtuvieron: 36 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:31:35] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:31:35] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:31:35] Proceso: 📈 Total acumulado: 526 registros
+[04-10-25 16:31:42] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 16:31:45] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:31:45] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:31:45] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:31:45] Proceso: 📈 Total acumulado: 563 registros
+[04-10-25 16:31:50] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 16:31:53] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:31:53] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:31:53] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:31:53] Proceso: 📈 Total acumulado: 600 registros
+[04-10-25 16:32:01] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 16:32:04] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:32:04] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:32:04] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:32:04] Proceso: 📈 Total acumulado: 637 registros
+[04-10-25 16:32:13] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 16:32:16] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:32:16] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:32:16] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:32:16] Proceso: 📈 Total acumulado: 674 registros
+[04-10-25 16:32:26] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 16:32:29] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:32:29] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:32:29] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:32:29] Proceso: 📈 Total acumulado: 711 registros
+[04-10-25 16:32:38] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 16:32:40] Proceso: se obtuvieron: 24 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:32:40] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:32:40] Proceso: 📊 Nuevos registros: 24
+[04-10-25 16:32:40] Proceso: 📈 Total acumulado: 735 registros
+[04-10-25 16:32:49] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 16:32:50] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 16:32:50] Proceso: 
+✅ Resultado final:
+[04-10-25 16:32:50] Proceso: - Categorías completadas: 1/1
+[04-10-25 16:32:50] Proceso: ⏳Tiempo total del scrap: 0:01:21.613961
+[04-10-25 16:32:50] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 16:32:50] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 16:32:50] Proceso: ✅ Entretencion y manualidades.csv procesado: 735 filas
+[04-10-25 16:32:50] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 16:32:50] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 16:32:50] Proceso: ✅ Antartica.csv creado con 1695 filas de 3 archivos
+[04-10-25 16:32:50] Error en: proceso de cola rabbiMQ Antartica: Variables de entorno faltantes: RABBITMQ_QUEUE, RABBITMQ_HOST, DEFAULT_USER_DEV, DEFAULT_PASS_DEV
+[04-10-25 16:32:50] Proceso: Esperando 3.30 horas para el próximo ciclo...⏳
+[04-10-25 16:43:06] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 16:43:06
+[04-10-25 16:43:06] Proceso: Estrategia Playwright seleccionada
+[04-10-25 16:43:06] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 16:43:06] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:43:11] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 16:43:13] Proceso: se obtuvieron: 36 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:43:13] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:43:13] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:43:13] Proceso: 📈 Total acumulado: 771 registros
+[04-10-25 16:43:19] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 16:43:22] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:43:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:43:22] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:43:22] Proceso: 📈 Total acumulado: 808 registros
+[04-10-25 16:44:15] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 16:44:15
+[04-10-25 16:44:15] Proceso: Estrategia Playwright seleccionada
+[04-10-25 16:44:15] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 16:44:15] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 16:44:19] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 16:44:21] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 16:44:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:44:21] Proceso: 📊 Nuevos registros: 36
+[04-10-25 16:44:21] Proceso: 📈 Total acumulado: 844 registros
+[04-10-25 16:44:31] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 16:44:34] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:44:34] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:44:34] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:44:34] Proceso: 📈 Total acumulado: 881 registros
+[04-10-25 16:44:40] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 16:44:43] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 16:44:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:44:43] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:44:43] Proceso: 📈 Total acumulado: 918 registros
+[04-10-25 16:44:51] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 16:44:54] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 16:44:54] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:44:54] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:44:54] Proceso: 📈 Total acumulado: 955 registros
+[04-10-25 16:45:01] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 16:45:04] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 16:45:04] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:45:04] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:45:04] Proceso: 📈 Total acumulado: 992 registros
+[04-10-25 16:45:10] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 16:45:13] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:45:13] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:45:13] Proceso: 📊 Nuevos registros: 37
+[04-10-25 16:45:13] Proceso: 📈 Total acumulado: 1029 registros
+[04-10-25 16:45:18] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 16:45:21] Proceso: se obtuvieron: 24 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 16:45:21] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 16:45:21] Proceso: 📊 Nuevos registros: 24
+[04-10-25 16:45:21] Proceso: 📈 Total acumulado: 1053 registros
+[04-10-25 16:45:26] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 16:45:26] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 16:45:26] Proceso: 
+✅ Resultado final:
+[04-10-25 16:45:26] Proceso: - Categorías completadas: 1/1
+[04-10-25 16:45:26] Proceso: ⏳Tiempo total del scrap: 0:01:10.586859
+[04-10-25 16:45:26] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 16:45:26] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 16:45:26] Proceso: ✅ Entretencion y manualidades.csv procesado: 1053 filas
+[04-10-25 16:45:26] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 16:45:26] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 16:45:26] Proceso: ✅ Antartica.csv creado con 2013 filas de 3 archivos
+[04-10-25 16:45:36] Error en: Error connecting to RabbitMQ (attempt 1/5):: 
+[04-10-25 16:45:49] Error en: Error connecting to RabbitMQ (attempt 2/5):: 
+[04-10-25 16:46:02] Error en: Error connecting to RabbitMQ (attempt 3/5):: 
+[04-10-25 16:46:15] Error en: Error connecting to RabbitMQ (attempt 4/5):: 
+[04-10-25 16:46:28] Error en: Error connecting to RabbitMQ (attempt 5/5):: 
+[04-10-25 16:46:28] Proceso: ❌ No se pudo conectar a RabbitMQ después de varios intentos
+[04-10-25 16:46:28] Error en: proceso de cola rabbiMQ Antartica: No se pudo conectar a RabbitMQ
+[04-10-25 16:46:28] Proceso: Esperando 3.60 horas para el próximo ciclo...⏳
+[04-10-25 17:08:30] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 17:08:30
+[04-10-25 17:08:30] Proceso: Estrategia Playwright seleccionada
+[04-10-25 17:08:30] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 17:08:30] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 17:08:35] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 17:08:37] Proceso: se obtuvieron: 36 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:08:37] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:08:37] Proceso: 📊 Nuevos registros: 36
+[04-10-25 17:08:37] Proceso: 📈 Total acumulado: 1089 registros
+[04-10-25 17:08:44] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 17:08:47] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:08:47] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:08:47] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:08:47] Proceso: 📈 Total acumulado: 1126 registros
+[04-10-25 17:08:55] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 17:08:57] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 17:08:57] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:08:57] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:08:57] Proceso: 📈 Total acumulado: 1163 registros
+[04-10-25 17:09:06] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 17:09:08] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:09:08] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:09:08] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:09:08] Proceso: 📈 Total acumulado: 1200 registros
+[04-10-25 17:09:14] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 17:09:17] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 17:09:17] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:09:17] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:09:17] Proceso: 📈 Total acumulado: 1237 registros
+[04-10-25 17:09:25] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 17:09:28] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 17:09:28] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:09:28] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:09:28] Proceso: 📈 Total acumulado: 1274 registros
+[04-10-25 17:09:36] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 17:09:38] Proceso: se obtuvieron: 24 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 17:09:38] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:09:38] Proceso: 📊 Nuevos registros: 24
+[04-10-25 17:09:38] Proceso: 📈 Total acumulado: 1298 registros
+[04-10-25 17:09:44] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 17:09:45] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 17:09:45] Proceso: 
+✅ Resultado final:
+[04-10-25 17:09:45] Proceso: - Categorías completadas: 1/1
+[04-10-25 17:09:45] Proceso: ⏳Tiempo total del scrap: 0:01:14.792374
+[04-10-25 17:09:45] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 17:09:45] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 17:09:45] Proceso: ✅ Entretencion y manualidades.csv procesado: 1298 filas
+[04-10-25 17:09:45] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 17:09:45] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 17:09:45] Proceso: ✅ Antartica.csv creado con 2258 filas de 3 archivos
+[04-10-25 17:09:55] Error en: Error connecting to RabbitMQ (attempt 1/5):: 
+[04-10-25 17:10:08] Error en: Error connecting to RabbitMQ (attempt 2/5):: 
+[04-10-25 17:10:21] Error en: Error connecting to RabbitMQ (attempt 3/5):: 
+[04-10-25 17:10:34] Error en: Error connecting to RabbitMQ (attempt 4/5):: 
+[04-10-25 17:10:47] Error en: Error connecting to RabbitMQ (attempt 5/5):: 
+[04-10-25 17:10:47] Proceso: ❌ No se pudo conectar a RabbitMQ después de varios intentos
+[04-10-25 17:10:47] Error en: proceso de cola rabbiMQ Antartica: No se pudo conectar a RabbitMQ
+[04-10-25 17:10:47] Proceso: Esperando 1.37 horas para el próximo ciclo...⏳
+[04-10-25 17:18:17] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 17:18:17
+[04-10-25 17:18:17] Proceso: Estrategia Playwright seleccionada
+[04-10-25 17:18:17] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 17:18:17] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 17:18:21] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 17:18:23] Proceso: se obtuvieron: 36 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 17:18:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:18:23] Proceso: 📊 Nuevos registros: 36
+[04-10-25 17:18:23] Proceso: 📈 Total acumulado: 1334 registros
+[04-10-25 17:18:32] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 17:18:35] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:18:35] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:18:35] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:18:35] Proceso: 📈 Total acumulado: 1371 registros
+[04-10-25 17:18:40] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 17:18:43] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 17:18:43] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:18:43] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:18:43] Proceso: 📈 Total acumulado: 1408 registros
+[04-10-25 17:18:52] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 17:18:55] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:18:55] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:18:55] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:18:55] Proceso: 📈 Total acumulado: 1445 registros
+[04-10-25 17:19:00] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 17:19:03] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 17:19:03] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:19:03] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:19:03] Proceso: 📈 Total acumulado: 1482 registros
+[04-10-25 17:19:12] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 17:19:15] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:19:15] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:19:15] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:19:15] Proceso: 📈 Total acumulado: 1519 registros
+[04-10-25 17:19:22] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 17:19:25] Proceso: se obtuvieron: 24 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 17:19:25] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:19:25] Proceso: 📊 Nuevos registros: 24
+[04-10-25 17:19:25] Proceso: 📈 Total acumulado: 1543 registros
+[04-10-25 17:19:34] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 17:19:34] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 17:19:34] Proceso: 
+✅ Resultado final:
+[04-10-25 17:19:34] Proceso: - Categorías completadas: 1/1
+[04-10-25 17:19:34] Proceso: ⏳Tiempo total del scrap: 0:01:17.026036
+[04-10-25 17:19:34] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 17:19:34] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 17:19:34] Proceso: ✅ Entretencion y manualidades.csv procesado: 1543 filas
+[04-10-25 17:19:34] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 17:19:34] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 17:19:34] Proceso: ✅ Antartica.csv creado con 2503 filas de 3 archivos
+[04-10-25 17:19:44] Error en: Error connecting to RabbitMQ (attempt 1/5):: 
+[04-10-25 17:19:57] Error en: Error connecting to RabbitMQ (attempt 2/5):: 
+[04-10-25 17:20:10] Error en: Error connecting to RabbitMQ (attempt 3/5):: 
+[04-10-25 17:20:23] Error en: Error connecting to RabbitMQ (attempt 4/5):: 
+[04-10-25 17:20:36] Error en: Error connecting to RabbitMQ (attempt 5/5):: 
+[04-10-25 17:20:36] Proceso: ❌ No se pudo conectar a RabbitMQ después de varios intentos
+[04-10-25 17:20:36] Error en: proceso de cola rabbiMQ Antartica: No se pudo conectar a RabbitMQ
+[04-10-25 17:20:36] Proceso: Esperando 2.94 horas para el próximo ciclo...⏳
+[04-10-25 17:39:14] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 17:39:14
+[04-10-25 17:39:14] Proceso: Estrategia Playwright seleccionada
+[04-10-25 17:39:14] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 17:39:14] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 17:39:19] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 17:39:22] Proceso: se obtuvieron: 36 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 17:39:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:39:22] Proceso: 📊 Nuevos registros: 36
+[04-10-25 17:39:22] Proceso: 📈 Total acumulado: 1579 registros
+[04-10-25 17:39:29] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 17:39:32] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:39:32] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:39:32] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:39:32] Proceso: 📈 Total acumulado: 1616 registros
+[04-10-25 17:39:39] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 17:39:42] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 17:39:42] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:39:42] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:39:42] Proceso: 📈 Total acumulado: 1653 registros
+[04-10-25 17:39:50] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 17:39:53] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 17:39:53] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:39:53] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:39:53] Proceso: 📈 Total acumulado: 1690 registros
+[04-10-25 17:40:00] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 17:40:02] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:40:02] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:40:02] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:40:02] Proceso: 📈 Total acumulado: 1727 registros
+[04-10-25 17:58:54] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 17:58:54
+[04-10-25 17:58:54] Proceso: Estrategia Playwright seleccionada
+[04-10-25 17:58:54] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 17:58:54] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 17:58:58] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 17:59:00] Proceso: se obtuvieron: 36 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 17:59:00] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:00] Proceso: 📊 Nuevos registros: 36
+[04-10-25 17:59:00] Proceso: 📈 Total acumulado: 1763 registros
+[04-10-25 17:59:10] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 17:59:13] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 17:59:13] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:13] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:59:13] Proceso: 📈 Total acumulado: 1800 registros
+[04-10-25 17:59:19] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 17:59:22] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:59:22] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:22] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:59:22] Proceso: 📈 Total acumulado: 1837 registros
+[04-10-25 17:59:27] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 17:59:30] Proceso: se obtuvieron: 37 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:59:30] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:30] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:59:30] Proceso: 📈 Total acumulado: 1874 registros
+[04-10-25 17:59:38] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 17:59:40] Proceso: se obtuvieron: 37 productos, ⏳esperando 6s para la siguiente pagina
+[04-10-25 17:59:40] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:40] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:59:40] Proceso: 📈 Total acumulado: 1911 registros
+[04-10-25 17:59:47] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 17:59:51] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 17:59:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:51] Proceso: 📊 Nuevos registros: 37
+[04-10-25 17:59:51] Proceso: 📈 Total acumulado: 1948 registros
+[04-10-25 17:59:56] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 17:59:59] Proceso: se obtuvieron: 24 productos, ⏳esperando 7s para la siguiente pagina
+[04-10-25 17:59:59] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 17:59:59] Proceso: 📊 Nuevos registros: 24
+[04-10-25 17:59:59] Proceso: 📈 Total acumulado: 1972 registros
+[04-10-25 18:00:06] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 18:00:07] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 18:00:07] Proceso: 
+✅ Resultado final:
+[04-10-25 18:00:07] Proceso: - Categorías completadas: 1/1
+[04-10-25 18:00:07] Proceso: ⏳Tiempo total del scrap: 0:01:12.773327
+[04-10-25 18:00:07] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 18:00:07] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 18:00:07] Proceso: ✅ Entretencion y manualidades.csv procesado: 1972 filas
+[04-10-25 18:00:07] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 18:00:07] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 18:00:07] Proceso: ✅ Antartica.csv creado con 2932 filas de 3 archivos
+[04-10-25 18:00:17] Error en: Error connecting to RabbitMQ (attempt 1/5):: 
+[04-10-25 18:00:30] Error en: Error connecting to RabbitMQ (attempt 2/5):: 
+[04-10-25 18:00:43] Error en: Error connecting to RabbitMQ (attempt 3/5):: 
+[04-10-25 18:00:56] Error en: Error connecting to RabbitMQ (attempt 4/5):: 
+[04-10-25 18:01:09] Error en: Error connecting to RabbitMQ (attempt 5/5):: 
+[04-10-25 18:01:09] Proceso: ❌ No se pudo conectar a RabbitMQ después de varios intentos
+[04-10-25 18:01:09] Error en: proceso de cola rabbiMQ Antartica: No se pudo conectar a RabbitMQ
+[04-10-25 18:01:09] Proceso: Esperando 3.50 horas para el próximo ciclo...⏳
+[04-10-25 18:25:08] Proceso: 
+🚀 Iniciando ciclo de scraping - 2025-10-04 18:25:08
+[04-10-25 18:25:08] Proceso: Estrategia Playwright seleccionada
+[04-10-25 18:25:08] Proceso: 
+📌 Procesando (1/1): Entretencion y manualidades
+[04-10-25 18:25:08] Proceso: Iniciando proceso con estrategia Playwright
+[04-10-25 18:25:13] Proceso: Estamos en: https://www.antartica.cl/libros/entretencion-y-manual.html
+[04-10-25 18:25:15] Proceso: se obtuvieron: 36 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 18:25:15] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:25:15] Proceso: 📊 Nuevos registros: 36
+[04-10-25 18:25:15] Proceso: 📈 Total acumulado: 2008 registros
+[04-10-25 18:25:20] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=2
+[04-10-25 18:25:23] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 18:25:23] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:25:23] Proceso: 📊 Nuevos registros: 37
+[04-10-25 18:25:23] Proceso: 📈 Total acumulado: 2045 registros
+[04-10-25 18:25:28] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=3
+[04-10-25 18:25:31] Proceso: se obtuvieron: 37 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 18:25:31] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:25:31] Proceso: 📊 Nuevos registros: 37
+[04-10-25 18:25:31] Proceso: 📈 Total acumulado: 2082 registros
+[04-10-25 18:25:39] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=4
+[04-10-25 18:25:42] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 18:25:42] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:25:42] Proceso: 📊 Nuevos registros: 37
+[04-10-25 18:25:42] Proceso: 📈 Total acumulado: 2119 registros
+[04-10-25 18:25:48] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=5
+[04-10-25 18:25:51] Proceso: se obtuvieron: 37 productos, ⏳esperando 9s para la siguiente pagina
+[04-10-25 18:25:51] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:25:51] Proceso: 📊 Nuevos registros: 37
+[04-10-25 18:25:51] Proceso: 📈 Total acumulado: 2156 registros
+[04-10-25 18:26:00] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=6
+[04-10-25 18:26:03] Proceso: se obtuvieron: 37 productos, ⏳esperando 5s para la siguiente pagina
+[04-10-25 18:26:03] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:26:03] Proceso: 📊 Nuevos registros: 37
+[04-10-25 18:26:03] Proceso: 📈 Total acumulado: 2193 registros
+[04-10-25 18:26:08] Proceso: Llegamos a https://www.antartica.cl/libros/entretencion-y-manual.html?p=7
+[04-10-25 18:26:10] Proceso: se obtuvieron: 24 productos, ⏳esperando 8s para la siguiente pagina
+[04-10-25 18:26:10] Proceso: ✅ CSV actualizado: /app/logic/../data/Entretencion y manualidades.csv
+[04-10-25 18:26:10] Proceso: 📊 Nuevos registros: 24
+[04-10-25 18:26:10] Proceso: 📈 Total acumulado: 2217 registros
+[04-10-25 18:26:18] Proceso: ✅ Ultima pagina ya escrapeada !
+[04-10-25 18:26:19] Proceso: ✅ Completado: Entretencion y manualidades
+[04-10-25 18:26:19] Proceso: 
+✅ Resultado final:
+[04-10-25 18:26:19] Proceso: - Categorías completadas: 1/1
+[04-10-25 18:26:19] Proceso: ⏳Tiempo total del scrap: 0:01:11.126450
+[04-10-25 18:26:19] Proceso: ✅ Iniciando proceso csv_forAll
+[04-10-25 18:26:19] Proceso: ✅ Archivo existente Antartica.csv eliminado.
+[04-10-25 18:26:19] Proceso: ✅ Entretencion y manualidades.csv procesado: 2217 filas
+[04-10-25 18:26:19] Proceso: ✅ Gastronomia y vinos.csv procesado: 604 filas
+[04-10-25 18:26:19] Proceso: ✅ Guías de viaje.csv procesado: 356 filas
+[04-10-25 18:26:19] Proceso: ✅ Antartica.csv creado con 3177 filas de 3 archivos
+[04-10-25 18:26:19] Proceso: ✅ Conexión establecida con RabbitMQ
+[04-10-25 18:26:19] Proceso: ✅ Mensaje enviado - Antartica
+[04-10-25 18:26:19] Proceso: ✅ CSV Antartica enviado a la cola exitosamente
+[04-10-25 18:26:19] Proceso: Conexión con RabbitMQ cerrada correctamente
+[04-10-25 18:26:19] Proceso: Esperando 2.65 horas para el próximo ciclo...⏳
