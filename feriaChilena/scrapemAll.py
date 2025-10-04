@@ -8,7 +8,7 @@ import random
 from logic.logs import error_logs, process_logs
 import time
 from datetime import datetime
-from rabbitmq_handler import RabbitMQHandler
+from logic.rabbitmq_handler import RabbitMQHandler
 from logic.randomScrap import scrapear_aleatoriamente
 from logic.csv_for_all import csv_forAll
 
