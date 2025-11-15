@@ -29,8 +29,15 @@ class ScrapSeleniumBase:
                 while True:
                     tiempo_espera = int(random.uniform(5, 10))
                     try:
+                        current_results_url = sb.get_current_url()
                         product_list = self.strategy.get_products(sb,self.categoria)
                         if product_list:
+                            if self.strategy.needs_isbn_update():
+                                process_logs('🔄 Actualizando ISBNs...')
+                                product_list = self.strategy.update_products_isbn(sb, product_list)  # Pasa browser
+                                process_logs('🔄 Volviendo a la página de resultados...')
+                                sb.open(current_results_url)
+                                sb.wait_for_element(selectors['product_container'])
                             process_logs(f'se obtuvieron: {len(product_list)} productos, ⏳esperando {tiempo_espera}s para la siguiente pagina' )
                             export_to_csv(product_list,self.categoria)
                             time.sleep(tiempo_espera)

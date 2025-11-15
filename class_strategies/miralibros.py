@@ -15,7 +15,66 @@ class MiraLibros(ScrapStrategy):
             'link': "a",
             'price': ".block-price",
             'title': "h3 a",
+            'isbn':'span.sku_elem"'
         }
+    
+    def needs_isbn_update(self): #esto lo reescribimos despues en el scrap
+        return True  # por defecto no necesita
+    
+
+    def update_products_isbn(self, browser, product_list):  # Cambia page por browser
+        """Actualiza los ISBNs de todos los productos en la lista"""
+        for i, product in enumerate(product_list, 1):
+            try:
+                process_logs(f'Obteniendo ISBN {i}/{len(product_list)}: {product.Link}')
+                
+                if product.ISBN != 'Template':
+                    continue
+                    
+                # Pasar el browser en lugar de la page
+                isbn = self.obtener_isbn_desde_link(browser, product.Link)
+                product.ISBN = isbn
+                process_logs(f'✅ ISBN actualizado: {isbn}')
+                
+                if i < len(product_list):
+                    time.sleep(random.uniform(1, 3))
+                    
+            except Exception as e:
+                error_logs(f'❌ Error actualizando ISBN para {product.Link}', str(e))
+        
+        return product_list
+    
+    def obtener_isbn_desde_link(self, browser, product_link):  # Cambia page por browser
+        """Obtiene el ISBN de un link específico"""
+        try:
+            if not product_link or product_link == 'Template':
+                return 'Template'
+                
+            # Crear nuevo contexto y página usando el browser
+            context = browser.new_context()
+            new_page = context.new_page()
+            
+            new_page.goto(product_link, wait_until='domcontentloaded', timeout=30000)
+            
+            # Buscar el elemento del ISBN
+            isbn_selector = self.get_selectors()['isbn']
+            isbn_element = new_page.wait_for_selector(isbn_selector, timeout=10000)
+            
+            if isbn_element:
+                isbn = isbn_element.inner_text().strip()
+            else:
+                isbn = 'Template'
+                error_logs(f'❌ No se encontró ISBN en: {product_link}')
+            
+            # Cerrar recursos
+            new_page.close()
+            context.close()
+            return isbn
+            
+        except Exception as e:
+            error_logs(f'❌ Error obteniendo ISBN de {product_link}', str(e))
+            return 'Template'
+        
     
     def cleanPrice(self, price_text):
         cleaned_price = price_text.replace("$", "").replace(".", "").strip()
@@ -46,7 +105,7 @@ class MiraLibros(ScrapStrategy):
         next_link.click()
         page.wait_for_selector('.product-block')  # Espera a que carguen los productos
         return True
-    
+     
     def get_products(self, page, categoria):
         current_time = datetime.now().strftime('%d-%m-%Y %H:%M')
         products = []

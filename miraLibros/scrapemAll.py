@@ -16,23 +16,23 @@ import pytz
 
 categorias = [
 ('https://miralibros.cl/a-narrativa','Narrativa'),
-('https://miralibros.cl/b-poesia','Poesia'),
-('https://miralibros.cl/c-salud-y-bienestar','salud_y_bienestar'),
-('https://miralibros.cl/d-esoterismo-y-astrologia','Esoterismo_y_Astrologia'),
-('https://miralibros.cl/e-negocios-y-finanzas','Negocios_y_Finanzas'),
-('https://miralibros.cl/f-cocina','Cocina'),
-('https://miralibros.cl/g-divulgacion-cientifica','Divulgacion_Cientifica'),
-('https://miralibros.cl/h-naturaleza-y-ecologia','Naturaleza_y_Ecologia'),
-('https://miralibros.cl/i-historia','Historia'),
-('https://miralibros.cl/j-ciencias-humanas-y-sociales','Ciencias_Humanas_y_Sociales'),
-('https://miralibros.cl/k-idiomas','Idiomas'),
-('https://miralibros.cl/l-arte-y-arquitectura','Arte_y_Arquitectura'),
-('https://miralibros.cl/m-tecnicas-artisticas-y-manualidades','Tecnicas_Artisticas_y_Manualidades'),
-('https://miralibros.cl/n-musica','Musica'),
-('https://miralibros.cl/o-cine','Cine'),
-('https://miralibros.cl/p-comic-e-ilustracion','Comic_e_Ilustracion'),
-('https://miralibros.cl/q-libros-infantiles','Libros_Infantiles'),
-('https://miralibros.cl/r-papeleria-y-regalos','Papeleria_y_Regalos'),
+#('https://miralibros.cl/b-poesia','Poesia'),
+#('https://miralibros.cl/c-salud-y-bienestar','salud_y_bienestar'),
+#('https://miralibros.cl/d-esoterismo-y-astrologia','Esoterismo_y_Astrologia'),
+#('https://miralibros.cl/e-negocios-y-finanzas','Negocios_y_Finanzas'),
+#('https://miralibros.cl/f-cocina','Cocina'),
+#('https://miralibros.cl/g-divulgacion-cientifica','Divulgacion_Cientifica'),
+#('https://miralibros.cl/h-naturaleza-y-ecologia','Naturaleza_y_Ecologia'),
+#('https://miralibros.cl/i-historia','Historia'),
+#('https://miralibros.cl/j-ciencias-humanas-y-sociales','Ciencias_Humanas_y_Sociales'),
+#('https://miralibros.cl/k-idiomas','Idiomas'),
+#('https://miralibros.cl/l-arte-y-arquitectura','Arte_y_Arquitectura'),
+#('https://miralibros.cl/m-tecnicas-artisticas-y-manualidades','Tecnicas_Artisticas_y_Manualidades'),
+#('https://miralibros.cl/n-musica','Musica'),
+#('https://miralibros.cl/o-cine','Cine'),
+#('https://miralibros.cl/p-comic-e-ilustracion','Comic_e_Ilustracion'),
+#('https://miralibros.cl/q-libros-infantiles','Libros_Infantiles'),
+#('https://miralibros.cl/r-papeleria-y-regalos','Papeleria_y_Regalos'),
 ('https://miralibros.cl/s-deportes','Deportes'),
 ('https://miralibros.cl/t-juegos','Juegos')
 ]
@@ -53,20 +53,20 @@ def main():
         wait_seconds = wait_hours * 3600
         try:
             csv_success = csv_forAll("data", csv_filename)
-            if csv_success:
-                try:
-                    with RabbitMQHandler() as rabbit:
-                        chile_tz = pytz.timezone("America/Santiago")
-                        timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
-                        enviarACola = rabbit.send_csv_notification('Antartica', timestamp)
-                        if enviarACola:
-                            process_logs('✅ CSV miraLibros enviado a la cola exitosamente')
-                        else:
-                            process_logs('❌ CSV miraLibros no se envio a la cola de manera exitosa')
-                except Exception as err:
-                    error_logs('proceso de cola rabbiMQ miraLibros', err)
-            else:
-                process_logs('❌ csv_forAll falló, no se envía a cola')
+            # if csv_success:
+            #     try:
+            #         with RabbitMQHandler() as rabbit:
+            #             chile_tz = pytz.timezone("America/Santiago")
+            #             timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+            #             enviarACola = rabbit.send_csv_notification('MiraLibros', timestamp)
+            #             if enviarACola:
+            #                 process_logs('✅ CSV miraLibros enviado a la cola exitosamente')
+            #             else:
+            #                 process_logs('❌ CSV miraLibros no se envio a la cola de manera exitosa')
+            #     except Exception as err:
+            #         error_logs('proceso de cola rabbiMQ miraLibros', err)
+            # else:
+            #     process_logs('❌ csv_forAll falló, no se envía a cola')
 
         except ValueError as ex:
             error_logs('Error en csv_forAll de miraLibros', ex)

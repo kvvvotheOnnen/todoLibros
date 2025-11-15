@@ -36,20 +36,20 @@ def main():
         wait_seconds = wait_hours * 3600
         try:
             csv_success = csv_forAll("data", csv_filename)
-            if csv_success:
-                try:
-                    with RabbitMQHandler() as rabbit:
-                        chile_tz = pytz.timezone("America/Santiago")
-                        timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
-                        enviarACola = rabbit.send_csv_notification('Antartica', timestamp)
-                        if enviarACola:
-                            process_logs('✅ CSV Buscalibre enviado a la cola exitosamente')
-                        else:
-                            process_logs('❌ CSV Buscalibre no se envio a la cola de manera exitosa')
-                except Exception as err:
-                    error_logs('proceso de cola rabbiMQ Buscalibre', err)
-            else:
-                process_logs('❌ csv_forAll falló, no se envía a cola')
+            # if csv_success:
+            #     try:
+            #         with RabbitMQHandler() as rabbit:
+            #             chile_tz = pytz.timezone("America/Santiago")
+            #             timestamp = datetime.now(chile_tz).strftime("%d-%m-%Y %H:%M:%S")
+            #             enviarACola = rabbit.send_csv_notification('Buscalibre', timestamp)
+            #             if enviarACola:
+            #                 process_logs('✅ CSV Buscalibre enviado a la cola exitosamente')
+            #             else:
+            #                 process_logs('❌ CSV Buscalibre no se envio a la cola de manera exitosa')
+            #     except Exception as err:
+            #         error_logs('proceso de cola rabbiMQ Buscalibre', err)
+            # else:
+            #     process_logs('❌ csv_forAll falló, no se envía a cola')
 
         except ValueError as ex:
             error_logs('Error en csv_forAll de Buscalibre', ex)

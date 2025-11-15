@@ -15,7 +15,7 @@ class ScrapPlaywright:
         self.output_dir = os.getenv('OUTPUT_DIR', './data')
         os.makedirs(self.output_dir, exist_ok=True)
     
-    
+
     def scrap(self):
         with sync_playwright() as p:
             try:
@@ -30,6 +30,9 @@ class ScrapPlaywright:
                     try:
                         product_list =(self.strategy.get_products(page,self.categoria))
                         if product_list:
+                            if self.strategy.needs_isbn_update():
+                                process_logs('🔄 Actualizando ISBNs...')
+                                product_list = self.strategy.update_products_isbn(browser, product_list)  # Pasa browser
                             process_logs(f'se obtuvieron: {len(product_list)} productos, ⏳esperando {tiempo_espera}s para la siguiente pagina' )
                             export_to_csv(product_list,self.categoria)
                             time.sleep(tiempo_espera)

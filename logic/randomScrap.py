@@ -33,7 +33,7 @@ def scrapear_aleatoriamente(categorias, strategy, engine_type, max_reintentos=3)
         procesadas_actual = len(categorias_procesadas)
         process_logs(f"\n📌 Procesando ({procesadas_actual + 1}/{total_categorias}): {categoria}")
         
-        try:
+        try: #igual se podria hacer mejor la vd
             if strategy == 1:
                 process_logs('Iniciando proceso con estrategia Playwright')
                 playWrightScrap = ScrapClass(url, Antartica(), categoria)

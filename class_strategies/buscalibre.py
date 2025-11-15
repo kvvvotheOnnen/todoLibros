@@ -21,7 +21,8 @@ class Buscalibre(ScrapStrategy):
             'author': ".autor",
             'tapa': ".metas"
         }
-    
+    def needs_isbn_update(self): #esto lo reescribimos despues en el scrap
+        return False
     def next_page(self,sb):
         try:
             sb.wait_for_element("#pagn", timeout=10)

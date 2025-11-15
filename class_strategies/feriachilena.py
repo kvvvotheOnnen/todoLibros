@@ -17,6 +17,8 @@ class feriaChilena(ScrapStrategy):
             'title': "h2.woocommerce-loop-product__title",
             'author': ".author-selector",  
         }
+    def needs_isbn_update(self): #esto lo reescribimos despues en el scrap
+        return False
     
     def cleanPrice(self, price_text):
         cleaned_price = price_text.replace("$", "").replace(".", "").strip()

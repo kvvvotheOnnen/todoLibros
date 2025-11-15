@@ -17,7 +17,8 @@ class Antartica(ScrapStrategy):
             'title': ".product-item-link",
             'author': ".link-autor-search-result"
         }
-    
+    def needs_isbn_update(self): #esto lo reescribimos despues en el scrap
+        return False
     def next_page(self,page):
         try:
             next_button = page.query_selector('a.next-page')
